@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Racing Data Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff; /* Light blue background */
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0078d7; /* Darker blue for header */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #0078d7;
+            margin-top: 0;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #0078d7;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #005fa3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Horse Racing Data Portal</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Race Data Viewer</h2>
+            <p>
+                Access comprehensive race data including entries, Gemini analysis, and Fuji data.
+                View race information by date and race number.
+            </p>
+            <a href="race_data_viewer.html" class="btn">Open Race Data Viewer</a>
+        </div>
+
+        <div class="card">
+            <h2>About This Portal</h2>
+            <p>
+                This portal provides access to horse racing data and analysis tools.
+                The Race Data Viewer allows you to browse race information, view entries,
+                and access AI-powered analysis from Gemini and Fuji.
+            </p>
+            <p>
+                Data is fetched from the PocketBase API and displayed in an easy-to-use interface.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Horse Racing Data Portal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
