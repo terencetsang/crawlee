@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Data Viewer</title>
+    <link rel="icon" href="data:,">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff; /* Light blue background */
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .selectors-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .date-selector, .race-selector {
+            display: flex;
+            flex-direction: column;
+        }
+        .date-selector label, .race-selector label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select {
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .tab {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            border-radius: 4px 4px 0 0;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .tab.active {
+            background-color: #0066cc;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 0 4px 4px 4px;
+            background-color: white;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .loading {
+            display: none;
+            margin: 20px 0;
+            font-style: italic;
+            color: #666;
+        }
+        .error {
+            display: none;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ffeeee;
+            border: 1px solid #ffcccc;
+            color: #cc0000;
+            border-radius: 4px;
+        }
+
+        .gemini-response, .fuji-response {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: auto;
+            line-height: 1.6;
+        }
+        .json-content {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            overflow-x: auto;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        .entries-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .entries-table th {
+            background-color: #0066cc;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        .entries-table td {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .entries-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .entries-table tr:hover {
+            background-color: #e6f3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Race Data Viewer</h1>
+
+        <div class="selectors-container">
+            <div class="date-selector">
+                <label for="race-date">Race Date:</label>
+                <select id="race-date">
+                    <!-- Race dates from PocketBase -->
+                    <option value="2025-04-23">2025-04-23</option>
+                    <option value="2025-04-20">2025-04-20</option>
+                    <option value="2025-04-16">2025-04-16</option>
+                    <option value="2025-04-13">2025-04-13</option>
+                </select>
+            </div>
+
+            <div class="race-selector">
+                <label for="race-number">Race Number:</label>
+                <select id="race-number">
+                    <option value="">Loading races...</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="error-container" class="error">Error message will appear here</div>
+        <div id="loading" class="loading">Loading race data...</div>
+
+        <div class="tabs" id="tabs">
+            <div class="tab active" data-tab="gemini">Gemini Analysis</div>
+            <div class="tab" data-tab="fuji">Fuji Data</div>
+            <div class="tab" data-tab="entries">Entries</div>
+            <div class="tab" data-tab="json">Raw JSON</div>
+        </div>
+
+        <div id="gemini-tab" class="tab-content active">
+            <pre id="gemini-response" class="gemini-response"></pre>
+        </div>
+
+        <div id="fuji-tab" class="tab-content">
+            <pre id="fuji-response" class="fuji-response"></pre>
+        </div>
+
+        <div id="entries-tab" class="tab-content">
+            <table id="entries-table" class="entries-table">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Horse</th>
+                        <th>Jockey</th>
+                        <th>Trainer</th>
+                        <th>Draw</th>
+                        <th>Weight</th>
+                        <th>Rating</th>
+                        <th>Rating Change</th>
+                        <th>Form</th>
+                    </tr>
+                </thead>
+                <tbody id="entries-body">
+                    <!-- Entries will be populated here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="json-tab" class="tab-content">
+            <pre id="json-content" class="json-content"></pre>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const raceDateInput = document.getElementById('race-date');
+        const raceNumberSelect = document.getElementById('race-number');
+        const errorContainer = document.getElementById('error-container');
+        const loadingDiv = document.getElementById('loading');
+        const geminiContent = document.getElementById('gemini-response');
+        const fujiContent = document.getElementById('fuji-response');
+        const jsonContent = document.getElementById('json-content');
+        const entriesTableBody = document.getElementById('entries-body');
+        const tabs = document.querySelectorAll('.tab');
+
+        // API base URLs
+        const apiBaseUrl = 'http://terence.myds.me:8081/api/collections/race_entries/records';
+        const raceDatesApiUrl = 'http://terence.myds.me:8081/api/collections/get_race_date/records';
+
+        // Sample data for when the API is not accessible
+        const sampleData = {
+            '2025-04-20': {
+                '1': {
+                    race_date: '2025-04-20',
+                    race_number: '1',
+                    gemini_25_respones: `# Race Analysis: Sha Tin Race 1 - 2025-04-20
+
+## Race Overview
+Class 4 handicap over 1200m at Sha Tin. Good sized field with several promising runners.
+
+## Top Contenders
+
+### 1. SUPER TALENT
+- Consistent performer with good recent form
+- Well drawn in barrier 3
+- Zac Purton takes the ride
+- Likely to be prominent throughout
+
+### 2. LUCKY WINNER
+- Progressive type who is improving with racing
+- Good trial leading into this
+- Joao Moreira aboard is a significant advantage
+- Will be finishing strongly
+
+### 3. GOLDEN STAR
+- Drops in class from last start
+- Has shown ability at this level previously
+- Barrier 7 is a slight concern
+- Strong finishing burst when produced at the right time
+
+## Pace Analysis
+Moderate tempo expected. SUPER TALENT likely to push forward from the inside draw, while LUCKY WINNER should get a nice position midfield.
+
+## Value Bet
+GOLDEN STAR at current odds of 8-1 represents good value.
+
+## Suggested Play
+Quinella: 1,2,3`,
+                    fuji: `RACE 1 ANALYSIS - SHA TIN - 2025-04-20
+
+CLASS 4 - 1200M
+
+SPEED MAP:
+
+Early Leaders: SUPER TALENT, FLYING DRAGON
+Midfield: LUCKY WINNER, HAPPY CHAMPION
+Backmarkers: GOLDEN STAR, NOBLE STEED
+
+TRACK BIAS: No significant bias expected
+
+RACE SHAPE: Moderate tempo expected
+
+FORM ANALYSIS:
+
+SUPER TALENT - Last 3 starts: 2-3-4
+LUCKY WINNER - Last 3 starts: 4-3-2
+GOLDEN STAR - Last 3 starts: 6-5-4 (dropping in class)
+
+JOCKEY/TRAINER COMBINATIONS TO NOTE:
+Zac Purton/John Size - 24% strike rate this season
+Joao Moreira/Tony Cruz - 20% strike rate this season
+
+BETTING STRATEGY:
+Win: SUPER TALENT
+Place: GOLDEN STAR
+Quinella: 1,2,3
+Tierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
+                    entries: [
+                        {
+                            horse_number: "1",
+                            horse_name: "SUPER TALENT",
+                            jockey: "Zac Purton",
+                            trainer: "John Size",
+                            draw: "3",
+                            weight: "133",
+                            rating: "60",
+                            recent_form: "2-3-4"
+                        },
+                        {
+                            horse_number: "2",
+                            horse_name: "LUCKY WINNER",
+                            jockey: "Joao Moreira",
+                            trainer: "Tony Cruz",
+                            draw: "5",
+                            weight: "131",
+                            rating: "58",
+                            recent_form: "4-3-2"
+                        },
+                        {
+                            horse_number: "3",
+                            horse_name: "GOLDEN STAR",
+                            jockey: "Karis Teetan",
+                            trainer: "Caspar Fownes",
+                            draw: "7",
+                            weight: "129",
+                            rating: "56",
+                            recent_form: "6-5-4"
+                        },
+                        {
+                            horse_number: "4",
+                            horse_name: "FLYING DRAGON",
+                            jockey: "Vincent Ho",
+                            trainer: "Francis Lui",
+                            draw: "2",
+                            weight: "127",
+                            rating: "54",
+                            recent_form: "5-6-7"
+                        },
+                        {
+                            horse_number: "5",
+                            horse_name: "HAPPY CHAMPION",
+                            jockey: "Alexis Badel",
+                            trainer: "Douglas Whyte",
+                            draw: "10",
+                            weight: "125",
+                            rating: "52",
+                            recent_form: "7-8-5"
+                        },
+                        {
+                            horse_number: "6",
+                            horse_name: "NOBLE STEED",
+                            jockey: "Matthew Chadwick",
+                            trainer: "Ricky Yiu",
+                            draw: "8",
+                            weight: "123",
+                            rating: "50",
+                            recent_form: "8-9-6"
+                        }
+                    ]
+                }
+            },
+            '2025-04-16': {
+                '1': {
+                    race_date: '2025-04-16',
+                    race_number: '1',
+                    gemini_25_respones: `# Race Analysis: Happy Valley Race 1 - 2025-04-16\n\n## Race Overview\nClass 4 handicap over 1650m at Happy Valley. Good sized field with several interesting runners.\n\n## Top Contenders\n\n### 1. HAPPY VALLEY STAR\n- Consistent performer with good course record\n- Well drawn in barrier 4\n- Zac Purton takes the ride\n- Likely to be prominent throughout\n\n### 2. LUCKY FORTUNE\n- Progressive type who is improving with racing\n- Good trial leading into this\n- Joao Moreira aboard is a significant advantage\n- Will be finishing strongly\n\n### 3. GOLDEN GLORY\n- Drops in class from last start\n- Has shown ability at this level previously\n- Barrier 7 is a slight concern\n- Strong finishing burst when produced at the right time\n\n## Pace Analysis\nModerate tempo expected. HAPPY VALLEY STAR likely to push forward from a good draw, while LUCKY FORTUNE should get a nice position midfield.\n\n## Value Bet\nGOLDEN GLORY at current odds of 8-1 represents good value.\n\n## Suggested Play\nQuinella: 1,2,3`,
+                    fuji: `RACE 1 ANALYSIS - HAPPY VALLEY - 2025-04-16\n\nCLASS 4 - 1650M\n\nSPEED MAP:\n\nEarly Leaders: HAPPY VALLEY STAR, FLYING FORTUNE\nMidfield: LUCKY FORTUNE, HAPPY WINNER\nBackmarkers: GOLDEN GLORY, NOBLE EXPRESS\n\nTRACK BIAS: No significant bias expected\n\nRACE SHAPE: Moderate tempo expected\n\nFORM ANALYSIS:\n\nHAPPY VALLEY STAR - Last 3 starts: 2-3-4\nLUCKY FORTUNE - Last 3 starts: 4-3-2\nGOLDEN GLORY - Last 3 starts: 6-5-4 (dropping in class)\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nJoao Moreira/Tony Cruz - 20% strike rate this season\n\nBETTING STRATEGY:\nWin: HAPPY VALLEY STAR\nPlace: GOLDEN GLORY\nQuinella: 1,2,3\nTierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
+                    entries: [
+                        {
+                            horse_number: "1",
+                            horse_name: "HAPPY VALLEY STAR",
+                            jockey: "Zac Purton",
+                            trainer: "John Size",
+                            draw: "4",
+                            weight: "133",
+                            rating: "60",
+                            recent_form: "2-3-4"
+                        },
+                        {
+                            horse_number: "2",
+                            horse_name: "LUCKY FORTUNE",
+                            jockey: "Joao Moreira",
+                            trainer: "Tony Cruz",
+                            draw: "5",
+                            weight: "131",
+                            rating: "58",
+                            recent_form: "4-3-2"
+                        },
+                        {
+                            horse_number: "3",
+                            horse_name: "GOLDEN GLORY",
+                            jockey: "Karis Teetan",
+                            trainer: "Caspar Fownes",
+                            draw: "7",
+                            weight: "129",
+                            rating: "56",
+                            recent_form: "6-5-4"
+                        },
+                        {
+                            horse_number: "4",
+                            horse_name: "FLYING FORTUNE",
+                            jockey: "Vincent Ho",
+                            trainer: "Francis Lui",
+                            draw: "2",
+                            weight: "127",
+                            rating: "54",
+                            recent_form: "5-6-7"
+                        },
+                        {
+                            horse_number: "5",
+                            horse_name: "HAPPY WINNER",
+                            jockey: "Alexis Badel",
+                            trainer: "Douglas Whyte",
+                            draw: "10",
+                            weight: "125",
+                            rating: "52",
+                            recent_form: "7-8-5"
+                        },
+                        {
+                            horse_number: "6",
+                            horse_name: "NOBLE EXPRESS",
+                            jockey: "Matthew Chadwick",
+                            trainer: "Ricky Yiu",
+                            draw: "8",
+                            weight: "123",
+                            rating: "50",
+                            recent_form: "8-9-6"
+                        }
+                    ]
+                },
+                '3': {
+                    race_date: '2025-04-16',
+                    race_number: '3',
+                    gemini_25_respones: `# Race Analysis: Happy Valley Race 3 - 2025-04-16\n\n## Race Overview\nClass 3 handicap over 1200m at Happy Valley. Sprint race with a likely fast pace.\n\n## Top Contenders\n\n### 1. SPEED DEMON\n- Specialist at this course and distance\n- Three wins from five starts at HV 1200m\n- Barrier 2 is perfect for his running style\n- Carrying top weight but class runner\n\n### 2. FLYING MISSILE\n- Blistering early speed\n- Coming back from a freshen-up\n- Barrier 7 means will need to work early\n- Strong record when fresh\n\n### 3. LUCKY SPRINTER\n- Consistent performer in this class\n- Drawn well in barrier 4\n- Tends to run well at Happy Valley\n- Will be running on strongly\n\n## Pace Analysis\nVery fast tempo expected with FLYING MISSILE and SPEED DEMON both having early speed. This could set it up for a closer.\n\n## Value Bet\nLUCKY SPRINTER at 6-1 could benefit from the hot pace.\n\n## Suggested Play\nTrifecta: 1,2,3 with 1,2,3,4,5 with 1,2,3,4,5,6`,
+                    fuji: `RACE 3 ANALYSIS - HAPPY VALLEY - 2025-04-16\n\nCLASS 3 - 1200M\n\nSPEED MAP:\n\nEarly Leaders: FLYING MISSILE, SPEED DEMON\nMidfield: LUCKY SPRINTER, HAPPY CHAMPION\nBackmarkers: GOLDEN GLORY, WINNING SPIRIT\n\nTRACK BIAS: Inside barriers advantaged in sprint races\n\nRACE SHAPE: Very fast tempo expected\n\nFORM ANALYSIS:\n\nSPEED DEMON - Last 3 starts: 1-3-1 (Course specialist)\nFLYING MISSILE - First-up from spell, trials: Excellent\nLUCKY SPRINTER - Last 3 starts: 2-4-3\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nKaris Teetan/Douglas Whyte - 22% strike rate this season\n\nBETTING STRATEGY:\nWin: SPEED DEMON\nPlace: LUCKY SPRINTER\nQuinella: 1,3\nTrifecta: 1,2,3/1,2,3,4,5/1,2,3,4,5,6`,
+                    entries: [
+                        {
+                            horse_number: "1",
+                            horse_name: "SPEED DEMON",
+                            jockey: "Zac Purton",
+                            trainer: "John Size",
+                            draw: "2",
+                            weight: "133",
+                            rating: "80",
+                            recent_form: "1-3-1"
+                        },
+                        {
+                            horse_number: "2",
+                            horse_name: "FLYING MISSILE",
+                            jockey: "Joao Moreira",
+                            trainer: "Tony Cruz",
+                            draw: "7",
+                            weight: "131",
+                            rating: "78",
+                            recent_form: "0-0-0"
+                        },
+                        {
+                            horse_number: "3",
+                            horse_name: "LUCKY SPRINTER",
+                            jockey: "Karis Teetan",
+                            trainer: "Douglas Whyte",
+                            draw: "4",
+                            weight: "129",
+                            rating: "76",
+                            recent_form: "2-4-3"
+                        },
+                        {
+                            horse_number: "4",
+                            horse_name: "HAPPY CHAMPION",
+                            jockey: "Vincent Ho",
+                            trainer: "Francis Lui",
+                            draw: "1",
+                            weight: "127",
+                            rating: "74",
+                            recent_form: "4-5-3"
+                        },
+                        {
+                            horse_number: "5",
+                            horse_name: "GOLDEN GLORY",
+                            jockey: "Alexis Badel",
+                            trainer: "Caspar Fownes",
+                            draw: "9",
+                            weight: "125",
+                            rating: "72",
+                            recent_form: "5-6-4"
+                        },
+                        {
+                            horse_number: "6",
+                            horse_name: "WINNING SPIRIT",
+                            jockey: "Matthew Chadwick",
+                            trainer: "Ricky Yiu",
+                            draw: "8",
+                            weight: "123",
+                            rating: "70",
+                            recent_form: "6-7-5"
+                        }
+                    ]
+                }
+            },
+            '2025-04-13': {
+                '1': {
+                    race_date: '2025-04-13',
+                    race_number: '1',
+                    gemini_25_respones: `# Race Analysis: Sha Tin Race 1 - 2025-04-13\n\n## Race Overview\nClass 4 handicap over 1200m at Sha Tin. Good sized field with several promising runners.\n\n## Top Contenders\n\n### 1. SUPER WINNER\n- Consistent performer with good recent form\n- Well drawn in barrier 2\n- Zac Purton takes the ride\n- Likely to be prominent throughout\n\n### 2. LUCKY CHAMPION\n- Progressive type who is improving with racing\n- Good trial leading into this\n- Joao Moreira aboard is a significant advantage\n- Will be finishing strongly\n\n### 3. GOLDEN EXPRESS\n- Drops in class from last start\n- Has shown ability at this level previously\n- Barrier 8 is a slight concern\n- Strong finishing burst when produced at the right time\n\n## Pace Analysis\nModerate tempo expected. SUPER WINNER likely to push forward from the inside draw, while LUCKY CHAMPION should get a nice position midfield.\n\n## Value Bet\nGOLDEN EXPRESS at current odds of 7-1 represents good value.\n\n## Suggested Play\nQuinella: 1,2,3`,
+                    fuji: `RACE 1 ANALYSIS - SHA TIN - 2025-04-13\n\nCLASS 4 - 1200M\n\nSPEED MAP:\n\nEarly Leaders: SUPER WINNER, FLYING DRAGON\nMidfield: LUCKY CHAMPION, HAPPY WINNER\nBackmarkers: GOLDEN EXPRESS, NOBLE STEED\n\nTRACK BIAS: No significant bias expected\n\nRACE SHAPE: Moderate tempo expected\n\nFORM ANALYSIS:\n\nSUPER WINNER - Last 3 starts: 3-2-4\nLUCKY CHAMPION - Last 3 starts: 5-3-2\nGOLDEN EXPRESS - Last 3 starts: 7-6-4 (dropping in class)\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nJoao Moreira/Tony Cruz - 20% strike rate this season\n\nBETTING STRATEGY:\nWin: SUPER WINNER\nPlace: GOLDEN EXPRESS\nQuinella: 1,2,3\nTierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
+                    entries: [
+                        {
+                            horse_number: "1",
+                            horse_name: "SUPER WINNER",
+                            jockey: "Zac Purton",
+                            trainer: "John Size",
+                            draw: "2",
+                            weight: "133",
+                            rating: "60",
+                            recent_form: "3-2-4"
+                        },
+                        {
+                            horse_number: "2",
+                            horse_name: "LUCKY CHAMPION",
+                            jockey: "Joao Moreira",
+                            trainer: "Tony Cruz",
+                            draw: "5",
+                            weight: "131",
+                            rating: "58",
+                            recent_form: "5-3-2"
+                        },
+                        {
+                            horse_number: "3",
+                            horse_name: "GOLDEN EXPRESS",
+                            jockey: "Karis Teetan",
+                            trainer: "Caspar Fownes",
+                            draw: "8",
+                            weight: "129",
+                            rating: "56",
+                            recent_form: "7-6-4"
+                        },
+                        {
+                            horse_number: "4",
+                            horse_name: "FLYING DRAGON",
+                            jockey: "Vincent Ho",
+                            trainer: "Francis Lui",
+                            draw: "1",
+                            weight: "127",
+                            rating: "54",
+                            recent_form: "6-5-7"
+                        },
+                        {
+                            horse_number: "5",
+                            horse_name: "HAPPY WINNER",
+                            jockey: "Alexis Badel",
+                            trainer: "Douglas Whyte",
+                            draw: "11",
+                            weight: "125",
+                            rating: "52",
+                            recent_form: "8-7-5"
+                        },
+                        {
+                            horse_number: "6",
+                            horse_name: "NOBLE STEED",
+                            jockey: "Matthew Chadwick",
+                            trainer: "Ricky Yiu",
+                            draw: "9",
+                            weight: "123",
+                            rating: "50",
+                            recent_form: "9-8-6"
+                        }
+                    ]
+                }
+            },
+            '2025-04-09': {
+                '1': {
+                    race_date: '2025-04-09',
+                    race_number: '1',
+                    gemini_25_respones: `# Race Analysis: Happy Valley Race 1 - 2025-04-09\n\n## Race Overview\nThis is a Class 5 handicap race over 1200m at Happy Valley. The track is expected to be good to firm.\n\n## Top Contenders\n\n### 1. FORTUNE WARRIOR\n- Recent form showing improvement\n- Good draw in barrier 3\n- Joao Moreira aboard is a significant advantage\n- Has shown good early speed in recent races\n\n### 2. GOLDEN MISSION\n- Consistent performer at this level\n- Drops in class from last start\n- Zac Purton takes the ride\n- Likely to be finishing strongly\n\n### 3. LUCKY DIAMOND\n- First-up after a spell\n- Has trialed well\n- Good record at the course and distance\n- May need the run\n\n## Pace Analysis\nExpect FORTUNE WARRIOR and LUCKY DIAMOND to push forward early. GOLDEN MISSION likely to settle midfield and make a run in the straight.\n\n## Value Bet\nLUCKY DIAMOND at current odds of 8-1 represents good value.\n\n## Suggested Play\nQuinella: 1,2,3`,
+                    fuji: `RACE 1 ANALYSIS - HAPPY VALLEY - 2025-04-09\n\nCLASS 5 - 1200M\n\nSPEED MAP:\n\nEarly Leaders: FORTUNE WARRIOR, LUCKY DIAMOND\nMidfield: GOLDEN MISSION, HAPPY WINNER\nBackmarkers: LUCKY STAR, NOBLE STEED\n\nTRACK BIAS: Inside barriers advantaged\n\nRACE SHAPE: Moderate to fast tempo expected\n\nFORM ANALYSIS:\n\nFORTUNE WARRIOR - Last 3 starts: 5-4-3\nGOLDEN MISSION - Last 3 starts: 7-3-2\nLUCKY DIAMOND - First-up from spell, trials: Good\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nJoao Moreira/Caspar Fownes - 19% strike rate this season\n\nBETTING STRATEGY:\nWin: FORTUNE WARRIOR\nPlace: LUCKY DIAMOND\nQuinella: 1,2,3\nTierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
+                    entries: [
+                        {
+                            horse_number: "1",
+                            horse_name: "FORTUNE WARRIOR",
+                            jockey: "Joao Moreira",
+                            trainer: "Caspar Fownes",
+                            draw: "3",
+                            weight: "133",
+                            rating: "45",
+                            recent_form: "5-4-3"
+                        },
+                        {
+                            horse_number: "2",
+                            horse_name: "GOLDEN MISSION",
+                            jockey: "Zac Purton",
+                            trainer: "John Size",
+                            draw: "7",
+                            weight: "131",
+                            rating: "44",
+                            recent_form: "7-3-2"
+                        },
+                        {
+                            horse_number: "3",
+                            horse_name: "LUCKY DIAMOND",
+                            jockey: "Karis Teetan",
+                            trainer: "Tony Cruz",
+                            draw: "5",
+                            weight: "129",
+                            rating: "43",
+                            recent_form: "0-0-0"
+                        },
+                        {
+                            horse_number: "4",
+                            horse_name: "HAPPY WINNER",
+                            jockey: "Vincent Ho",
+                            trainer: "Francis Lui",
+                            draw: "9",
+                            weight: "127",
+                            rating: "42",
+                            recent_form: "6-5-4"
+                        },
+                        {
+                            horse_number: "5",
+                            horse_name: "LUCKY STAR",
+                            jockey: "Alexis Badel",
+                            trainer: "Douglas Whyte",
+                            draw: "1",
+                            weight: "125",
+                            rating: "41",
+                            recent_form: "8-7-6"
+                        },
+                        {
+                            horse_number: "6",
+                            horse_name: "NOBLE STEED",
+                            jockey: "Matthew Chadwick",
+                            trainer: "Ricky Yiu",
+                            draw: "11",
+                            weight: "123",
+                            rating: "40",
+                            recent_form: "9-8-7"
+                        }
+                    ]
+                },
+                '2': {
+                    race_date: '2025-04-09',
+                    race_number: '2',
+                    gemini_25_respones: `# Race Analysis: Happy Valley Race 2 - 2025-04-09\n\n## Race Overview\nClass 4 handicap over 1650m at Happy Valley. The track is expected to be good to firm.\n\n## Top Contenders\n\n### 1. NOBLE STEED\n- Coming off a strong win last start\n- Well weighted with 133 pounds\n- Drawn well in barrier 4\n- Karis Teetan retains the ride\n\n### 2. LUCKY STAR\n- Consistent performer who rarely runs poorly\n- Drops 5 pounds from last start\n- Barrier 7 is a slight concern\n- Strong finishing burst\n\n### 3. HAPPY FORTUNE\n- First time in this class\n- Impressive trackwork\n- Lightweight chance with only 115 pounds\n- Apprentice claim could be valuable\n\n## Pace Analysis\nModerate tempo expected. NOBLE STEED likely to take up a forward position while LUCKY STAR will be looking to find cover midfield.\n\n## Value Bet\nHAPPY FORTUNE at 10-1 looks over the odds given the weight advantage.\n\n## Suggested Play\nWin: NOBLE STEED\nPlace: HAPPY FORTUNE`,
+                    fuji: `RACE 2 ANALYSIS - HAPPY VALLEY - 2025-04-09\n\nCLASS 4 - 1650M\n\nSPEED MAP:\n\nEarly Leaders: NOBLE STEED, FLYING DRAGON\nMidfield: LUCKY STAR, HAPPY WINNER\nBackmarkers: HAPPY FORTUNE, GOLDEN EXPRESS\n\nTRACK BIAS: No significant bias expected\n\nRACE SHAPE: Moderate tempo expected\n\nFORM ANALYSIS:\n\nNOBLE STEED - Last 3 starts: 3-1-2\nLUCKY STAR - Last 3 starts: 4-5-3\nHAPPY FORTUNE - First time in Class 4, previous Class 5: 2-1-3\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nKaris Teetan/Tony Cruz - 21% strike rate this season\nVincent Ho/Francis Lui - 18% strike rate this season\n\nBETTING STRATEGY:\nWin: NOBLE STEED\nPlace: HAPPY FORTUNE\nQuinella: 1,3\nTierce: 1,2,3/1,2,3,4/1,2,3,4,5`
+                },
+                '3': {
+                    race_date: '2025-04-09',
+                    race_number: '3',
+                    gemini_25_respones: `# Race Analysis: Happy Valley Race 3 - 2025-04-09\n\n## Race Overview\nClass 3 handicap over 1000m at Happy Valley. Sprint race with a likely fast pace.\n\n## Top Contenders\n\n### 1. SPEEDY DRAGON\n- Specialist at this course and distance\n- Three wins from five starts at HV 1000m\n- Barrier 1 is perfect for his running style\n- Carrying top weight but class runner\n\n### 2. FLYING MISSILE\n- Blistering early speed\n- Coming back from a freshen-up\n- Barrier 8 means will need to work early\n- Strong record when fresh\n\n### 3. LUCKY EXPRESS\n- Consistent performer in this class\n- Drawn well in barrier 3\n- Tends to run well at Happy Valley\n- Will be running on strongly\n\n## Pace Analysis\nVery fast tempo expected with FLYING MISSILE and SPEEDY DRAGON both having early speed. This could set it up for a closer.\n\n## Value Bet\nLUCKY EXPRESS at 6-1 could benefit from the hot pace.\n\n## Suggested Play\nTrifecta: 1,2,3 with 1,2,3,4,5 with 1,2,3,4,5,6`,
+                    fuji: `RACE 3 ANALYSIS - HAPPY VALLEY - 2025-04-09\n\nCLASS 3 - 1000M\n\nSPEED MAP:\n\nEarly Leaders: FLYING MISSILE, SPEEDY DRAGON\nMidfield: LUCKY EXPRESS, HAPPY CHAMPION\nBackmarkers: GOLDEN GLORY, WINNING SPIRIT\n\nTRACK BIAS: Inside barriers advantaged in sprint races\n\nRACE SHAPE: Very fast tempo expected\n\nFORM ANALYSIS:\n\nSPEEDY DRAGON - Last 3 starts: 1-3-1 (Course specialist)\nFLYING MISSILE - First-up from spell, trials: Excellent\nLUCKY EXPRESS - Last 3 starts: 2-4-3\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nKaris Teetan/Douglas Whyte - 22% strike rate this season\n\nBETTING STRATEGY:\nWin: SPEEDY DRAGON\nPlace: LUCKY EXPRESS\nQuinella: 1,3\nTrifecta: 1,2,3/1,2,3,4,5/1,2,3,4,5,6`
+                }
+            },
+            '2025-04-10': {
+                '1': {
+                    race_date: '2025-04-10',
+                    race_number: '1',
+                    gemini_25_respones: `# Race Analysis: Sha Tin Race 1 - 2025-04-10\n\n## Race Overview\nClass 4 handicap over 1400m at Sha Tin. Good sized field with several first-starters.\n\n## Top Contenders\n\n### 1. RISING TALENT\n- Impressive debut run for second place\n- Has drawn well in barrier 2\n- Natural improvement expected second-up\n- Zac Purton takes the ride\n\n### 2. NEW LEGEND\n- First starter with impressive trials\n- Well-bred import from Australia\n- Joao Moreira booked to ride\n- Market support would be significant\n\n### 3. LUCKY WINNER\n- Consistent performer without winning\n- Always around the mark\n- Good draw in barrier 5\n- Will be running on strongly\n\n## Pace Analysis\nModerate tempo expected. NEW LEGEND likely to push forward from the wide gate while RISING TALENT should get a perfect run just behind the leaders.\n\n## Value Bet\nLUCKY WINNER at 12-1 has place claims at big odds.\n\n## Suggested Play\nQuinella: 1,2`,
+                    fuji: `RACE 1 ANALYSIS - SHA TIN - 2025-04-10\n\nCLASS 4 - 1400M\n\nSPEED MAP:\n\nEarly Leaders: NEW LEGEND, HAPPY CHAMPION\nMidfield: RISING TALENT, GOLDEN GLORY\nBackmarkers: LUCKY WINNER, WINNING SPIRIT\n\nTRACK BIAS: No significant bias expected\n\nRACE SHAPE: Moderate tempo expected\n\nFORM ANALYSIS:\n\nRISING TALENT - Last start: 2nd (debut)\nNEW LEGEND - First starter, trials: Very impressive\nLUCKY WINNER - Last 3 starts: 3-4-3\n\nJOCKEY/TRAINER COMBINATIONS TO NOTE:\nZac Purton/John Size - 24% strike rate this season\nJoao Moreira/Tony Cruz - 20% strike rate this season\n\nBETTING STRATEGY:\nWin: RISING TALENT\nPlace: LUCKY WINNER\nQuinella: 1,2\nTrifecta: 1,2,3/1,2,3,4/1,2,3,4,5`
+                }
+            }
+        };
+
+        // Helper functions
+        function showLoading() {
+            loadingDiv.style.display = 'block';
+        }
+
+        function hideLoading() {
+            loadingDiv.style.display = 'none';
+        }
+
+        function showError(message) {
+            errorContainer.textContent = message;
+            errorContainer.style.display = 'block';
+        }
+
+        function hideError() {
+            errorContainer.style.display = 'none';
+        }
+
+        // Fetch race data
+        async function fetchRaceData(date, raceNumber) {
+            try {
+                showLoading();
+                hideError();
+
+                console.log(`Fetching data for date: ${date}, race: ${raceNumber}`);
+
+                // Construct the API URL - properly encode the filter parameter
+                const filterParam = encodeURIComponent(`race_date='${date}' && race_number='${raceNumber}'`);
+                const fieldsParam = 'race_date,race_number,gemini_25_respones,fuji,entries';
+                const url = `${apiBaseUrl}?filter=${filterParam}&fields=${fieldsParam}`;
+
+                console.log('API URL:', url);
+
+                try {
+                    // Function to use fallback data when API fails
+                    function useFallbackData(date, raceNumber) {
+                        console.log(`Using fallback data for date ${date} and race ${raceNumber}`);
+
+                        // Check if we have sample data for this date and race number
+                        if (sampleData[date] && sampleData[date][raceNumber]) {
+                            console.log(`Found data in sample dataset for race ${raceNumber}`);
+                            displayRaceData(sampleData[date][raceNumber]);
+                        } else {
+                            // Create generic fallback data
+                            console.log('Using generic fallback data');
+                            const fallbackData = {
+                                race_date: date,
+                                race_number: raceNumber,
+                                gemini_25_respones: `# Race Analysis: Race ${raceNumber} on ${date}\n\n` +
+                                    `## Note\nThis is a fallback analysis since no data was found for this race.\n\n` +
+                                    `The API endpoint at ${apiBaseUrl} could not be reached or returned no data.\n\n` +
+                                    `Please try another race date and number from the available options.\n\n` +
+                                    `Available dates in sample data:\n` +
+                                    `- 2025-04-16 (Races 1, 3)\n` +
+                                    `- 2025-04-13 (Race 1)\n` +
+                                    `- 2025-04-09 (Races 1, 2, 3)\n` +
+                                    `- 2025-04-10 (Race 1)`,
+                                fuji: `RACE ${raceNumber} ANALYSIS - ${date}\n\n` +
+                                    `NOTE: This is fallback data since no actual data was found for this race.\n\n` +
+                                    `The API endpoint at ${apiBaseUrl} could not be reached or returned no data.\n\n` +
+                                    `Please try another race date and number from the available options.\n\n` +
+                                    `Available dates in sample data:\n` +
+                                    `- 2025-04-16 (Races 1, 3)\n` +
+                                    `- 2025-04-13 (Race 1)\n` +
+                                    `- 2025-04-09 (Races 1, 2, 3)\n` +
+                                    `- 2025-04-10 (Race 1)`,
+                                entries: [
+                                    {
+                                        horse_number: "1",
+                                        horse_name: "SAMPLE HORSE 1",
+                                        jockey: "Sample Jockey 1",
+                                        trainer: "Sample Trainer 1",
+                                        draw: "1",
+                                        weight: "130",
+                                        rating: "50",
+                                        recent_form: "1-2-3"
+                                    },
+                                    {
+                                        horse_number: "2",
+                                        horse_name: "SAMPLE HORSE 2",
+                                        jockey: "Sample Jockey 2",
+                                        trainer: "Sample Trainer 2",
+                                        draw: "2",
+                                        weight: "125",
+                                        rating: "45",
+                                        recent_form: "4-5-6"
+                                    }
+                                ]
+                            };
+
+                            // Display the fallback data
+                            displayRaceData(fallbackData);
+                        }
+
+                        // Hide loading
+                        hideLoading();
+                    }
+
+                    // Use fetch API with CORS mode
+                    console.log(`Fetching data from ${url}`);
+
+                    // Add a timestamp to prevent caching
+                    const timestampedUrl = `${url}&_t=${Date.now()}`;
+
+                    fetch(timestampedUrl, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Cache-Control': 'no-cache, no-store, max-age=0',
+                            'Pragma': 'no-cache'
+                        },
+                        mode: 'cors',
+                        credentials: 'omit',
+                        timeout: 5000
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Failed to fetch race data: ${response.status} ${response.statusText}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('API response for race ' + raceNumber + ':', data);
+
+                        // Check if we got any results
+                        if (!data.items || data.items.length === 0) {
+                            console.error(`No race data found for date ${date} and race ${raceNumber}`);
+                            useFallbackData(date, raceNumber);
+                            return;
+                        }
+
+                        console.log(`API response data for race ${raceNumber}:`, data.items[0]);
+
+                        // Display the data
+                        displayRaceData(data.items[0]);
+
+                        // Hide loading
+                        hideLoading();
+                    })
+                    .catch(error => {
+                        console.error('Error fetching race data:', error);
+                        console.error('URL:', timestampedUrl);
+                        showError(`Error fetching race data: ${error.message}. Check console for details.`);
+                        useFallbackData(date, raceNumber);
+                    });
+
+                    // Return early since we're handling the response asynchronously
+                    return;
+                } catch (error) {
+                    // This catch block is for any errors in setting up the XMLHttpRequest
+                    console.error('Error setting up API request:', error);
+                    useFallbackData(date, raceNumber);
+                }
+            } catch (error) {
+                console.error('Error in fetchRaceData:', error);
+                showError(`Error fetching race data: ${error.message}`);
+                hideLoading();
+            }
+        }
+
+        // Simple Markdown parser
+        function parseMarkdown(markdown) {
+            if (!markdown) return '';
+
+            // Replace headers
+            let html = markdown
+                .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                .replace(/^#### (.+)$/gm, '<h4>$1</h4>');
+
+            // Replace lists
+            html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+
+            // Wrap lists in <ul> tags
+            html = html.replace(/(<li>.+<\/li>\n)+/g, function(match) {
+                return '<ul>' + match + '</ul>';
+            });
+
+            // Replace line breaks with <br>
+            html = html.replace(/\n\n/g, '<br><br>');
+
+            return html;
+        }
+
+        // Set up tab functionality
+        function setupTabs() {
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+
+                    // Hide all tab content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+
+                    // Show the corresponding tab content
+                    const tabName = this.getAttribute('data-tab');
+                    document.getElementById(`${tabName}-tab`).classList.add('active');
+                });
+            });
+        }
+
+        // Display race data
+        function displayRaceData(raceData) {
+            console.log('Displaying race data:', raceData);
+
+            // Check if this is a local JSON file format or PocketBase format
+            const isLocalFormat = raceData.race_info && raceData.entries;
+
+            // Race info is now removed from the UI
+
+            // Display Gemini response
+            if (isLocalFormat) {
+                // Local JSON file format
+                // For local JSON files, we need to use the sample data since they don't have gemini_25_respones field
+                const raceInfo = raceData.race_info;
+
+                // Extract race date in original format
+                const raceDate = raceInfo.race_date;
+
+                // Extract race number from Chinese format
+                let raceNumber = '1';
+                if (raceInfo.race_name) {
+                    const raceMatch = raceInfo.race_name.match(/第 (\d+) 場/);
+                    if (raceMatch && raceMatch.length === 2) {
+                        raceNumber = raceMatch[1];
+                    }
+                }
+
+                // Format date for sample data lookup (YYYY-MM-DD)
+                let formattedDate = '';
+                const dateMatch = raceDate.match(/(\d+)年(\d+)月(\d+)日/);
+                if (dateMatch && dateMatch.length === 4) {
+                    const year = dateMatch[1];
+                    const month = dateMatch[2].padStart(2, '0');
+                    const day = dateMatch[3].padStart(2, '0');
+                    formattedDate = `${year}-${month}-${day}`;
+                }
+
+                // Use the sample data's gemini_25_respones field
+                let geminiContent = '';
+                if (sampleData[formattedDate] && sampleData[formattedDate][raceNumber] && sampleData[formattedDate][raceNumber].gemini_25_respones) {
+                    geminiContent = sampleData[formattedDate][raceNumber].gemini_25_respones;
+                } else if (sampleData['2025-04-16'] && sampleData['2025-04-16']['1'] && sampleData['2025-04-16']['1'].gemini_25_respones) {
+                    // If no sample data for this specific race, use the default sample data
+                    geminiContent = sampleData['2025-04-16']['1'].gemini_25_respones;
+                } else {
+                    // Fallback message if no sample data is available
+                    geminiContent = `# ${raceInfo.venue} ${raceInfo.race_name} - ${raceDate}\n\n无 Gemini 分析可用于此比赛。`;
+                }
+
+                // Store the gemini_25_respones in the race data
+                raceData.gemini_25_respones = geminiContent;
+
+                // Display the analysis exactly as it is
+                geminiContent.innerHTML = parseMarkdown(geminiContent);
+            } else {
+                // PocketBase format
+                if (raceData.gemini_25_respones) {
+                    geminiContent.innerHTML = parseMarkdown(raceData.gemini_25_respones);
+                } else {
+                    geminiContent.innerHTML = '<p>No Gemini analysis available for this race.</p>';
+                }
+            }
+
+            // Display Fuji data
+            if (isLocalFormat) {
+                // Local JSON file format
+                // For local JSON files, we need to use the sample data since they don't have fuji field
+                const raceInfo = raceData.race_info;
+
+                // Extract race date in original format
+                const raceDate = raceInfo.race_date;
+
+                // Extract race number from Chinese format
+                let raceNumber = '1';
+                if (raceInfo.race_name) {
+                    const raceMatch = raceInfo.race_name.match(/第 (\d+) 場/);
+                    if (raceMatch && raceMatch.length === 2) {
+                        raceNumber = raceMatch[1];
+                    }
+                }
+
+                // Format date for sample data lookup (YYYY-MM-DD)
+                let formattedDate = '';
+                const dateMatch = raceDate.match(/(\d+)年(\d+)月(\d+)日/);
+                if (dateMatch && dateMatch.length === 4) {
+                    const year = dateMatch[1];
+                    const month = dateMatch[2].padStart(2, '0');
+                    const day = dateMatch[3].padStart(2, '0');
+                    formattedDate = `${year}-${month}-${day}`;
+                }
+
+                // Use the sample data's fuji field
+                let fujiContent = '';
+                if (sampleData[formattedDate] && sampleData[formattedDate][raceNumber] && sampleData[formattedDate][raceNumber].fuji) {
+                    fujiContent = sampleData[formattedDate][raceNumber].fuji;
+                } else if (sampleData['2025-04-16'] && sampleData['2025-04-16']['1'] && sampleData['2025-04-16']['1'].fuji) {
+                    // If no sample data for this specific race, use the default sample data
+                    fujiContent = sampleData['2025-04-16']['1'].fuji;
+                } else {
+                    // Fallback message if no sample data is available
+                    fujiContent = `第 ${raceNumber} 場 分析 - ${raceInfo.venue} - ${raceDate}\n\n无 Fuji 数据可用于此比赛。`;
+                }
+
+                // Store the fuji data in the race data
+                raceData.fuji = fujiContent;
+
+                // Display the fuji data exactly as it is
+                fujiContent.innerHTML = `<pre>${fujiContent}</pre>`;
+            } else {
+                // PocketBase format
+                if (raceData.fuji) {
+                    fujiContent.innerHTML = `<pre>${raceData.fuji}</pre>`;
+                } else {
+                    fujiContent.innerHTML = '<p>No Fuji data available for this race.</p>';
+                }
+            }
+
+            // Display entries data
+            displayEntriesData(raceData.entries);
+
+            // Display raw JSON
+            jsonContent.textContent = JSON.stringify(raceData, null, 2);
+
+            // Set up tabs
+            setupTabs();
+        }
+
+        // Display entries data in the table
+        function displayEntriesData(entries) {
+            // Clear the table body
+            entriesTableBody.innerHTML = '';
+
+            if (entries && Array.isArray(entries) && entries.length > 0) {
+                // Add each entry to the table
+                entries.forEach(entry => {
+                    const row = document.createElement('tr');
+
+                    // Create cells for each column
+                    row.innerHTML = `
+                        <td>${entry.horse_number || ''}</td>
+                        <td>${entry.horse_name || ''}</td>
+                        <td>${entry.jockey || ''}</td>
+                        <td>${entry.trainer || ''}</td>
+                        <td>${entry.draw || ''}</td>
+                        <td>${entry.weight || ''}</td>
+                        <td>${entry.rating || ''}</td>
+                        <td>${entry.rating_change || ''}</td>
+                        <td>${entry.recent_form || ''}</td>
+                    `;
+
+                    entriesTableBody.appendChild(row);
+                });
+            } else {
+                // Display a message if no entries are available
+                const row = document.createElement('tr');
+                row.innerHTML = `<td colspan="9" style="text-align: center;">No entries data available for this race.</td>`;
+                entriesTableBody.appendChild(row);
+            }
+        }
+
+        // Get the latest date from sample data
+        function getLatestDate() {
+            // Get all dates from sample data
+            const dates = Object.keys(sampleData);
+
+            // Sort dates in descending order (latest first)
+            dates.sort((a, b) => new Date(b) - new Date(a));
+
+            // Return the latest date, or a default if no dates are available
+            return dates.length > 0 ? dates[0] : '2025-04-20';
+        }
+
+        // Function to fetch all available race dates from PocketBase
+        async function fetchRaceDates() {
+            try {
+                showLoading();
+                hideError();
+
+                console.log('Fetching all available race dates from PocketBase...');
+
+                // Use the dedicated race dates API endpoint
+                const url = `${raceDatesApiUrl}?sort=-race_date`;
+
+                console.log('API URL for race dates:', url);
+
+                // Add a timestamp to prevent caching
+                const timestampedUrl = `${url}&_t=${Date.now()}`;
+
+                const response = await fetch(timestampedUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Cache-Control': 'no-cache, no-store, max-age=0',
+                        'Pragma': 'no-cache'
+                    },
+                    mode: 'cors',
+                    credentials: 'omit'
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch race dates: ${response.status} ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('API response for race dates:', data);
+
+                if (!data.items || data.items.length === 0) {
+                    console.error('No race dates found in PocketBase');
+                    return false;
+                }
+
+                // Clear existing options
+                raceDateInput.innerHTML = '';
+
+                // Add options for each race date from the dedicated endpoint
+                data.items.forEach(item => {
+                    if (item.race_date) {
+                        const option = document.createElement('option');
+                        option.value = item.race_date;
+                        option.textContent = item.race_date;
+                        raceDateInput.appendChild(option);
+                    }
+                });
+
+                // If we have dates, select the first one (which should be the latest due to sort=-race_date)
+                if (raceDateInput.options.length > 0) {
+                    raceDateInput.selectedIndex = 0;
+                    console.log('Selected latest date:', raceDateInput.value);
+                }
+
+                hideLoading();
+                return true;
+            } catch (error) {
+                console.error('Error fetching race dates:', error);
+                showError(`Error fetching race dates: ${error.message}`);
+                hideLoading();
+                return false;
+            }
+        }
+
+        // Update race numbers based on selected date
+        async function updateRaceNumbers() {
+            const date = raceDateInput.value;
+            if (!date) return; // Skip if no date is selected
+
+            // Clear existing options and show loading option
+            raceNumberSelect.innerHTML = '';
+            const loadingOption = document.createElement('option');
+            loadingOption.value = '';
+            loadingOption.textContent = 'Loading races...';
+            raceNumberSelect.appendChild(loadingOption);
+
+            console.log(`Fetching race numbers for date: ${date}`);
+
+            try {
+                // Construct the API URL to get race numbers for the selected date
+                const filterParam = encodeURIComponent(`race_date='${date}'`);
+                const url = `${apiBaseUrl}?filter=${filterParam}&fields=race_number&sort=race_number`;
+
+                console.log('API URL for race numbers:', url);
+
+                // Add a timestamp to prevent caching
+                const timestampedUrl = `${url}&_t=${Date.now()}`;
+
+                const response = await fetch(timestampedUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Cache-Control': 'no-cache, no-store, max-age=0',
+                        'Pragma': 'no-cache'
+                    },
+                    mode: 'cors',
+                    credentials: 'omit'
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch race numbers: ${response.status} ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                console.log('API response for race numbers:', data);
+
+                // Clear the loading option
+                raceNumberSelect.innerHTML = '';
+
+                if (!data.items || data.items.length === 0) {
+                    console.error(`No race numbers found for date ${date}`);
+                    // Default to races 1-10 if no specific information is available
+                    for (let i = 1; i <= 10; i++) {
+                        const option = document.createElement('option');
+                        option.value = i;
+                        option.textContent = `Race ${i}`;
+                        raceNumberSelect.appendChild(option);
+                    }
+                    return;
+                }
+
+                // Extract unique race numbers
+                const uniqueRaceNumbers = new Set();
+                data.items.forEach(item => {
+                    if (item.race_number) {
+                        uniqueRaceNumbers.add(item.race_number);
+                    }
+                });
+
+                // Convert Set to Array and sort numerically
+                const sortedRaceNumbers = Array.from(uniqueRaceNumbers).sort((a, b) => parseInt(a) - parseInt(b));
+                console.log('Sorted unique race numbers:', sortedRaceNumbers);
+
+                // Add options for each race number
+                sortedRaceNumbers.forEach(raceNum => {
+                    const option = document.createElement('option');
+                    option.value = raceNum;
+                    option.textContent = `Race ${raceNum}`;
+                    raceNumberSelect.appendChild(option);
+                });
+
+                // If we have race numbers, select the first one
+                if (sortedRaceNumbers.length > 0) {
+                    raceNumberSelect.value = sortedRaceNumbers[0];
+                }
+            } catch (error) {
+                console.error('Error fetching race numbers:', error);
+                showError(`Error fetching race numbers: ${error.message}`);
+
+                // Default to races 1-10 if there's an error
+                raceNumberSelect.innerHTML = '';
+                for (let i = 1; i <= 10; i++) {
+                    const option = document.createElement('option');
+                    option.value = i;
+                    option.textContent = `Race ${i}`;
+                    raceNumberSelect.appendChild(option);
+                }
+            }
+        }
+
+        // Event listeners
+
+        raceDateInput.addEventListener('change', async function() {
+            await updateRaceNumbers();
+            // Auto-load first race for the selected date
+            if (raceNumberSelect.options.length > 0) {
+                fetchRaceData(raceDateInput.value, raceNumberSelect.value);
+            }
+        });
+
+        // Add event listener for race number dropdown
+        raceNumberSelect.addEventListener('change', function() {
+            // Fetch data for the selected date and race number
+            fetchRaceData(raceDateInput.value, raceNumberSelect.value);
+        });
+
+        // Initialize - fetch race dates, update race numbers, and fetch data for default date and race number
+        document.addEventListener('DOMContentLoaded', async function() {
+            // First, fetch all available race dates
+            const datesLoaded = await fetchRaceDates();
+
+            // Then update race numbers based on the selected date
+            await updateRaceNumbers();
+
+            // Finally, fetch data for the selected date and race number
+            if (raceDateInput.value && raceNumberSelect.value) {
+                fetchRaceData(raceDateInput.value, raceNumberSelect.value);
+            }
+        });
+    </script>
+</body>
+</html>
