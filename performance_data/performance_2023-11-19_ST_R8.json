@@ -1,0 +1,360 @@
+{
+  "race_date": "2023/11/19",
+  "racecourse": "ST",
+  "race_number": "8",
+  "race_info": {
+    "race_number_text": "第 8 場 (183)",
+    "race_number": "8",
+    "class_distance_text": "二級賽 - 1600米",
+    "race_class": "二級賽",
+    "distance": "1600米",
+    "full_text": "第 8 場 (183) 二級賽 - 1600米",
+    "race_name": "二級賽 1600米",
+    "track_condition": "好地至快地",
+    "prize_money": "HK$ 5,350,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "7.33",
+      "6.11",
+      "6.11",
+      "4.88"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "4431",
+      "5552",
+      "2213"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "5",
+      "horse_name": "永遠美麗",
+      "jockey": "潘頓",
+      "trainer": "蔡約翰",
+      "actual_weight": "123",
+      "declared_weight": "1193",
+      "draw": "5",
+      "margin": "-",
+      "running_position": "4431",
+      "finish_time": "1:33.04",
+      "win_odds": "2.5",
+      "horse_code": "H008"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "美麗同享",
+      "jockey": "梁家俊",
+      "trainer": "告東尼",
+      "actual_weight": "123",
+      "declared_weight": "1041",
+      "draw": "2",
+      "margin": "短馬頭位",
+      "running_position": "5552",
+      "finish_time": "1:33.04",
+      "win_odds": "11",
+      "horse_code": "E058"
+    },
+    {
+      "position": 3,
+      "horse_number": "4",
+      "horse_name": "遨遊氣泡",
+      "jockey": "巴度",
+      "trainer": "姚本輝",
+      "actual_weight": "123",
+      "declared_weight": "1242",
+      "draw": "3",
+      "margin": "4-1/2",
+      "running_position": "2213",
+      "finish_time": "1:33.74",
+      "win_odds": "10",
+      "horse_code": "E436"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "加州星球",
+      "jockey": "蔡明紹",
+      "trainer": "告東尼",
+      "actual_weight": "128",
+      "declared_weight": "1213",
+      "draw": "4",
+      "margin": "4-3/4",
+      "running_position": "1124",
+      "finish_time": "1:33.81",
+      "win_odds": "1.7",
+      "horse_code": "E314"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "健康愉快",
+      "jockey": "艾兆禮",
+      "trainer": "羅富全",
+      "actual_weight": "123",
+      "declared_weight": "1177",
+      "draw": "1",
+      "margin": "5-3/4",
+      "running_position": "3345",
+      "finish_time": "1:33.97",
+      "win_odds": "27",
+      "horse_code": "D435"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "5",
+        "payout": "25.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "5",
+        "payout": "14.00"
+      },
+      {
+        "combination": "2",
+        "payout": "32.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,5",
+        "payout": "89.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "5,2",
+        "payout": "162.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "5,2,4",
+        "payout": "587.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,4,5",
+        "payout": "133.00"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "1/5",
+        "payout": "34.00"
+      },
+      {
+        "combination": "1/2",
+        "payout": "50.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "5",
+      "horse_name": "永遠美麗",
+      "horse_name_with_code": "永遠美麗(H008)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "美麗同享",
+      "horse_name_with_code": "美麗同享(E058)",
+      "incident_report": "被查詢時，梁家俊解釋，趨近三百米處時，他自右手改以左手握鞭，並對坐騎用鞭一次。他說，當他試圖第二度對坐騎用鞭時，馬鞭脫手，因而在餘下途程上未能對坐騎用鞭。小組警告梁家俊，並告誡他應盡可能確保任何時間都保持妥善控制馬鞭。小組在決定不向梁家俊採取行動時，考慮了他過去兩年多未有干犯類似行為。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "4",
+      "horse_name": "遨遊氣泡",
+      "horse_name_with_code": "遨遊氣泡(E436)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "加州星球",
+      "horse_name_with_code": "加州星球(E314)",
+      "incident_report": "被查詢有關此駒令人失望的表現時，蔡明紹表示，他在對面直路上須消耗坐騎一些氣力以超越「健康愉快」。他說，坐騎在領放下走勢良佳，但自五百米處起在「遨遊氣泡」推進至其外側時受追迫。他續說，坐騎於進入直路後瞬即對催策毫無反應。練馬師告東尼同意騎師蔡明紹的觀點，他又說，「加州星球」須較同場其他對手多負五磅上陣，而且賽事步速較標準時間為快，當中以早段步速尤甚。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。「加州星球」必須通過獸醫檢驗後，才可再次出賽。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "健康愉快",
+      "horse_name_with_code": "健康愉快(D435)",
+      "incident_report": "出閘僅屬一般。接近千三米處時在被「加州星球」過頭而收慢之際昂首。接近一千米處時推進至「加州星球」內側，其後在再被「加州星球」（蔡明紹）過頭之際收慢，當時「加州星球」在尚未充分帶離下向內斜跑。小組嚴厲譴責蔡明紹，並告誡他在轉換跑線時須確保已充分帶離。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "7.33",
+        "6.11",
+        "6.11",
+        "4.88"
+      ],
+      "fastest_sectional": 4.88,
+      "slowest_sectional": 7.33,
+      "sectional_variance": 2.45,
+      "track_condition": "好地至快地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "5",
+        "horse_name": "永遠美麗",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 2.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 123,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "美麗同享",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 11.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "短馬頭位"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "遨遊氣泡",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 10.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "4-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "加州星球",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 1.7,
+          "odds_rating": "strong_favorite",
+          "result_rating": "competitive",
+          "weight_carried": 128,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "健康愉快",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 27.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "5-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 5,
+      "odds_statistics": {
+        "favorite_odds": 1.7,
+        "longest_odds": 27.0,
+        "average_odds": 10.44,
+        "odds_range": 25.3
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 2,
+      "race_competitiveness": "competitive"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 5,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "加州星球",
+          "position": 4,
+          "odds": 1.7,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "永遠美麗",
+          "position": 1,
+          "odds": 2.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "遨遊氣泡",
+          "position": 3,
+          "odds": 10.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "加州星球",
+        "odds": 1.7,
+        "position": 4,
+        "performance": "unplaced"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 123,
+      "max_weight": 128,
+      "average_weight": 124.0,
+      "weight_spread": 5,
+      "top_weight_best_position": 4,
+      "bottom_weight_best_position": 1
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.7,
+      "longest_odds": 27.0,
+      "average_odds": 10.44,
+      "odds_range": 25.3,
+      "winner_odds": 2.5,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 4,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:23:45.295362"
+}

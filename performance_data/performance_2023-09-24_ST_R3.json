@@ -1,0 +1,354 @@
+{
+  "race_date": "2023/09/24",
+  "racecourse": "ST",
+  "race_number": "3",
+  "race_info": {
+    "race_number_text": "第 3 場 (39)",
+    "race_number": "3",
+    "class_distance_text": "三級賽 - 1400米",
+    "race_class": "三級賽",
+    "distance": "1400米",
+    "full_text": "第 3 場 (39) 三級賽 - 1400米",
+    "race_name": "三級賽 1400米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 4,200,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.19",
+      "3.5",
+      "3.5",
+      "2.8"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "1111",
+      "2222",
+      "4453"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "2",
+      "horse_name": "健康愉快",
+      "jockey": "巴度",
+      "trainer": "羅富全",
+      "actual_weight": "125",
+      "declared_weight": "1175",
+      "draw": "1",
+      "margin": "-",
+      "running_position": "1111",
+      "finish_time": "1:21.93",
+      "win_odds": "9.3",
+      "horse_code": "D435"
+    },
+    {
+      "position": 2,
+      "horse_number": "4",
+      "horse_name": "綫路之星",
+      "jockey": "潘頓",
+      "trainer": "告東尼",
+      "actual_weight": "123",
+      "declared_weight": "1077",
+      "draw": "5",
+      "margin": "1-1/4",
+      "running_position": "2222",
+      "finish_time": "1:22.10",
+      "win_odds": "2.8",
+      "horse_code": "G076"
+    },
+    {
+      "position": 3,
+      "horse_number": "6",
+      "horse_name": "中華盛景",
+      "jockey": "艾兆禮",
+      "trainer": "告東尼",
+      "actual_weight": "115",
+      "declared_weight": "1066",
+      "draw": "4",
+      "margin": "1-1/2",
+      "running_position": "4453",
+      "finish_time": "1:22.16",
+      "win_odds": "4.4",
+      "horse_code": "E379"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "美麗同享",
+      "jockey": "布文",
+      "trainer": "告東尼",
+      "actual_weight": "135",
+      "declared_weight": "1032",
+      "draw": "3",
+      "margin": "2",
+      "running_position": "3334",
+      "finish_time": "1:22.25",
+      "win_odds": "6.8",
+      "horse_code": "E058"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "直線力山",
+      "jockey": "何澤堯",
+      "trainer": "方嘉柏",
+      "actual_weight": "125",
+      "declared_weight": "1104",
+      "draw": "2",
+      "margin": "2-1/2",
+      "running_position": "6565",
+      "finish_time": "1:22.34",
+      "win_odds": "6.3",
+      "horse_code": "G435"
+    },
+    {
+      "position": 6,
+      "horse_number": "5",
+      "horse_name": "安遇",
+      "jockey": "梁家俊",
+      "trainer": "文家良",
+      "actual_weight": "123",
+      "declared_weight": "1153",
+      "draw": "6",
+      "margin": "10-1/2",
+      "running_position": "5646",
+      "finish_time": "1:23.59",
+      "win_odds": "4.4",
+      "horse_code": "G236"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "2",
+        "payout": "93.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "2",
+        "payout": "33.50"
+      },
+      {
+        "combination": "4",
+        "payout": "18.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,4",
+        "payout": "125.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "2,4",
+        "payout": "260.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "2,4,6",
+        "payout": "1,021.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,4,6",
+        "payout": "153.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,4,6",
+        "payout": "77.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "2,4,6,1",
+        "payout": "1,982.00"
+      }
+    ],
+    "第二口孖寶": [
+      {
+        "combination": "6/2",
+        "payout": "319.00"
+      },
+      {
+        "combination": "6/4",
+        "payout": "32.50"
+      }
+    ]
+  },
+  "incidents": [],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.19",
+        "3.5",
+        "3.5",
+        "2.8"
+      ],
+      "fastest_sectional": 2.8,
+      "slowest_sectional": 4.19,
+      "sectional_variance": 1.39,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "2",
+        "horse_name": "健康愉快",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 9.3,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 125,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "綫路之星",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 2.8,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "中華盛景",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 4.4,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "美麗同享",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 6.8,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "直線力山",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 6.3,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "安遇",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 4.4,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "10-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 2.8,
+        "longest_odds": 9.3,
+        "average_odds": 5.67,
+        "odds_range": 6.5
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 4,
+      "race_competitiveness": "very_competitive"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "綫路之星",
+          "position": 2,
+          "odds": 2.8,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "中華盛景",
+          "position": 3,
+          "odds": 4.4,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "安遇",
+          "position": 6,
+          "odds": 4.4,
+          "odds_rating": "favorite"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "綫路之星",
+        "odds": 2.8,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 115,
+      "max_weight": 135,
+      "average_weight": 124.3,
+      "weight_spread": 20,
+      "top_weight_best_position": 4,
+      "bottom_weight_best_position": 3
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.8,
+      "longest_odds": 9.3,
+      "average_odds": 5.67,
+      "odds_range": 6.500000000000001,
+      "winner_odds": 9.3,
+      "market_efficiency": "minor_upset",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 4,
+      "total_margins_recorded": 5,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:36:36.640091"
+}

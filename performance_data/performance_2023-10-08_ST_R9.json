@@ -1,0 +1,100 @@
+{
+  "race_date": "2023/10/08",
+  "racecourse": "ST",
+  "race_number": "9",
+  "race_info": {
+    "race_number_text": "第 9 場 (0)",
+    "race_number": "9",
+    "class_distance_text": "第三班 - 1600米 - (80-60)",
+    "race_class": "第三班",
+    "distance": "1600米",
+    "rating_range": "80-60",
+    "full_text": "第 9 場 (0) 第三班 - 1600米 - (80-60)",
+    "race_name": "第三班 1600米",
+    "track_condition": "",
+    "prize_money": "HK$ 2,050,000"
+  },
+  "sectional_times": {},
+  "results": [],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "第八口孖寶": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ]
+  },
+  "incidents": [],
+  "performance": {
+    "race_performance": {
+      "track_condition": "",
+      "track_condition_rating": "unknown"
+    },
+    "horse_performance": [],
+    "speed_analysis": {},
+    "statistical_data": {
+      "race_class": 3,
+      "class_level": "medium",
+      "rating_range": "80-60",
+      "min_rating": 80,
+      "max_rating": 60,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {},
+  "scraped_at": "2025-06-26T22:30:02.130793"
+}

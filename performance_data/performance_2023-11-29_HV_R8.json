@@ -1,0 +1,640 @@
+{
+  "race_date": "2023/11/29",
+  "racecourse": "HV",
+  "race_number": "8",
+  "race_info": {
+    "race_number_text": "第 8 場 (212)",
+    "race_number": "8",
+    "class_distance_text": "第二班 - 1200米 - (100-80)",
+    "race_class": "第二班",
+    "distance": "1200米",
+    "rating_range": "100-80",
+    "full_text": "第 8 場 (212) 第二班 - 1200米 - (100-80)",
+    "race_name": "第二班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 2,840,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.26",
+      "8.1",
+      "5.79"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "891",
+      "112",
+      "773"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "5",
+      "horse_name": "小霸王",
+      "jockey": "周俊樂",
+      "trainer": "容天鵬",
+      "actual_weight": "124",
+      "declared_weight": "1228",
+      "draw": "9",
+      "margin": "-",
+      "running_position": "891",
+      "finish_time": "1:09.22",
+      "win_odds": "7.8",
+      "horse_code": "G265"
+    },
+    {
+      "position": 2,
+      "horse_number": "8",
+      "horse_name": "電氣騎士",
+      "jockey": "鍾易禮",
+      "trainer": "韋達",
+      "actual_weight": "118",
+      "declared_weight": "1217",
+      "draw": "2",
+      "margin": "1-1/4",
+      "running_position": "112",
+      "finish_time": "1:09.43",
+      "win_odds": "3.3",
+      "horse_code": "G258"
+    },
+    {
+      "position": 3,
+      "horse_number": "2",
+      "horse_name": "嫡愛心",
+      "jockey": "艾道拿",
+      "trainer": "蔡約翰",
+      "actual_weight": "134",
+      "declared_weight": "1178",
+      "draw": "1",
+      "margin": "2-1/4",
+      "running_position": "773",
+      "finish_time": "1:09.59",
+      "win_odds": "4.6",
+      "horse_code": "H093"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "魅力寶駒",
+      "jockey": "嘉里",
+      "trainer": "蔡約翰",
+      "actual_weight": "125",
+      "declared_weight": "1175",
+      "draw": "5",
+      "margin": "2-1/2",
+      "running_position": "444",
+      "finish_time": "1:09.63",
+      "win_odds": "12",
+      "horse_code": "G213"
+    },
+    {
+      "position": 5,
+      "horse_number": "11",
+      "horse_name": "傑出漢子",
+      "jockey": "希威森",
+      "trainer": "呂健威",
+      "actual_weight": "120",
+      "declared_weight": "1100",
+      "draw": "4",
+      "margin": "3",
+      "running_position": "225",
+      "finish_time": "1:09.71",
+      "win_odds": "5.7",
+      "horse_code": "G455"
+    },
+    {
+      "position": 6,
+      "horse_number": "4",
+      "horse_name": "雪勇神駒",
+      "jockey": "麥道朗",
+      "trainer": "沈集成",
+      "actual_weight": "131",
+      "declared_weight": "1130",
+      "draw": "7",
+      "margin": "3-1/4",
+      "running_position": "986",
+      "finish_time": "1:09.72",
+      "win_odds": "9.3",
+      "horse_code": "G467"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "超霸勝",
+      "jockey": "艾兆禮",
+      "trainer": "葉楚航",
+      "actual_weight": "121",
+      "declared_weight": "1070",
+      "draw": "6",
+      "margin": "3-1/2",
+      "running_position": "667",
+      "finish_time": "1:09.77",
+      "win_odds": "18",
+      "horse_code": "H069"
+    },
+    {
+      "position": 8,
+      "horse_number": "3",
+      "horse_name": "駿馬風采",
+      "jockey": "潘明輝",
+      "trainer": "羅富全",
+      "actual_weight": "132",
+      "declared_weight": "1206",
+      "draw": "3",
+      "margin": "4-1/2",
+      "running_position": "558",
+      "finish_time": "1:09.95",
+      "win_odds": "67",
+      "horse_code": "D334"
+    },
+    {
+      "position": 9,
+      "horse_number": "7",
+      "horse_name": "伊臣",
+      "jockey": "田泰安",
+      "trainer": "羅富全",
+      "actual_weight": "123",
+      "declared_weight": "1154",
+      "draw": "8",
+      "margin": "4-3/4",
+      "running_position": "10119",
+      "finish_time": "1:09.98",
+      "win_odds": "57",
+      "horse_code": "G061"
+    },
+    {
+      "position": 10,
+      "horse_number": "12",
+      "horse_name": "電源之駒",
+      "jockey": "蔡明紹",
+      "trainer": "文家良",
+      "actual_weight": "118",
+      "declared_weight": "1122",
+      "draw": "10",
+      "margin": "7",
+      "running_position": "111010",
+      "finish_time": "1:10.36",
+      "win_odds": "104",
+      "horse_code": "E301"
+    },
+    {
+      "position": 11,
+      "horse_number": "1",
+      "horse_name": "四季醒",
+      "jockey": "潘頓",
+      "trainer": "黎昭昇",
+      "actual_weight": "135",
+      "declared_weight": "1107",
+      "draw": "11",
+      "margin": "7-1/4",
+      "running_position": "3311",
+      "finish_time": "1:10.37",
+      "win_odds": "8.7",
+      "horse_code": "H223"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "5",
+        "payout": "78.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "5",
+        "payout": "26.00"
+      },
+      {
+        "combination": "8",
+        "payout": "15.50"
+      },
+      {
+        "combination": "2",
+        "payout": "17.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "5,8",
+        "payout": "144.50"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "5,8",
+        "payout": "55.50"
+      },
+      {
+        "combination": "2,5",
+        "payout": "63.00"
+      },
+      {
+        "combination": "2,8",
+        "payout": "31.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "5,8",
+        "payout": "357.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "5,8,2",
+        "payout": "1,148.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,5,8",
+        "payout": "161.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "2,5,6,8",
+        "payout": "341.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "5,8,2,6",
+        "payout": "7,320.00"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "1/5",
+        "payout": "90.00"
+      },
+      {
+        "combination": "1/8",
+        "payout": "16.00"
+      },
+      {
+        "combination": "3/1/8",
+        "payout": "91.00"
+      }
+    ],
+    "第四口孖T": [
+      {
+        "combination": "1,3,10/2,5,8",
+        "payout": "2,864.00"
+      },
+      {
+        "combination": "6/7/1/3/1/5",
+        "payout": "54,319.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "5",
+      "horse_name": "小霸王",
+      "horse_name_with_code": "小霸王(G265)",
+      "incident_report": "跑過千一米處時被「超霸勝」碰撞，當時「超霸勝」向外斜跑避開「魅力寶駒」。過了二百米處後推進至「駿馬風采」與「嫡愛心」之間的窄位。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "8",
+      "horse_name": "電氣騎士",
+      "horse_name_with_code": "電氣騎士(G258)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "2",
+      "horse_name": "嫡愛心",
+      "horse_name_with_code": "嫡愛心(H093)",
+      "incident_report": "末段勒避。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "魅力寶駒",
+      "horse_name_with_code": "魅力寶駒(G213)",
+      "incident_report": "接近千一米處時被碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "11",
+      "horse_name": "傑出漢子",
+      "horse_name_with_code": "傑出漢子(G455)",
+      "incident_report": "見習騎師鍾易禮（「電氣騎士」）承認一項不小心策騎〔賽事規例第100(1)條〕，事緣他於末段鞭策坐騎時，容許坐騎在尚未帶離「嫡愛心」之際向外斜跑，導致「嫡愛心」勒避「電氣騎士」的後蹄及被帶向外跑，「傑出漢子」也因而在「魅力寶駒」與「嫡愛心」之間受擠迫之際勒避。考慮了他的紀錄後，小組判罰見習騎師鍾易禮由二零二三年十二月二十六日星期二開始停賽，直至二零二四年一月二日星期二才可再次出賽（三個香港賽馬日）。在衡量判罰輕重時，小組裁定見習騎師鍾易禮的不小心策騎程度屬第二級，以及影響情況屬第二級。此外，為代替罰款及考慮到身為見習騎師而經驗不足，小組根據賽事規例第12(46)條，指示見習騎師鍾易禮出席騎術委員會的會議以接受改進訓練。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "4",
+      "horse_name": "雪勇神駒",
+      "horse_name_with_code": "雪勇神駒(G467)",
+      "incident_report": "接近二百五十米處時在被「超霸勝」帶向外跑之際受阻礙。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "超霸勝",
+      "horse_name_with_code": "超霸勝(H069)",
+      "incident_report": "跑過千一米處時被碰撞後軀。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "3",
+      "horse_name": "駿馬風采",
+      "horse_name_with_code": "駿馬風采(D334)",
+      "incident_report": "接近千一米處時被碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "7",
+      "horse_name": "伊臣",
+      "horse_name_with_code": "伊臣(G061)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 10,
+      "horse_number": "12",
+      "horse_name": "電源之駒",
+      "horse_name_with_code": "電源之駒(E301)",
+      "incident_report": "自外檔出閘後於早段在馬群之後切入。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 11,
+      "horse_number": "1",
+      "horse_name": "四季醒",
+      "horse_name_with_code": "四季醒(H223)",
+      "incident_report": "賽後，潘頓表示，坐騎是賽負頂磅一百三十五磅上陣，加上自大外檔起步及首次增程角逐千二米途程，因而於末段未能以勁勢衝刺，尤其在早段及中段步速偏快下。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": "WV",
+      "horse_number": "10",
+      "horse_name": "明心知遇",
+      "horse_name_with_code": "明心知遇(H256)",
+      "incident_report": "十一月二十七日被小組按照獸醫意見（左前腿不良於行）著令退出。「明心知遇」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.26",
+        "8.1",
+        "5.79"
+      ],
+      "fastest_sectional": 5.79,
+      "slowest_sectional": 9.26,
+      "sectional_variance": 3.47,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "5",
+        "horse_name": "小霸王",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 7.8,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 124,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "電氣騎士",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 3.3,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "嫡愛心",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 4.6,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 134,
+          "weight_rating": "heavy",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "魅力寶駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "11",
+        "horse_name": "傑出漢子",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 5.7,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "3"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "雪勇神駒",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 9.3,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "3-1/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "超霸勝",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 18.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "3-1/2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "駿馬風采",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 67.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "4-1/2"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "伊臣",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 57.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "12",
+        "horse_name": "電源之駒",
+        "position": 10,
+        "performance_metrics": {
+          "win_odds": 104.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "7"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "四季醒",
+        "position": 11,
+        "performance_metrics": {
+          "win_odds": 8.7,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "7-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 11,
+      "odds_statistics": {
+        "favorite_odds": 3.3,
+        "longest_odds": 104.0,
+        "average_odds": 27.04,
+        "odds_range": 100.7
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 4,
+      "race_competitiveness": "very_competitive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "100-80",
+      "min_rating": 100,
+      "max_rating": 80,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 11,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "電氣騎士",
+          "position": 2,
+          "odds": 3.3,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "嫡愛心",
+          "position": 3,
+          "odds": 4.6,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "傑出漢子",
+          "position": 5,
+          "odds": 5.7,
+          "odds_rating": "favorite"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "電氣騎士",
+        "odds": 3.3,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 118,
+      "max_weight": 135,
+      "average_weight": 125.5,
+      "weight_spread": 17,
+      "top_weight_best_position": 11,
+      "bottom_weight_best_position": 2
+    },
+    "odds_analysis": {
+      "shortest_odds": 3.3,
+      "longest_odds": 104.0,
+      "average_odds": 27.04,
+      "odds_range": 100.7,
+      "winner_odds": 7.8,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 4,
+      "total_margins_recorded": 10,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:24:21.757066"
+}

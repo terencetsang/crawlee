@@ -1,0 +1,644 @@
+{
+  "race_date": "2025/04/16",
+  "racecourse": "HV",
+  "race_number": "1",
+  "race_info": {
+    "race_number_text": "第 1 場 (592)",
+    "race_number": "1",
+    "class_distance_text": "第五班 - 1000米 - (40-0)",
+    "race_class": "第五班",
+    "distance": "1000米",
+    "rating_range": "40-0",
+    "full_text": "第 1 場 (592) 第五班 - 1000米 - (40-0)",
+    "race_name": "第五班 1000米",
+    "track_condition": "好地至快地",
+    "prize_money": "HK$ 875,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.95",
+      "4.33",
+      "3.1"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "561",
+      "892",
+      "113"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "10",
+      "horse_name": "瑤瑤日上",
+      "jockey": "巴度",
+      "trainer": "容天鵬",
+      "actual_weight": "125",
+      "declared_weight": "1170",
+      "draw": "4",
+      "margin": "-",
+      "running_position": "561",
+      "finish_time": "0:56.90",
+      "win_odds": "6.3",
+      "horse_code": "J423"
+    },
+    {
+      "position": 2,
+      "horse_number": "7",
+      "horse_name": "快樂奇兵",
+      "jockey": "布文",
+      "trainer": "賀賢",
+      "actual_weight": "129",
+      "declared_weight": "1061",
+      "draw": "8",
+      "margin": "1/2",
+      "running_position": "892",
+      "finish_time": "0:57.00",
+      "win_odds": "8.6",
+      "horse_code": "H297"
+    },
+    {
+      "position": 3,
+      "horse_number": "11",
+      "horse_name": "天分高",
+      "jockey": "霍宏聲",
+      "trainer": "方嘉柏",
+      "actual_weight": "124",
+      "declared_weight": "1052",
+      "draw": "12",
+      "margin": "3/4",
+      "running_position": "113",
+      "finish_time": "0:57.04",
+      "win_odds": "14",
+      "horse_code": "H046"
+    },
+    {
+      "position": 4,
+      "horse_number": "9",
+      "horse_name": "錶之多多",
+      "jockey": "潘頓",
+      "trainer": "文家良",
+      "actual_weight": "127",
+      "declared_weight": "1227",
+      "draw": "5",
+      "margin": "3/4",
+      "running_position": "784",
+      "finish_time": "0:57.05",
+      "win_odds": "4.9",
+      "horse_code": "H476"
+    },
+    {
+      "position": 5,
+      "horse_number": "4",
+      "horse_name": "天火同心",
+      "jockey": "班德禮",
+      "trainer": "韋達",
+      "actual_weight": "131",
+      "declared_weight": "1178",
+      "draw": "1",
+      "margin": "1-1/4",
+      "running_position": "335",
+      "finish_time": "0:57.08",
+      "win_odds": "17",
+      "horse_code": "J259"
+    },
+    {
+      "position": 6,
+      "horse_number": "5",
+      "horse_name": "中華威威",
+      "jockey": "田泰安",
+      "trainer": "徐雨石",
+      "actual_weight": "131",
+      "declared_weight": "1256",
+      "draw": "2",
+      "margin": "1-3/4",
+      "running_position": "446",
+      "finish_time": "0:57.19",
+      "win_odds": "8.8",
+      "horse_code": "D075"
+    },
+    {
+      "position": 7,
+      "horse_number": "12",
+      "horse_name": "鑽飾翱翔",
+      "jockey": "黃智弘",
+      "trainer": "姚本輝",
+      "actual_weight": "113",
+      "declared_weight": "1192",
+      "draw": "3",
+      "margin": "2",
+      "running_position": "657",
+      "finish_time": "0:57.20",
+      "win_odds": "3.9",
+      "horse_code": "G201"
+    },
+    {
+      "position": 8,
+      "horse_number": "2",
+      "horse_name": "辣得駕勢",
+      "jockey": "賀銘年",
+      "trainer": "巫偉傑",
+      "actual_weight": "134",
+      "declared_weight": "1121",
+      "draw": "6",
+      "margin": "2",
+      "running_position": "228",
+      "finish_time": "0:57.22",
+      "win_odds": "14",
+      "horse_code": "G203"
+    },
+    {
+      "position": 9,
+      "horse_number": "1",
+      "horse_name": "大番薯",
+      "jockey": "希威森",
+      "trainer": "廖康銘",
+      "actual_weight": "134",
+      "declared_weight": "1075",
+      "draw": "10",
+      "margin": "2-1/2",
+      "running_position": "12119",
+      "finish_time": "0:57.28",
+      "win_odds": "25",
+      "horse_code": "J383"
+    },
+    {
+      "position": 10,
+      "horse_number": "6",
+      "horse_name": "謙謙君子",
+      "jockey": "周俊樂",
+      "trainer": "葉楚航",
+      "actual_weight": "128",
+      "declared_weight": "1037",
+      "draw": "7",
+      "margin": "2-1/2",
+      "running_position": "9710",
+      "finish_time": "0:57.32",
+      "win_odds": "10",
+      "horse_code": "G352"
+    },
+    {
+      "position": 11,
+      "horse_number": "3",
+      "horse_name": "太陽昇",
+      "jockey": "蔡明紹",
+      "trainer": "蘇偉賢",
+      "actual_weight": "132",
+      "declared_weight": "1113",
+      "draw": "11",
+      "margin": "6-1/2",
+      "running_position": "101211",
+      "finish_time": "0:57.96",
+      "win_odds": "66",
+      "horse_code": "J134"
+    },
+    {
+      "position": 12,
+      "horse_number": "8",
+      "horse_name": "全城帶勝",
+      "jockey": "梁家俊",
+      "trainer": "鄭俊偉",
+      "actual_weight": "129",
+      "declared_weight": "1162",
+      "draw": "9",
+      "margin": "8-1/2",
+      "running_position": "111012",
+      "finish_time": "0:58.27",
+      "win_odds": "48",
+      "horse_code": "H200"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "10",
+        "payout": "63.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "10",
+        "payout": "23.50"
+      },
+      {
+        "combination": "7",
+        "payout": "25.50"
+      },
+      {
+        "combination": "11",
+        "payout": "46.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "7,10",
+        "payout": "299.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "7,10",
+        "payout": "100.50"
+      },
+      {
+        "combination": "10,11",
+        "payout": "177.00"
+      },
+      {
+        "combination": "7,11",
+        "payout": "193.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "10,7",
+        "payout": "655.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "10,7,11",
+        "payout": "8,012.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "7,10,11",
+        "payout": "1,460.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "7,9,10,11",
+        "payout": "1,894.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "10,7,11,9",
+        "payout": "47,123.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "10",
+      "horse_name": "瑤瑤日上",
+      "horse_name_with_code": "瑤瑤日上(J423)",
+      "incident_report": "在運往跑馬地馬場途中煩躁不安，其後接受獸醫檢查，獸醫認為此駒適宜出賽。起步後不久在一段途程上與「鑽飾翱翔」互相觸碰。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "7",
+      "horse_name": "快樂奇兵",
+      "horse_name_with_code": "快樂奇兵(H297)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "11",
+      "horse_name": "天分高",
+      "horse_name_with_code": "天分高(H046)",
+      "incident_report": "霍宏聲因於接近一百米處時造成干擾而承認一項不小心策騎（見「辣得駕勢」）。最後一百五十米外閃。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "9",
+      "horse_name": "錶之多多",
+      "horse_name_with_code": "錶之多多(H476)",
+      "incident_report": "早段昂首，在「瑤瑤日上」之後向內移入以取得遮擋之際走勢欠順，其後於中段持續走勢欠順。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "4",
+      "horse_name": "天火同心",
+      "horse_name_with_code": "天火同心(J259)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "5",
+      "horse_name": "中華威威",
+      "horse_name_with_code": "中華威威(D075)",
+      "incident_report": "起步後不久向外斜跑及被碰撞。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "12",
+      "horse_name": "鑽飾翱翔",
+      "horse_name_with_code": "鑽飾翱翔(G201)",
+      "incident_report": "出閘僅屬一般，其後不久在一段途程上在「瑤瑤日上」與略為向外斜跑的「中華威威」之間緊迫競跑。賽後，見習騎師黃智弘表示，他獲指示讓坐騎領放，但坐騎起步時受擠迫，其後居於較部署為後的位置。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "2",
+      "horse_name": "辣得駕勢",
+      "horse_name_with_code": "辣得駕勢(G203)",
+      "incident_report": "霍宏聲（「天分高」）承認一項不小心策騎〔賽事規例第100(1)條〕，事緣於接近一百米處時，他容許坐騎在尚未帶離「辣得駕勢」下向外斜跑，導致「辣得駕勢」失去應有的跑線及須收慢避開「天分高」。小組判罰霍宏聲於四月三十日星期三跑馬地賽事停賽（一個香港賽馬日）。在衡量判罰輕重時，小組裁定霍宏聲的不小心策騎程度屬第二級，以及影響情況屬第二級，也考慮了他的甚佳策騎出賽紀錄。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "1",
+      "horse_name": "大番薯",
+      "horse_name_with_code": "大番薯(J383)",
+      "incident_report": "躍出時在「太陽昇」與向外斜跑的「全城帶勝」之間受擠迫。賽後，希威森表示，儘管於起步時受擠迫，他的策騎指示是自外檔出閘後於早段讓坐騎留後競跑。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    },
+    {
+      "position": 10,
+      "horse_number": "6",
+      "horse_name": "謙謙君子",
+      "horse_name_with_code": "謙謙君子(G352)",
+      "incident_report": "周俊樂於接近一百米處時跌掉馬鞭。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 11,
+      "horse_number": "3",
+      "horse_name": "太陽昇",
+      "horse_name_with_code": "太陽昇(J134)",
+      "incident_report": "躍出時在「天分高」內側受緊迫之際被碰撞及失去平衡。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 12,
+      "horse_number": "8",
+      "horse_name": "全城帶勝",
+      "horse_name_with_code": "全城帶勝(H200)",
+      "incident_report": "起步時向外斜跑及被碰撞。賽後立即接受獸醫檢查，內窺鏡檢查顯示此駒的氣管內有很多血。「全城帶勝」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "veterinary_examination",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.95",
+        "4.33",
+        "3.1"
+      ],
+      "fastest_sectional": 3.1,
+      "slowest_sectional": 4.95,
+      "sectional_variance": 1.85,
+      "track_condition": "好地至快地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "10",
+        "horse_name": "瑤瑤日上",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 6.3,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 125,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "快樂奇兵",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 8.6,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 129,
+          "weight_rating": "moderate",
+          "margin": "1/2"
+        }
+      },
+      {
+        "horse_number": "11",
+        "horse_name": "天分高",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 14.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "錶之多多",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 4.9,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 127,
+          "weight_rating": "moderate",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "天火同心",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 17.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "中華威威",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 8.8,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "12",
+        "horse_name": "鑽飾翱翔",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 3.9,
+          "odds_rating": "favorite",
+          "result_rating": "unplaced",
+          "weight_carried": 113,
+          "weight_rating": "light",
+          "margin": "2"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "辣得駕勢",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 14.0,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 134,
+          "weight_rating": "heavy",
+          "margin": "2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "大番薯",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 25.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 134,
+          "weight_rating": "heavy",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "謙謙君子",
+        "position": 10,
+        "performance_metrics": {
+          "win_odds": 10.0,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 128,
+          "weight_rating": "moderate",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "太陽昇",
+        "position": 11,
+        "performance_metrics": {
+          "win_odds": 66.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "6-1/2"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "全城帶勝",
+        "position": 12,
+        "performance_metrics": {
+          "win_odds": 48.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 129,
+          "weight_rating": "moderate",
+          "margin": "8-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 12,
+      "odds_statistics": {
+        "favorite_odds": 3.9,
+        "longest_odds": 66.0,
+        "average_odds": 18.88,
+        "odds_range": 62.1
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 2,
+      "race_competitiveness": "competitive",
+      "race_class": 5,
+      "class_level": "entry",
+      "rating_range": "40-0",
+      "min_rating": 40,
+      "max_rating": 0,
+      "rating_spread": -40
+    }
+  },
+  "field_analysis": {
+    "total_runners": 12,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "鑽飾翱翔",
+          "position": 7,
+          "odds": 3.9,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "錶之多多",
+          "position": 4,
+          "odds": 4.9,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "瑤瑤日上",
+          "position": 1,
+          "odds": 6.3,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 1,
+      "market_leader": {
+        "horse_name": "鑽飾翱翔",
+        "odds": 3.9,
+        "position": 7,
+        "performance": "unplaced"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 113,
+      "max_weight": 134,
+      "average_weight": 128.1,
+      "weight_spread": 21,
+      "top_weight_best_position": 8,
+      "bottom_weight_best_position": 7
+    },
+    "odds_analysis": {
+      "shortest_odds": 3.9,
+      "longest_odds": 66.0,
+      "average_odds": 18.88,
+      "odds_range": 62.1,
+      "winner_odds": 6.3,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 11,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-24T20:11:36.431685"
+}

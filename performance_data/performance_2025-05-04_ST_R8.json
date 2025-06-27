@@ -1,0 +1,413 @@
+{
+  "race_date": "2025/05/04",
+  "racecourse": "ST",
+  "race_number": "8",
+  "race_info": {
+    "race_number_text": "第 8 場 (646)",
+    "race_number": "8",
+    "class_distance_text": "三級賽 - 2400米",
+    "race_class": "三級賽",
+    "distance": "2400米",
+    "full_text": "第 8 場 (646) 三級賽 - 2400米",
+    "race_name": "三級賽 2400米",
+    "track_condition": "好地至快地",
+    "prize_money": "HK$ 4,200,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "5.27",
+      "4.39",
+      "4.39",
+      "4.39",
+      "4.39",
+      "3.52"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "566651",
+      "344422",
+      "111113"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "有目共賞",
+      "jockey": "潘頓",
+      "trainer": "蔡約翰",
+      "actual_weight": "123",
+      "declared_weight": "1077",
+      "draw": "2",
+      "margin": "-",
+      "running_position": "566651",
+      "finish_time": "2:29.72",
+      "win_odds": "1.8",
+      "horse_code": "K020"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "優才",
+      "jockey": "周俊樂",
+      "trainer": "葉楚航",
+      "actual_weight": "121",
+      "declared_weight": "1039",
+      "draw": "4",
+      "margin": "短馬頭位",
+      "running_position": "344422",
+      "finish_time": "2:29.73",
+      "win_odds": "6.1",
+      "horse_code": "J536"
+    },
+    {
+      "position": 3,
+      "horse_number": "3",
+      "horse_name": "又龍串鳳",
+      "jockey": "巴度",
+      "trainer": "告東尼",
+      "actual_weight": "125",
+      "declared_weight": "1056",
+      "draw": "3",
+      "margin": "3/4",
+      "running_position": "111113",
+      "finish_time": "2:29.85",
+      "win_odds": "9.4",
+      "horse_code": "E461"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "愛心神駒",
+      "jockey": "潘明輝",
+      "trainer": "廖康銘",
+      "actual_weight": "119",
+      "declared_weight": "1095",
+      "draw": "6",
+      "margin": "1-1/4",
+      "running_position": "655544",
+      "finish_time": "2:29.93",
+      "win_odds": "4.7",
+      "horse_code": "H389"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "錶之五知",
+      "jockey": "布文",
+      "trainer": "告東尼",
+      "actual_weight": "135",
+      "declared_weight": "1011",
+      "draw": "1",
+      "margin": "4",
+      "running_position": "433365",
+      "finish_time": "2:30.34",
+      "win_odds": "7.2",
+      "horse_code": "G286"
+    },
+    {
+      "position": 6,
+      "horse_number": "2",
+      "horse_name": "當年情",
+      "jockey": "艾道拿",
+      "trainer": "告東尼",
+      "actual_weight": "135",
+      "declared_weight": "996",
+      "draw": "5",
+      "margin": "9-3/4",
+      "running_position": "222236",
+      "finish_time": "2:31.27",
+      "win_odds": "20",
+      "horse_code": "G371"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "18.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "14.00"
+      },
+      {
+        "combination": "5",
+        "payout": "27.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,5",
+        "payout": "50.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,5",
+        "payout": "87.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,5,3",
+        "payout": "389.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "3,4,5",
+        "payout": "125.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "3,4,5,6",
+        "payout": "47.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "4,5,3,6",
+        "payout": "1,120.00"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "5/4",
+        "payout": "215.50"
+      },
+      {
+        "combination": "5/5",
+        "payout": "109.50"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "有目共賞",
+      "horse_name_with_code": "有目共賞(K020)",
+      "incident_report": "過了五百米處後被向外移出以推進的「愛心神駒」碰撞及帶出更外疊。賽後，潘頓表示，坐騎躍出時觸碰閘廂左側，導致他的左腳踢中閘門及在腳踏內滑移。他說，他因而於起步後不久須用左手調整套在腳踏內的左腳。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "優才",
+      "horse_name_with_code": "優才(J536)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "3",
+      "horse_name": "又龍串鳳",
+      "horse_name_with_code": "又龍串鳳(E461)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "愛心神駒",
+      "horse_name_with_code": "愛心神駒(H389)",
+      "incident_report": "出閘笨拙。過了五百米處後向外移出，與「有目共賞」互相觸碰。",
+      "incident_type": "starting_issues",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "錶之五知",
+      "horse_name_with_code": "錶之五知(G286)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "2",
+      "horse_name": "當年情",
+      "horse_name_with_code": "當年情(G371)",
+      "incident_report": "賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "5.27",
+        "4.39",
+        "4.39",
+        "4.39",
+        "4.39",
+        "3.52"
+      ],
+      "fastest_sectional": 3.52,
+      "slowest_sectional": 5.27,
+      "sectional_variance": 1.75,
+      "track_condition": "好地至快地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "有目共賞",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 1.8,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 123,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "優才",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 6.1,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "短馬頭位"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "又龍串鳳",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 9.4,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "愛心神駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 4.7,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "錶之五知",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 7.2,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "當年情",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 20.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "9-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 1.8,
+        "longest_odds": 20.0,
+        "average_odds": 8.2,
+        "odds_range": 18.2
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 2,
+      "race_competitiveness": "competitive"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "有目共賞",
+          "position": 1,
+          "odds": 1.8,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "愛心神駒",
+          "position": 4,
+          "odds": 4.7,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "優才",
+          "position": 2,
+          "odds": 6.1,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "有目共賞",
+        "odds": 1.8,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 119,
+      "max_weight": 135,
+      "average_weight": 126.3,
+      "weight_spread": 16,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 4
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.8,
+      "longest_odds": 20.0,
+      "average_odds": 8.2,
+      "odds_range": 18.2,
+      "winner_odds": 1.8,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 5,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-24T19:07:43.656164"
+}

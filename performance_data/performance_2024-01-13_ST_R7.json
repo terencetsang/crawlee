@@ -1,0 +1,543 @@
+{
+  "race_date": "2024/01/13",
+  "racecourse": "ST",
+  "race_number": "7",
+  "race_info": {
+    "race_number_text": "第 7 場 (339)",
+    "race_number": "7",
+    "class_distance_text": "第二班 - 1200米 - (100-80)",
+    "race_class": "第二班",
+    "distance": "1200米",
+    "rating_range": "100-80",
+    "full_text": "第 7 場 (339) 第二班 - 1200米 - (100-80)",
+    "race_name": "第二班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 2,840,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.58",
+      "8.38",
+      "5.99"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "651",
+      "442",
+      "563"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "6",
+      "horse_name": "錶之銀河",
+      "jockey": "田泰安",
+      "trainer": "伍鵬志",
+      "actual_weight": "123",
+      "declared_weight": "1150",
+      "draw": "5",
+      "margin": "-",
+      "running_position": "651",
+      "finish_time": "1:08.68",
+      "win_odds": "1.2",
+      "horse_code": "H399"
+    },
+    {
+      "position": 2,
+      "horse_number": "8",
+      "horse_name": "晶晶日上",
+      "jockey": "希威森",
+      "trainer": "容天鵬",
+      "actual_weight": "119",
+      "declared_weight": "1190",
+      "draw": "4",
+      "margin": "1-1/2",
+      "running_position": "442",
+      "finish_time": "1:08.93",
+      "win_odds": "21",
+      "horse_code": "H089"
+    },
+    {
+      "position": 3,
+      "horse_number": "7",
+      "horse_name": "幸運遇見",
+      "jockey": "艾兆禮",
+      "trainer": "大衛希斯",
+      "actual_weight": "120",
+      "declared_weight": "1094",
+      "draw": "8",
+      "margin": "4-1/2",
+      "running_position": "563",
+      "finish_time": "1:09.40",
+      "win_odds": "7.9",
+      "horse_code": "H274"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "魅力寶駒",
+      "jockey": "艾道拿",
+      "trainer": "蔡約翰",
+      "actual_weight": "123",
+      "declared_weight": "1178",
+      "draw": "2",
+      "margin": "4-3/4",
+      "running_position": "224",
+      "finish_time": "1:09.42",
+      "win_odds": "9",
+      "horse_code": "G213"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "平海歡星",
+      "jockey": "布文",
+      "trainer": "蔡約翰",
+      "actual_weight": "135",
+      "declared_weight": "1137",
+      "draw": "3",
+      "margin": "5-1/4",
+      "running_position": "115",
+      "finish_time": "1:09.52",
+      "win_odds": "40",
+      "horse_code": "C377"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "瑪瑙",
+      "jockey": "鍾易禮",
+      "trainer": "羅富全",
+      "actual_weight": "123",
+      "declared_weight": "1175",
+      "draw": "1",
+      "margin": "6-1/4",
+      "running_position": "336",
+      "finish_time": "1:09.67",
+      "win_odds": "39",
+      "horse_code": "G306"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "紫雲冰",
+      "jockey": "何澤堯",
+      "trainer": "方嘉柏",
+      "actual_weight": "119",
+      "declared_weight": "1186",
+      "draw": "6",
+      "margin": "6-3/4",
+      "running_position": "887",
+      "finish_time": "1:09.77",
+      "win_odds": "27",
+      "horse_code": "G246"
+    },
+    {
+      "position": 8,
+      "horse_number": "4",
+      "horse_name": "當家精神",
+      "jockey": "班德禮",
+      "trainer": "韋達",
+      "actual_weight": "124",
+      "declared_weight": "1119",
+      "draw": "7",
+      "margin": "7",
+      "running_position": "978",
+      "finish_time": "1:09.81",
+      "win_odds": "53",
+      "horse_code": "D489"
+    },
+    {
+      "position": 9,
+      "horse_number": "2",
+      "horse_name": "駿馬風采",
+      "jockey": "蔡明紹",
+      "trainer": "羅富全",
+      "actual_weight": "131",
+      "declared_weight": "1229",
+      "draw": "9",
+      "margin": "7-3/4",
+      "running_position": "799",
+      "finish_time": "1:09.92",
+      "win_odds": "55",
+      "horse_code": "D334"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "6",
+        "payout": "12.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "6",
+        "payout": "10.50"
+      },
+      {
+        "combination": "8",
+        "payout": "30.50"
+      },
+      {
+        "combination": "7",
+        "payout": "15.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "6,8",
+        "payout": "79.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "6,8",
+        "payout": "31.50"
+      },
+      {
+        "combination": "6,7",
+        "payout": "17.50"
+      },
+      {
+        "combination": "7,8",
+        "payout": "88.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "6,8",
+        "payout": "107.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "6,8,7",
+        "payout": "370.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "6,7,8",
+        "payout": "124.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "5,6,7,8",
+        "payout": "77.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "6,8,7,5",
+        "payout": "996.00"
+      }
+    ],
+    "第六口孖寶": [
+      {
+        "combination": "1/6",
+        "payout": "151.00"
+      },
+      {
+        "combination": "1/8",
+        "payout": "351.50"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "6",
+      "horse_name": "錶之銀河",
+      "horse_name_with_code": "錶之銀河(H399)",
+      "incident_report": "出閘僅屬一般。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "8",
+      "horse_name": "晶晶日上",
+      "horse_name_with_code": "晶晶日上(H089)",
+      "incident_report": "出閘僅屬一般。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "7",
+      "horse_name": "幸運遇見",
+      "horse_name_with_code": "幸運遇見(H274)",
+      "incident_report": "大部分途程在沒有遮擋下走外疊。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "魅力寶駒",
+      "horse_name_with_code": "魅力寶駒(G213)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "平海歡星",
+      "horse_name_with_code": "平海歡星(C377)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "瑪瑙",
+      "horse_name_with_code": "瑪瑙(G306)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "紫雲冰",
+      "horse_name_with_code": "紫雲冰(G246)",
+      "incident_report": "賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 8,
+      "horse_number": "4",
+      "horse_name": "當家精神",
+      "horse_name_with_code": "當家精神(D489)",
+      "incident_report": "自外檔出閘後於早段在馬群之後切入。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "2",
+      "horse_name": "駿馬風采",
+      "horse_name_with_code": "駿馬風采(D334)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.58",
+        "8.38",
+        "5.99"
+      ],
+      "fastest_sectional": 5.99,
+      "slowest_sectional": 9.58,
+      "sectional_variance": 3.59,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "6",
+        "horse_name": "錶之銀河",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 1.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 123,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "晶晶日上",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 21.0,
+          "odds_rating": "outsider",
+          "result_rating": "placed",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "幸運遇見",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 7.9,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "4-1/2"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "魅力寶駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 9.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "平海歡星",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 40.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "5-1/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "瑪瑙",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 39.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "6-1/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "紫雲冰",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 27.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "6-3/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "當家精神",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 53.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "7"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "駿馬風采",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 55.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "7-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 9,
+      "odds_statistics": {
+        "favorite_odds": 1.2,
+        "longest_odds": 55.0,
+        "average_odds": 28.12,
+        "odds_range": 53.8
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 4,
+      "race_competitiveness": "very_competitive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "100-80",
+      "min_rating": 100,
+      "max_rating": 80,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 9,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "錶之銀河",
+          "position": 1,
+          "odds": 1.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "幸運遇見",
+          "position": 3,
+          "odds": 7.9,
+          "odds_rating": "competitive"
+        },
+        {
+          "horse_name": "魅力寶駒",
+          "position": 4,
+          "odds": 9.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "錶之銀河",
+        "odds": 1.2,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 119,
+      "max_weight": 135,
+      "average_weight": 124.1,
+      "weight_spread": 16,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 2
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.2,
+      "longest_odds": 55.0,
+      "average_odds": 28.12,
+      "odds_range": 53.8,
+      "winner_odds": 1.2,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 4,
+      "total_margins_recorded": 8,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T21:54:01.264400"
+}

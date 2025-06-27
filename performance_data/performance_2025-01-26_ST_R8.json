@@ -1,0 +1,543 @@
+{
+  "race_date": "2025/01/26",
+  "racecourse": "ST",
+  "race_number": "8",
+  "race_info": {
+    "race_number_text": "第 8 場 (383)",
+    "race_number": "8",
+    "class_distance_text": "第二班 - 1200米 - (100-80)",
+    "race_class": "第二班",
+    "distance": "1200米",
+    "rating_range": "100-80",
+    "full_text": "第 8 場 (383) 第二班 - 1200米 - (100-80)",
+    "race_name": "第二班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 2,840,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.28",
+      "8.12",
+      "5.8"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "881",
+      "112",
+      "433"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "3",
+      "horse_name": "華麗再勝",
+      "jockey": "潘頓",
+      "trainer": "沈集成",
+      "actual_weight": "129",
+      "declared_weight": "1180",
+      "draw": "7",
+      "margin": "-",
+      "running_position": "881",
+      "finish_time": "1:09.31",
+      "win_odds": "1.5",
+      "horse_code": "J008"
+    },
+    {
+      "position": 2,
+      "horse_number": "7",
+      "horse_name": "水晶酒杯",
+      "jockey": "貝知仁",
+      "trainer": "呂健威",
+      "actual_weight": "124",
+      "declared_weight": "1221",
+      "draw": "6",
+      "margin": "頸位",
+      "running_position": "112",
+      "finish_time": "1:09.37",
+      "win_odds": "32",
+      "horse_code": "H081"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "同祥和順",
+      "jockey": "希威森",
+      "trainer": "廖康銘",
+      "actual_weight": "127",
+      "declared_weight": "1220",
+      "draw": "5",
+      "margin": "1/2",
+      "running_position": "433",
+      "finish_time": "1:09.42",
+      "win_odds": "6.1",
+      "horse_code": "J185"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "小霸王",
+      "jockey": "艾道拿",
+      "trainer": "告東尼",
+      "actual_weight": "132",
+      "declared_weight": "1202",
+      "draw": "8",
+      "margin": "1-1/4",
+      "running_position": "994",
+      "finish_time": "1:09.52",
+      "win_odds": "50",
+      "horse_code": "G265"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "魅力寶駒",
+      "jockey": "巴度",
+      "trainer": "蔡約翰",
+      "actual_weight": "125",
+      "declared_weight": "1219",
+      "draw": "9",
+      "margin": "1-3/4",
+      "running_position": "555",
+      "finish_time": "1:09.60",
+      "win_odds": "16",
+      "horse_code": "G213"
+    },
+    {
+      "position": 6,
+      "horse_number": "9",
+      "horse_name": "晶晶日上",
+      "jockey": "蔡明紹",
+      "trainer": "容天鵬",
+      "actual_weight": "120",
+      "declared_weight": "1211",
+      "draw": "1",
+      "margin": "2-1/2",
+      "running_position": "676",
+      "finish_time": "1:09.70",
+      "win_odds": "12",
+      "horse_code": "H089"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "人和家興",
+      "jockey": "艾兆禮",
+      "trainer": "大衛希斯",
+      "actual_weight": "128",
+      "declared_weight": "1207",
+      "draw": "2",
+      "margin": "3",
+      "running_position": "347",
+      "finish_time": "1:09.80",
+      "win_odds": "23",
+      "horse_code": "E061"
+    },
+    {
+      "position": 8,
+      "horse_number": "2",
+      "horse_name": "八駿巨昇",
+      "jockey": "鍾易禮",
+      "trainer": "告東尼",
+      "actual_weight": "128",
+      "declared_weight": "1168",
+      "draw": "3",
+      "margin": "3-1/2",
+      "running_position": "228",
+      "finish_time": "1:09.86",
+      "win_odds": "16",
+      "horse_code": "H092"
+    },
+    {
+      "position": 9,
+      "horse_number": "8",
+      "horse_name": "傑出漢子",
+      "jockey": "何澤堯",
+      "trainer": "呂健威",
+      "actual_weight": "121",
+      "declared_weight": "1112",
+      "draw": "4",
+      "margin": "4",
+      "running_position": "769",
+      "finish_time": "1:09.94",
+      "win_odds": "12",
+      "horse_code": "G455"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "3",
+        "payout": "15.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "3",
+        "payout": "10.10"
+      },
+      {
+        "combination": "7",
+        "payout": "58.00"
+      },
+      {
+        "combination": "5",
+        "payout": "17.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "3,7",
+        "payout": "195.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "3,7",
+        "payout": "77.50"
+      },
+      {
+        "combination": "3,5",
+        "payout": "19.00"
+      },
+      {
+        "combination": "5,7",
+        "payout": "173.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "3,7",
+        "payout": "246.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "3,7,5",
+        "payout": "736.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "3,5,7",
+        "payout": "146.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,3,5,7",
+        "payout": "1,070.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "3,7,5,1",
+        "payout": "11,090.00"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "5/3",
+        "payout": "126.00"
+      },
+      {
+        "combination": "5/7",
+        "payout": "193.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "3",
+      "horse_name": "華麗再勝",
+      "horse_name_with_code": "華麗再勝(J008)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "7",
+      "horse_name": "水晶酒杯",
+      "horse_name_with_code": "水晶酒杯(H081)",
+      "incident_report": "賽後須抽取樣本檢驗。<27/1/2025 獸醫報告增補>獸醫報告，「水晶酒杯」於賽後翌晨左前腿不良於行。「水晶酒杯」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "同祥和順",
+      "horse_name_with_code": "同祥和順(J185)",
+      "incident_report": "躍出時觸碰閘廂左側。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "小霸王",
+      "horse_name_with_code": "小霸王(G265)",
+      "incident_report": "直路上內閃，趨近一百五十米處時不願移至「華麗再勝」外側以望空。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "魅力寶駒",
+      "horse_name_with_code": "魅力寶駒(G213)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "9",
+      "horse_name": "晶晶日上",
+      "horse_name_with_code": "晶晶日上(H089)",
+      "incident_report": "出閘僅屬一般。跑離五十米處時在推進至「八駿巨昇」與「魅力寶駒」之間的窄位之際一度受困。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "人和家興",
+      "horse_name_with_code": "人和家興(E061)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "2",
+      "horse_name": "八駿巨昇",
+      "horse_name_with_code": "八駿巨昇(H092)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "8",
+      "horse_name": "傑出漢子",
+      "horse_name_with_code": "傑出漢子(G455)",
+      "incident_report": "直路彎外閃。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.28",
+        "8.12",
+        "5.8"
+      ],
+      "fastest_sectional": 5.8,
+      "slowest_sectional": 9.28,
+      "sectional_variance": 3.48,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "3",
+        "horse_name": "華麗再勝",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 1.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 129,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "水晶酒杯",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 32.0,
+          "odds_rating": "outsider",
+          "result_rating": "placed",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "同祥和順",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 6.1,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 127,
+          "weight_rating": "moderate",
+          "margin": "1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "小霸王",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 50.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "魅力寶駒",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 16.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "晶晶日上",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "人和家興",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 23.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 128,
+          "weight_rating": "moderate",
+          "margin": "3"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "八駿巨昇",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 16.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 128,
+          "weight_rating": "moderate",
+          "margin": "3-1/2"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "傑出漢子",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 9,
+      "odds_statistics": {
+        "favorite_odds": 1.5,
+        "longest_odds": 50.0,
+        "average_odds": 18.73,
+        "odds_range": 48.5
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "100-80",
+      "min_rating": 100,
+      "max_rating": 80,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 9,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "華麗再勝",
+          "position": 1,
+          "odds": 1.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "同祥和順",
+          "position": 3,
+          "odds": 6.1,
+          "odds_rating": "competitive"
+        },
+        {
+          "horse_name": "晶晶日上",
+          "position": 6,
+          "odds": 12.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "華麗再勝",
+        "odds": 1.5,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 120,
+      "max_weight": 132,
+      "average_weight": 126.0,
+      "weight_spread": 12,
+      "top_weight_best_position": 4,
+      "bottom_weight_best_position": 6
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.5,
+      "longest_odds": 50.0,
+      "average_odds": 18.73,
+      "odds_range": 48.5,
+      "winner_odds": 1.5,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 4,
+      "total_margins_recorded": 8,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-25T00:33:22.926340"
+}
