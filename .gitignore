@@ -26,7 +26,7 @@ test_race_dates.html
 race_data_viewer.html
 update_race_dates.py
 __pycache__/create_prompt_json_file.cpython-312.pyc
-race_data/
+
 prompt_text_files/
 storage/
 test_pocketbase.py
