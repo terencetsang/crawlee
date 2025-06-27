@@ -1,73 +1,124 @@
-annotated-types==0.7.0
-anyio==4.7.0
-arrow==1.3.0
-beautifulsoup4==4.12.3
-binaryornot==0.4.4
-blessed==1.20.0
-Brotli==1.1.0
-certifi==2024.12.14
-chardet==5.2.0
-charset-normalizer==3.4.0
-click==8.1.7
-colorama==0.4.6
-cookiecutter==2.6.0
+# ============================================================================
+# HKJC Race Data Processing Pipeline - Python Dependencies
+# ============================================================================
+# This file contains all required Python packages for the complete HKJC
+# data extraction and upload pipeline.
+#
+# Core Pipeline Dependencies:
+# - Web scraping: crawlee, beautifulsoup4, requests
+# - Data processing: pandas, numpy
+# - Database: pocketbase
+# - Configuration: python-dotenv
+# - Date/time handling: python-dateutil, pytz
+#
+# Installation: pip install -r requirements.txt
+# ============================================================================
+
+# Core Web Scraping Framework
 crawlee==0.4.5
-docutils==0.21.2
-editor==1.6.6
-eval_type_backport==0.2.0
-filelock==3.16.1
-greenlet==3.1.1
-h11==0.14.0
-h2==4.1.0
-hpack==4.0.0
-html5lib==1.1
-httpcore==1.0.7
-httpx==0.27.2
-hyperframe==6.0.1
-idna==3.10
-inquirer==3.4.0
-Jinja2==3.1.4
+
+# HTML Parsing and Web Requests
+beautifulsoup4==4.12.3
+requests==2.32.3
 lxml==5.3.0
-markdown-it-py==3.0.0
-MarkupSafe==3.0.2
-mdurl==0.1.2
-more-itertools==10.5.0
-multidict==6.1.0
-numpy==2.2.2
-pandas==2.2.3
-playwright==1.49.1
+
+# PocketBase Database Client
 pocketbase==0.15.0
-propcache==0.2.1
-psutil==6.1.0
+
+# Configuration Management
+python-dotenv==1.0.1
+
+# Data Processing
+pandas==2.2.3
+numpy==2.2.2
+
+# Date and Time Handling
+python-dateutil==2.9.0.post0
+pytz==2025.1
+
+# HTTP and Network Libraries
+httpx==0.27.2
+httpcore==1.0.7
+urllib3==2.2.3
+certifi==2024.12.14
+
+# Async Support
+anyio==4.7.0
+greenlet==3.1.1
+
+# Browser Automation (for advanced scraping if needed)
+playwright==1.49.1
+
+# Data Validation
 pydantic==2.10.3
 pydantic-settings==2.7.0
 pydantic_core==2.27.1
-pyee==12.0.0
-Pygments==2.18.0
-python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
-python-slugify==8.0.4
-pytz==2025.1
-PyYAML==6.0.2
-readchar==4.2.1
-requests==2.32.3
-requests-file==2.1.0
-rich==13.9.4
-runs==1.2.2
-shellingham==1.5.4
-six==1.17.0
-sniffio==1.3.1
-sortedcollections==2.1.0
-sortedcontainers==2.4.0
+
+# Text Processing
+charset-normalizer==3.4.0
+chardet==5.2.0
 soupsieve==2.6
+
+# Utility Libraries
+click==8.1.7
+colorama==0.4.6
+rich==13.9.4
+typer==0.15.1
+
+# Type Annotations
+typing_extensions==4.12.2
+annotated-types==0.7.0
+
+# Supporting Dependencies
+idna==3.10
+sniffio==1.3.1
+h11==0.14.0
+h2==4.1.0
+hpack==4.0.0
+hyperframe==6.0.1
+multidict==6.1.0
+yarl==1.18.3
+propcache==0.2.1
+six==1.17.0
+wcwidth==0.2.13
+
+# Development and Debugging Tools
+psutil==6.1.0
+filelock==3.16.1
+
+# Template and Configuration Tools
+Jinja2==3.1.4
+MarkupSafe==3.0.2
+PyYAML==6.0.2
+
+# Additional Utilities
+arrow==1.3.0
+python-slugify==8.0.4
 text-unidecode==1.3
 tldextract==5.1.3
-typer==0.15.1
-types-python-dateutil==2.9.0.20241206
-typing_extensions==4.12.2
 tzdata==2025.1
-urllib3==2.2.3
-wcwidth==0.2.13
+
+# Legacy Dependencies (may be removed in future versions)
+binaryornot==0.4.4
+blessed==1.20.0
+Brotli==1.1.0
+cookiecutter==2.6.0
+docutils==0.21.2
+editor==1.6.6
+eval_type_backport==0.2.0
+html5lib==1.1
+inquirer==3.4.0
+markdown-it-py==3.0.0
+mdurl==0.1.2
+more-itertools==10.5.0
+Pygments==2.18.0
+readchar==4.2.1
+requests-file==2.1.0
+runs==1.2.2
+shellingham==1.5.4
+sortedcollections==2.1.0
+sortedcontainers==2.4.0
+types-python-dateutil==2.9.0.20241206
 webencodings==0.5.1
 xmod==1.8.1
-yarl==1.18.3
+pyee==12.0.0
