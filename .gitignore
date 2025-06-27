@@ -32,7 +32,10 @@ storage/
 test_pocketbase.py
 static_server.py
 simple_proxy.py
-race_dates.json
+
 simple_race_viewer.html
 proxy_server.py
 .env
+test_*.py
+check_*.py
+debug_*
