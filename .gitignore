@@ -6,7 +6,7 @@
 
 # Data directories (large files)
 # win_odds_data/*.json  # COMMENTED OUT - Include win odds data in git
-race_data/
+# race_data/  # COMMENTED OUT - Include race data in git
 prompt_text_files/
 
 # Generated reports and summaries
