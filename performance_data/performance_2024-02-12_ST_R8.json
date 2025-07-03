@@ -1,0 +1,411 @@
+{
+  "race_date": "2024/02/12",
+  "racecourse": "ST",
+  "race_number": "8",
+  "race_info": {
+    "race_number_text": "第 8 場 (414)",
+    "race_number": "8",
+    "class_distance_text": "第一班 - 1400米 - (85+)",
+    "race_class": "第一班",
+    "distance": "1400米",
+    "full_text": "第 8 場 (414) 第一班 - 1400米 - (85+)",
+    "race_name": "第一班 1400米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 3,720,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.09",
+      "3.41",
+      "3.41",
+      "2.73"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "3431",
+      "4552",
+      "2113"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "紅運帝王",
+      "jockey": "潘頓",
+      "trainer": "蔡約翰",
+      "actual_weight": "125",
+      "declared_weight": "1118",
+      "draw": "2",
+      "margin": "-",
+      "running_position": "3431",
+      "finish_time": "1:21.42",
+      "win_odds": "4.2",
+      "horse_code": "H115"
+    },
+    {
+      "position": 2,
+      "horse_number": "6",
+      "horse_name": "綠族無限",
+      "jockey": "田泰安",
+      "trainer": "伍鵬志",
+      "actual_weight": "115",
+      "declared_weight": "1109",
+      "draw": "1",
+      "margin": "頸位",
+      "running_position": "4552",
+      "finish_time": "1:21.48",
+      "win_odds": "1.2",
+      "horse_code": "H338"
+    },
+    {
+      "position": 3,
+      "horse_number": "2",
+      "horse_name": "韋小寶",
+      "jockey": "鍾易禮",
+      "trainer": "伍鵬志",
+      "actual_weight": "126",
+      "declared_weight": "1133",
+      "draw": "6",
+      "margin": "8-1/2",
+      "running_position": "2113",
+      "finish_time": "1:22.79",
+      "win_odds": "15",
+      "horse_code": "C188"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "速遞奇兵",
+      "jockey": "霍宏聲",
+      "trainer": "廖康銘",
+      "actual_weight": "135",
+      "declared_weight": "1225",
+      "draw": "4",
+      "margin": "9-3/4",
+      "running_position": "5344",
+      "finish_time": "1:22.99",
+      "win_odds": "26",
+      "horse_code": "D449"
+    },
+    {
+      "position": 5,
+      "horse_number": "5",
+      "horse_name": "健康快駒",
+      "jockey": "希威森",
+      "trainer": "大衛希斯",
+      "actual_weight": "125",
+      "declared_weight": "992",
+      "draw": "5",
+      "margin": "10-1/2",
+      "running_position": "6665",
+      "finish_time": "1:23.11",
+      "win_odds": "37",
+      "horse_code": "G010"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "聚才",
+      "jockey": "艾兆禮",
+      "trainer": "伍鵬志",
+      "actual_weight": "131",
+      "declared_weight": "1187",
+      "draw": "3",
+      "margin": "17-1/2",
+      "running_position": "1226",
+      "finish_time": "1:24.22",
+      "win_odds": "36",
+      "horse_code": "D108"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "42.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "13.50"
+      },
+      {
+        "combination": "6",
+        "payout": "12.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,6",
+        "payout": "14.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,6",
+        "payout": "52.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,6,2",
+        "payout": "133.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,4,6",
+        "payout": "29.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,4,6",
+        "payout": "32.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "4,6,2,1",
+        "payout": "412.00"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "4/4",
+        "payout": "28.50"
+      },
+      {
+        "combination": "4/6",
+        "payout": "10.50"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "紅運帝王",
+      "horse_name_with_code": "紅運帝王(H115)",
+      "incident_report": "接近一百五十米處時被挨擦。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "6",
+      "horse_name": "綠族無限",
+      "horse_name_with_code": "綠族無限(H338)",
+      "incident_report": "千一米處收慢。接近一百五十米處時向內斜跑，挨擦「紅運帝王」。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 3,
+      "horse_number": "2",
+      "horse_name": "韋小寶",
+      "horse_name_with_code": "韋小寶(C188)",
+      "incident_report": "賽後，練馬師伍鵬志確認，他指示見習騎師鍾易禮於早段讓此駒佔取「聚才」之後的位置以取得遮擋。他說，他曾指示騎師艾兆禮讓「聚才」領放，但由於該駒未能展現如預期般的前速，他認為這導致此駒居於較預期為前的位置。見習騎師鍾易禮確認伍鵬志發出的指示，並且告知小組，他在坐騎搶口之際讓坐騎展步上前領放，以圖讓坐騎穩定走勢。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "速遞奇兵",
+      "horse_name_with_code": "速遞奇兵(D449)",
+      "incident_report": "躍出時受擠迫。被查詢有關他於轉直路彎時的騎法，以及「紅運帝王」於接近四百五十米處時得以在此駒內側望空的理由時，霍宏聲表示，他獲指示確保坐騎於入直路時保持恰當平衡，留待自三百米處起一鼓作氣地衝刺。他說，坐騎於起步時受擠迫，接近千一米處時在「綠族無限」向外移出避開「紅運帝王」之際失去平衡。他說，他其後得以讓坐騎跟隨「聚才」，而當時「紅運帝王」居於坐騎內側。他說，他於轉直路彎時留意到「紅運帝王」居於坐騎內側，但鑒於練馬師廖康銘發出的策騎指示，他不願將坐騎推進上前以阻止「紅運帝王」向外移出。他續說，坐騎於入直路時取得平衡後隨即受催策。廖康銘確認所發出的指示，並告知小組，他認為「速遞奇兵」不喜歡被其他馬匹觸碰，遂指示霍宏聲確保此駒在陣上不受干擾。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "5",
+      "horse_name": "健康快駒",
+      "horse_name_with_code": "健康快駒(G010)",
+      "incident_report": "出閘僅屬一般，其後在「韋小寶」與「速遞奇兵」之間受擠迫。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "聚才",
+      "horse_name_with_code": "聚才(D108)",
+      "incident_report": "起步時向外斜跑及被碰撞。賽後立即接受獸醫檢查，發現此駒患有「喘鳴症」，而此駒過往也有此毛病報告。",
+      "incident_type": "veterinary_examination",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.09",
+        "3.41",
+        "3.41",
+        "2.73"
+      ],
+      "fastest_sectional": 2.73,
+      "slowest_sectional": 4.09,
+      "sectional_variance": 1.36,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "紅運帝王",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 4.2,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 125,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "綠族無限",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 1.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "韋小寶",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 15.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 126,
+          "weight_rating": "moderate",
+          "margin": "8-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "速遞奇兵",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 26.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "9-3/4"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "健康快駒",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 37.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "10-1/2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "聚才",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 36.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "17-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 1.2,
+        "longest_odds": 37.0,
+        "average_odds": 19.9,
+        "odds_range": 35.8
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 1,
+      "class_level": "high"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "綠族無限",
+          "position": 2,
+          "odds": 1.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "紅運帝王",
+          "position": 1,
+          "odds": 4.2,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "韋小寶",
+          "position": 3,
+          "odds": 15.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 3,
+      "market_leader": {
+        "horse_name": "綠族無限",
+        "odds": 1.2,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 115,
+      "max_weight": 135,
+      "average_weight": 126.2,
+      "weight_spread": 20,
+      "top_weight_best_position": 4,
+      "bottom_weight_best_position": 2
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.2,
+      "longest_odds": 37.0,
+      "average_odds": 19.9,
+      "odds_range": 35.8,
+      "winner_odds": 4.2,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 4,
+      "total_margins_recorded": 5,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T20:02:44.879964"
+}

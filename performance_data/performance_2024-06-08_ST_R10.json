@@ -1,0 +1,670 @@
+{
+  "race_date": "2024/06/08",
+  "racecourse": "ST",
+  "race_number": "10",
+  "race_info": {
+    "race_number_text": "第 10 場 (741)",
+    "race_number": "10",
+    "class_distance_text": "第三班 - 1400米 - (80-60)",
+    "race_class": "第三班",
+    "distance": "1400米",
+    "rating_range": "80-60",
+    "full_text": "第 10 場 (741) 第三班 - 1400米 - (80-60)",
+    "race_name": "第三班 1400米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 1,860,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.0",
+      "3.33",
+      "3.33",
+      "2.67"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "1111",
+      "1212102",
+      "8993"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "10",
+      "horse_name": "美麗邂逅",
+      "jockey": "鍾易禮",
+      "trainer": "告東尼",
+      "actual_weight": "117",
+      "declared_weight": "1164",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "1111",
+      "finish_time": "1:21.53",
+      "win_odds": "13",
+      "horse_code": "E459"
+    },
+    {
+      "position": 2,
+      "horse_number": "12",
+      "horse_name": "風繼續吹",
+      "jockey": "田泰安",
+      "trainer": "鄭俊偉",
+      "actual_weight": "119",
+      "declared_weight": "1156",
+      "draw": "12",
+      "margin": "頸位",
+      "running_position": "1212102",
+      "finish_time": "1:21.59",
+      "win_odds": "21",
+      "horse_code": "E471"
+    },
+    {
+      "position": 3,
+      "horse_number": "1",
+      "horse_name": "潮州精神",
+      "jockey": "巴度",
+      "trainer": "文家良",
+      "actual_weight": "135",
+      "declared_weight": "1192",
+      "draw": "9",
+      "margin": "3/4",
+      "running_position": "8993",
+      "finish_time": "1:21.68",
+      "win_odds": "9.2",
+      "horse_code": "H175"
+    },
+    {
+      "position": 4,
+      "horse_number": "3",
+      "horse_name": "同樣美麗",
+      "jockey": "艾道拿",
+      "trainer": "告東尼",
+      "actual_weight": "131",
+      "declared_weight": "1057",
+      "draw": "7",
+      "margin": "1",
+      "running_position": "3324",
+      "finish_time": "1:21.70",
+      "win_odds": "8.2",
+      "horse_code": "H334"
+    },
+    {
+      "position": 5,
+      "horse_number": "7",
+      "horse_name": "星運少爵",
+      "jockey": "布文",
+      "trainer": "方嘉柏",
+      "actual_weight": "124",
+      "declared_weight": "1123",
+      "draw": "1",
+      "margin": "2-1/2",
+      "running_position": "7885",
+      "finish_time": "1:21.95",
+      "win_odds": "2.7",
+      "horse_code": "H459"
+    },
+    {
+      "position": 6,
+      "horse_number": "8",
+      "horse_name": "飛越星空",
+      "jockey": "潘明輝",
+      "trainer": "伍鵬志",
+      "actual_weight": "119",
+      "declared_weight": "1173",
+      "draw": "5",
+      "margin": "3-3/4",
+      "running_position": "1011126",
+      "finish_time": "1:22.15",
+      "win_odds": "43",
+      "horse_code": "J328"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "誠好運",
+      "jockey": "梁家俊",
+      "trainer": "羅富全",
+      "actual_weight": "121",
+      "declared_weight": "1001",
+      "draw": "4",
+      "margin": "4-3/4",
+      "running_position": "4437",
+      "finish_time": "1:22.29",
+      "win_odds": "6",
+      "horse_code": "H477"
+    },
+    {
+      "position": 8,
+      "horse_number": "4",
+      "horse_name": "金佰令",
+      "jockey": "湯普新",
+      "trainer": "姚本輝",
+      "actual_weight": "129",
+      "declared_weight": "1196",
+      "draw": "11",
+      "margin": "6-1/2",
+      "running_position": "910118",
+      "finish_time": "1:22.59",
+      "win_odds": "16",
+      "horse_code": "G434"
+    },
+    {
+      "position": 9,
+      "horse_number": "5",
+      "horse_name": "智跑得",
+      "jockey": "希威森",
+      "trainer": "大衛希斯",
+      "actual_weight": "124",
+      "declared_weight": "1159",
+      "draw": "2",
+      "margin": "7-1/4",
+      "running_position": "6659",
+      "finish_time": "1:22.70",
+      "win_odds": "27",
+      "horse_code": "J330"
+    },
+    {
+      "position": 10,
+      "horse_number": "6",
+      "horse_name": "銀亮光速",
+      "jockey": "霍宏聲",
+      "trainer": "呂健威",
+      "actual_weight": "124",
+      "declared_weight": "1064",
+      "draw": "10",
+      "margin": "9-3/4",
+      "running_position": "55410",
+      "finish_time": "1:23.10",
+      "win_odds": "18",
+      "horse_code": "H171"
+    },
+    {
+      "position": 11,
+      "horse_number": "2",
+      "horse_name": "光年八十",
+      "jockey": "黃智弘",
+      "trainer": "容天鵬",
+      "actual_weight": "125",
+      "declared_weight": "1275",
+      "draw": "6",
+      "margin": "15-1/2",
+      "running_position": "117711",
+      "finish_time": "1:24.02",
+      "win_odds": "6.8",
+      "horse_code": "H170"
+    },
+    {
+      "position": 12,
+      "horse_number": "11",
+      "horse_name": "凝聚美麗",
+      "jockey": "蔡明紹",
+      "trainer": "巫偉傑",
+      "actual_weight": "120",
+      "declared_weight": "1058",
+      "draw": "8",
+      "margin": "17-1/4",
+      "running_position": "22612",
+      "finish_time": "1:24.30",
+      "win_odds": "124",
+      "horse_code": "J299"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "10",
+        "payout": "133.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "10",
+        "payout": "40.50"
+      },
+      {
+        "combination": "12",
+        "payout": "53.50"
+      },
+      {
+        "combination": "1",
+        "payout": "27.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "10,12",
+        "payout": "1,390.50"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "10,12",
+        "payout": "382.00"
+      },
+      {
+        "combination": "1,10",
+        "payout": "201.50"
+      },
+      {
+        "combination": "1,12",
+        "payout": "228.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "10,12",
+        "payout": "2,476.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "10,12,1",
+        "payout": "22,917.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "1,10,12",
+        "payout": "3,288.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,3,10,12",
+        "payout": "4,307.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "10,12,1,3",
+        "payout": "125,838.00"
+      }
+    ],
+    "第九口孖寶": [
+      {
+        "combination": "3/10",
+        "payout": "1,376.00"
+      },
+      {
+        "combination": "3/12",
+        "payout": "235.50"
+      },
+      {
+        "combination": "1/3/12",
+        "payout": "904.00"
+      }
+    ],
+    "第五口孖T": [
+      {
+        "combination": "3,8,14/1,10,12",
+        "payout": "184,030.00"
+      },
+      {
+        "combination": "7/2/7/1/3/10",
+        "payout": "141,478.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "10",
+      "horse_name": "美麗邂逅",
+      "horse_name_with_code": "美麗邂逅(E459)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "12",
+      "horse_name": "風繼續吹",
+      "horse_name_with_code": "風繼續吹(E471)",
+      "incident_report": "自大外檔出閘後於早段在馬群之後切入。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "1",
+      "horse_name": "潮州精神",
+      "horse_name_with_code": "潮州精神(H175)",
+      "incident_report": "出閘僅屬一般。接近一千米處時被「光年八十」碰撞，收慢避開「銀亮光速」。於末段，巴度的馬鞭纏在「同樣美麗」的騎師艾道拿的腿後。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "3",
+      "horse_name": "同樣美麗",
+      "horse_name_with_code": "同樣美麗(H334)",
+      "incident_report": "趨近一千米處時被帶向內跑及發生碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "7",
+      "horse_name": "星運少爵",
+      "horse_name_with_code": "星運少爵(H459)",
+      "incident_report": "起步時發生碰撞。趨近一千米處時在受擠迫之際收慢。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "8",
+      "horse_name": "飛越星空",
+      "horse_name_with_code": "飛越星空(J328)",
+      "incident_report": "起步後不久在「同樣美麗」與「誠好運」之間受擠迫之際收慢，當時「誠好運」被「美麗邂逅」帶向外跑。跑離一千米處時勒避「星運少爵」。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "誠好運",
+      "horse_name_with_code": "誠好運(H477)",
+      "incident_report": "趨近一千米處時被碰撞，因而失去平衡及向內斜跑。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "4",
+      "horse_name": "金佰令",
+      "horse_name_with_code": "金佰令(G434)",
+      "incident_report": "接近千一米處時推進至「銀亮光速」（霍宏聲）內側，其後收慢避開該駒的後蹄。小組譴責霍宏聲。",
+      "incident_type": "stewards_reprimand",
+      "severity": "high"
+    },
+    {
+      "position": 9,
+      "horse_number": "5",
+      "horse_name": "智跑得",
+      "horse_name_with_code": "智跑得(J330)",
+      "incident_report": "起步時發生碰撞。趨近四百米處時向外斜跑及被碰撞。蔡明紹（「凝聚美麗」）承認一項不小心策騎〔賽事規例第100(1)條〕，事緣他於趨近一千米處時容許坐騎在尚未充分帶離「同樣美麗」下向內斜跑，導致「同樣美麗」被帶向內跑及與「誠好運」互相觸碰，以致「誠好運」其後被迫向內橫越「智跑得」的跑線，「智跑得」因而須勒避，同時擠壓居其內側競跑的「星運少爵」。小組判罰蔡明紹於七月四日星期四跑馬地賽事停賽（一個香港賽馬日）。在衡量判罰輕重時，小組裁定蔡明紹的不小心策騎程度屬第二級，以及影響情況屬第二級，也考慮了他的甚佳策騎出賽紀錄。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    },
+    {
+      "position": 10,
+      "horse_number": "6",
+      "horse_name": "銀亮光速",
+      "horse_name_with_code": "銀亮光速(H171)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 11,
+      "horse_number": "2",
+      "horse_name": "光年八十",
+      "horse_name_with_code": "光年八十(H170)",
+      "incident_report": "趨近一千米處時在「潮州精神」與向外斜跑的「智跑得」之間受擠迫。趨近四百米處時被向外斜跑的「智跑得」碰撞。賽後，見習騎師黃智弘表示，他獲指示嘗試讓坐騎領放。他說，坐騎出閘緩慢，其後不久受擠迫及居於更後位置。他又說，坐騎於早段及中段沿途搶口，接近一千米處時受擠迫，其後在沒有遮擋下走外疊，直路上衝刺乏力。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "medium"
+    },
+    {
+      "position": 12,
+      "horse_number": "11",
+      "horse_name": "凝聚美麗",
+      "horse_name_with_code": "凝聚美麗(J299)",
+      "incident_report": "蔡明紹因於趨近一千米處時造成干擾而承認一項不小心策騎（見「智跑得」）。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.0",
+        "3.33",
+        "3.33",
+        "2.67"
+      ],
+      "fastest_sectional": 2.67,
+      "slowest_sectional": 4.0,
+      "sectional_variance": 1.33,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "10",
+        "horse_name": "美麗邂逅",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 13.0,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 117,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "12",
+        "horse_name": "風繼續吹",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 21.0,
+          "odds_rating": "outsider",
+          "result_rating": "placed",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "潮州精神",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 9.2,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "同樣美麗",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 8.2,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "1"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "星運少爵",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 2.7,
+          "odds_rating": "strong_favorite",
+          "result_rating": "competitive",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "飛越星空",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 43.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "3-3/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "誠好運",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 6.0,
+          "odds_rating": "favorite",
+          "result_rating": "unplaced",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "金佰令",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 16.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 129,
+          "weight_rating": "moderate",
+          "margin": "6-1/2"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "智跑得",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 27.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "7-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "銀亮光速",
+        "position": 10,
+        "performance_metrics": {
+          "win_odds": 18.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "9-3/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "光年八十",
+        "position": 11,
+        "performance_metrics": {
+          "win_odds": 6.8,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "15-1/2"
+        }
+      },
+      {
+        "horse_number": "11",
+        "horse_name": "凝聚美麗",
+        "position": 12,
+        "performance_metrics": {
+          "win_odds": 124.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "17-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 12,
+      "odds_statistics": {
+        "favorite_odds": 2.7,
+        "longest_odds": 124.0,
+        "average_odds": 24.57,
+        "odds_range": 121.3
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 1,
+      "race_competitiveness": "decisive",
+      "race_class": 3,
+      "class_level": "medium",
+      "rating_range": "80-60",
+      "min_rating": 80,
+      "max_rating": 60,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 12,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "星運少爵",
+          "position": 5,
+          "odds": 2.7,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "誠好運",
+          "position": 7,
+          "odds": 6.0,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "光年八十",
+          "position": 11,
+          "odds": 6.8,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 0,
+      "market_leader": {
+        "horse_name": "星運少爵",
+        "odds": 2.7,
+        "position": 5,
+        "performance": "unplaced"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 117,
+      "max_weight": 135,
+      "average_weight": 124.0,
+      "weight_spread": 18,
+      "top_weight_best_position": 3,
+      "bottom_weight_best_position": 1
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.7,
+      "longest_odds": 124.0,
+      "average_odds": 24.57,
+      "odds_range": 121.3,
+      "winner_odds": 13.0,
+      "market_efficiency": "minor_upset",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 11,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T18:23:51.679899"
+}

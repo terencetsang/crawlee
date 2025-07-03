@@ -1,0 +1,469 @@
+{
+  "race_date": "2024/07/04",
+  "racecourse": "HV",
+  "race_number": "2",
+  "race_info": {
+    "race_number_text": "第 2 場 (794)",
+    "race_number": "2",
+    "class_distance_text": "第二班 - 1000米 - (100-75)",
+    "race_class": "第二班",
+    "distance": "1000米",
+    "rating_range": "100-75",
+    "full_text": "第 2 場 (794) 第二班 - 1000米 - (100-75)",
+    "race_name": "第二班 1000米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 2,840,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.98",
+      "4.35",
+      "3.11"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "651",
+      "222",
+      "333"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "1",
+      "horse_name": "電氣騎士",
+      "jockey": "布文",
+      "trainer": "韋達",
+      "actual_weight": "135",
+      "declared_weight": "1203",
+      "draw": "6",
+      "margin": "-",
+      "running_position": "651",
+      "finish_time": "0:56.56",
+      "win_odds": "7.1",
+      "horse_code": "G258"
+    },
+    {
+      "position": 2,
+      "horse_number": "3",
+      "horse_name": "狀元及第",
+      "jockey": "艾道拿",
+      "trainer": "告東尼",
+      "actual_weight": "133",
+      "declared_weight": "1153",
+      "draw": "1",
+      "margin": "頸位",
+      "running_position": "222",
+      "finish_time": "0:56.60",
+      "win_odds": "11",
+      "horse_code": "E392"
+    },
+    {
+      "position": 3,
+      "horse_number": "6",
+      "horse_name": "美麗第一",
+      "jockey": "田泰安",
+      "trainer": "伍鵬志",
+      "actual_weight": "118",
+      "declared_weight": "1175",
+      "draw": "2",
+      "margin": "頸位",
+      "running_position": "333",
+      "finish_time": "0:56.61",
+      "win_odds": "1.5",
+      "horse_code": "H294"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "緊張大師",
+      "jockey": "希威森",
+      "trainer": "大衛希斯",
+      "actual_weight": "133",
+      "declared_weight": "1265",
+      "draw": "3",
+      "margin": "3/4",
+      "running_position": "114",
+      "finish_time": "0:56.70",
+      "win_odds": "10",
+      "horse_code": "E421"
+    },
+    {
+      "position": 5,
+      "horse_number": "7",
+      "horse_name": "財才",
+      "jockey": "艾兆禮",
+      "trainer": "伍鵬志",
+      "actual_weight": "115",
+      "declared_weight": "1156",
+      "draw": "4",
+      "margin": "3",
+      "running_position": "545",
+      "finish_time": "0:57.03",
+      "win_odds": "26",
+      "horse_code": "H125"
+    },
+    {
+      "position": 6,
+      "horse_number": "5",
+      "horse_name": "水晶酒杯",
+      "jockey": "鍾易禮",
+      "trainer": "呂健威",
+      "actual_weight": "115",
+      "declared_weight": "1246",
+      "draw": "5",
+      "margin": "5-1/4",
+      "running_position": "466",
+      "finish_time": "0:57.40",
+      "win_odds": "6.1",
+      "horse_code": "H081"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "合夥雄心",
+      "jockey": "潘明輝",
+      "trainer": "沈集成",
+      "actual_weight": "118",
+      "declared_weight": "1117",
+      "draw": "7",
+      "margin": "6-1/2",
+      "running_position": "777",
+      "finish_time": "0:57.58",
+      "win_odds": "34",
+      "horse_code": "E218"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "1",
+        "payout": "71.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "1",
+        "payout": "16.50"
+      },
+      {
+        "combination": "3",
+        "payout": "19.50"
+      },
+      {
+        "combination": "6",
+        "payout": "11.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "1,3",
+        "payout": "280.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "1,3",
+        "payout": "61.50"
+      },
+      {
+        "combination": "1,6",
+        "payout": "21.00"
+      },
+      {
+        "combination": "3,6",
+        "payout": "28.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "1,3",
+        "payout": "474.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "1,3,6",
+        "payout": "1,193.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "1,3,6",
+        "payout": "106.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,3,6",
+        "payout": "82.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "1,3,6,2",
+        "payout": "3,114.00"
+      }
+    ],
+    "第一口孖寶": [
+      {
+        "combination": "1/1",
+        "payout": "337.50"
+      },
+      {
+        "combination": "1/3",
+        "payout": "86.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "1",
+      "horse_name": "電氣騎士",
+      "horse_name_with_code": "電氣騎士(G258)",
+      "incident_report": "出閘僅屬一般。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "3",
+      "horse_name": "狀元及第",
+      "horse_name_with_code": "狀元及第(E392)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "6",
+      "horse_name": "美麗第一",
+      "horse_name_with_code": "美麗第一(H294)",
+      "incident_report": "跑離四百米處時被「狀元及第」帶出較外疊，其後於直路彎外閃。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "緊張大師",
+      "horse_name_with_code": "緊張大師(E421)",
+      "incident_report": "接近終點時在略為向內斜跑的「狀元及第」內側緊迫競跑。",
+      "incident_type": "running_wide_or_in",
+      "severity": "low"
+    },
+    {
+      "position": 5,
+      "horse_number": "7",
+      "horse_name": "財才",
+      "horse_name_with_code": "財才(H125)",
+      "incident_report": "出閘僅屬一般。<5/7/2024獸醫報告增補>獸醫報告，「財才」於賽後翌晨左前腿肌腱受傷。「財才」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "5",
+      "horse_name": "水晶酒杯",
+      "horse_name_with_code": "水晶酒杯(H081)",
+      "incident_report": "賽後，鍾易禮報告，坐騎於中段轉彎時外閃，直路上未能追前。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。<8/7/2024七月四日跑馬地賽事 – 第二場（794）>小組是日就有關此駒的騎法召見了騎師鍾易禮。他說，坐騎沿途外閃，他將身體重心移向坐騎右邊以圖鼓勵坐騎移近內欄。他說，他的馬鞍因而略為向右滑移，但該情況並未令他於陣上陷入不利處境。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "合夥雄心",
+      "horse_name_with_code": "合夥雄心(E218)",
+      "incident_report": "自大外檔出閘後於早段在馬群之後切入。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.98",
+        "4.35",
+        "3.11"
+      ],
+      "fastest_sectional": 3.11,
+      "slowest_sectional": 4.98,
+      "sectional_variance": 1.87,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "1",
+        "horse_name": "電氣騎士",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 7.1,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 135,
+          "weight_rating": "heavy"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "狀元及第",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 11.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "美麗第一",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 1.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "緊張大師",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 10.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "財才",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 26.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "3"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "水晶酒杯",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 6.1,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "5-1/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "合夥雄心",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 34.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "6-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 7,
+      "odds_statistics": {
+        "favorite_odds": 1.5,
+        "longest_odds": 34.0,
+        "average_odds": 13.67,
+        "odds_range": 32.5
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 1,
+      "race_competitiveness": "decisive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "100-75",
+      "min_rating": 100,
+      "max_rating": 75,
+      "rating_spread": -25
+    }
+  },
+  "field_analysis": {
+    "total_runners": 7,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "美麗第一",
+          "position": 3,
+          "odds": 1.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "水晶酒杯",
+          "position": 6,
+          "odds": 6.1,
+          "odds_rating": "competitive"
+        },
+        {
+          "horse_name": "電氣騎士",
+          "position": 1,
+          "odds": 7.1,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "美麗第一",
+        "odds": 1.5,
+        "position": 3,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 115,
+      "max_weight": 135,
+      "average_weight": 123.9,
+      "weight_spread": 20,
+      "top_weight_best_position": 1,
+      "bottom_weight_best_position": 5
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.5,
+      "longest_odds": 34.0,
+      "average_odds": 13.67,
+      "odds_range": 32.5,
+      "winner_odds": 7.1,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 3,
+      "total_margins_recorded": 6,
+      "competitiveness": "very_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T18:19:04.707323"
+}

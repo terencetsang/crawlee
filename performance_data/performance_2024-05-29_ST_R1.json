@@ -1,0 +1,357 @@
+{
+  "race_date": "2024/05/29",
+  "racecourse": "ST",
+  "race_number": "1",
+  "race_info": {
+    "race_number_text": "第 1 場 (704)",
+    "race_number": "1",
+    "class_distance_text": "第二班 - 1650米 - (100-80)",
+    "race_class": "第二班",
+    "distance": "1650米",
+    "rating_range": "100-80",
+    "full_text": "第 1 場 (704) 第二班 - 1650米 - (100-80)",
+    "race_name": "第二班 1650米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 3,120,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "8.85",
+      "7.37",
+      "7.37",
+      "5.9"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "5551",
+      "4422",
+      "1113"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "魅影獵飛",
+      "jockey": "田泰安",
+      "trainer": "姚本輝",
+      "actual_weight": "119",
+      "declared_weight": "1147",
+      "draw": "5",
+      "margin": "-",
+      "running_position": "5551",
+      "finish_time": "1:40.13",
+      "win_odds": "1.7",
+      "horse_code": "G317"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "黃腳鱲",
+      "jockey": "希威森",
+      "trainer": "呂健威",
+      "actual_weight": "119",
+      "declared_weight": "1210",
+      "draw": "4",
+      "margin": "1-1/4",
+      "running_position": "4422",
+      "finish_time": "1:40.33",
+      "win_odds": "3.5",
+      "horse_code": "G326"
+    },
+    {
+      "position": 3,
+      "horse_number": "1",
+      "horse_name": "電訊巴打",
+      "jockey": "布文",
+      "trainer": "徐雨石",
+      "actual_weight": "135",
+      "declared_weight": "1115",
+      "draw": "1",
+      "margin": "1-3/4",
+      "running_position": "1113",
+      "finish_time": "1:40.43",
+      "win_odds": "6.8",
+      "horse_code": "D482"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "魅力寶駒",
+      "jockey": "巴度",
+      "trainer": "蔡約翰",
+      "actual_weight": "133",
+      "declared_weight": "1182",
+      "draw": "3",
+      "margin": "2-3/4",
+      "running_position": "3334",
+      "finish_time": "1:40.59",
+      "win_odds": "7.3",
+      "horse_code": "G213"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "保羅承傳",
+      "jockey": "潘明輝",
+      "trainer": "羅富全",
+      "actual_weight": "130",
+      "declared_weight": "1101",
+      "draw": "2",
+      "margin": "3-3/4",
+      "running_position": "2245",
+      "finish_time": "1:40.73",
+      "win_odds": "15",
+      "horse_code": "C517"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "17.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "13.00"
+      },
+      {
+        "combination": "5",
+        "payout": "16.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,5",
+        "payout": "21.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,5",
+        "payout": "37.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,5,1",
+        "payout": "66.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "1,4,5",
+        "payout": "27.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "魅影獵飛",
+      "horse_name_with_code": "魅影獵飛(G317)",
+      "incident_report": "三百五十米處被「保羅承傳」碰撞，當時「保羅承傳」向外移出以圖推進。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "黃腳鱲",
+      "horse_name_with_code": "黃腳鱲(G326)",
+      "incident_report": "出閘笨拙，繼而被「魅力寶駒」碰撞。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 3,
+      "horse_number": "1",
+      "horse_name": "電訊巴打",
+      "horse_name_with_code": "電訊巴打(D482)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "魅力寶駒",
+      "horse_name_with_code": "魅力寶駒(G213)",
+      "incident_report": "起步時發生碰撞。趨近二百米處時移至「電訊巴打」內側以繼續望空。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "保羅承傳",
+      "horse_name_with_code": "保羅承傳(C517)",
+      "incident_report": "三百五十米處發生碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "8.85",
+        "7.37",
+        "7.37",
+        "5.9"
+      ],
+      "fastest_sectional": 5.9,
+      "slowest_sectional": 8.85,
+      "sectional_variance": 2.95,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "魅影獵飛",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 1.7,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 119,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "黃腳鱲",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 3.5,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "電訊巴打",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 6.8,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "魅力寶駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 7.3,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "2-3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "保羅承傳",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 15.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 130,
+          "weight_rating": "heavy",
+          "margin": "3-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 5,
+      "odds_statistics": {
+        "favorite_odds": 1.7,
+        "longest_odds": 15.0,
+        "average_odds": 6.86,
+        "odds_range": 13.3
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 1,
+      "race_competitiveness": "decisive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "100-80",
+      "min_rating": 100,
+      "max_rating": 80,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 5,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "魅影獵飛",
+          "position": 1,
+          "odds": 1.7,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "黃腳鱲",
+          "position": 2,
+          "odds": 3.5,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "電訊巴打",
+          "position": 3,
+          "odds": 6.8,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 3,
+      "market_leader": {
+        "horse_name": "魅影獵飛",
+        "odds": 1.7,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 119,
+      "max_weight": 135,
+      "average_weight": 127.2,
+      "weight_spread": 16,
+      "top_weight_best_position": 3,
+      "bottom_weight_best_position": 1
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.7,
+      "longest_odds": 15.0,
+      "average_odds": 6.86,
+      "odds_range": 13.3,
+      "winner_odds": 1.7,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 1,
+      "total_margins_recorded": 4,
+      "competitiveness": "decisive"
+    }
+  },
+  "scraped_at": "2025-06-26T18:32:16.219630"
+}

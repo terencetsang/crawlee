@@ -1,0 +1,471 @@
+{
+  "race_date": "2024/02/21",
+  "racecourse": "HV",
+  "race_number": "2",
+  "race_info": {
+    "race_number_text": "第 2 場 (438)",
+    "race_number": "2",
+    "class_distance_text": "第一班 - 1650米 - (110-85)",
+    "race_class": "第一班",
+    "distance": "1650米",
+    "rating_range": "110-85",
+    "full_text": "第 2 場 (438) 第一班 - 1650米 - (110-85)",
+    "race_name": "第一班 1650米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 4,075,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "8.9",
+      "7.42",
+      "7.42",
+      "5.93"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "2221",
+      "5552",
+      "3333"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "7",
+      "horse_name": "一先生",
+      "jockey": "班德禮",
+      "trainer": "姚本輝",
+      "actual_weight": "119",
+      "declared_weight": "1120",
+      "draw": "7",
+      "margin": "-",
+      "running_position": "2221",
+      "finish_time": "1:40.13",
+      "win_odds": "8.4",
+      "horse_code": "G227"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "越駿歡欣",
+      "jockey": "巴度",
+      "trainer": "羅富全",
+      "actual_weight": "134",
+      "declared_weight": "1134",
+      "draw": "3",
+      "margin": "1-1/4",
+      "running_position": "5552",
+      "finish_time": "1:40.32",
+      "win_odds": "3.1",
+      "horse_code": "G446"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "雪勇神駒",
+      "jockey": "艾道拿",
+      "trainer": "沈集成",
+      "actual_weight": "122",
+      "declared_weight": "1129",
+      "draw": "1",
+      "margin": "2-1/4",
+      "running_position": "3333",
+      "finish_time": "1:40.46",
+      "win_odds": "7",
+      "horse_code": "G467"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "電訊巴打",
+      "jockey": "希威森",
+      "trainer": "徐雨石",
+      "actual_weight": "135",
+      "declared_weight": "1121",
+      "draw": "6",
+      "margin": "2-1/4",
+      "running_position": "1114",
+      "finish_time": "1:40.49",
+      "win_odds": "13",
+      "horse_code": "D482"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "自力更生",
+      "jockey": "董明朗",
+      "trainer": "鄭俊偉",
+      "actual_weight": "122",
+      "declared_weight": "1006",
+      "draw": "4",
+      "margin": "3-1/4",
+      "running_position": "7775",
+      "finish_time": "1:40.64",
+      "win_odds": "30",
+      "horse_code": "G209"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "當年情",
+      "jockey": "鍾易禮",
+      "trainer": "告東尼",
+      "actual_weight": "124",
+      "declared_weight": "1000",
+      "draw": "2",
+      "margin": "3-1/4",
+      "running_position": "4446",
+      "finish_time": "1:40.65",
+      "win_odds": "7.6",
+      "horse_code": "G371"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "舞林密碼",
+      "jockey": "田泰安",
+      "trainer": "方嘉柏",
+      "actual_weight": "122",
+      "declared_weight": "1017",
+      "draw": "5",
+      "margin": "4-3/4",
+      "running_position": "6667",
+      "finish_time": "1:40.88",
+      "win_odds": "2.5",
+      "horse_code": "G365"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "7",
+        "payout": "84.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "7",
+        "payout": "21.00"
+      },
+      {
+        "combination": "2",
+        "payout": "13.50"
+      },
+      {
+        "combination": "5",
+        "payout": "19.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,7",
+        "payout": "150.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "2,7",
+        "payout": "44.50"
+      },
+      {
+        "combination": "5,7",
+        "payout": "64.00"
+      },
+      {
+        "combination": "2,5",
+        "payout": "37.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "7,2",
+        "payout": "326.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "7,2,5",
+        "payout": "1,773.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,5,7",
+        "payout": "249.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,5,7",
+        "payout": "437.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "7,2,5,1",
+        "payout": "10,565.00"
+      }
+    ],
+    "第一口孖寶": [
+      {
+        "combination": "8/7",
+        "payout": "660.50"
+      },
+      {
+        "combination": "8/2",
+        "payout": "51.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "7",
+      "horse_name": "一先生",
+      "horse_name_with_code": "一先生(G227)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "越駿歡欣",
+      "horse_name_with_code": "越駿歡欣(G446)",
+      "incident_report": "出閘笨拙。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "雪勇神駒",
+      "horse_name_with_code": "雪勇神駒(G467)",
+      "incident_report": "直路早段內閃，不願移至「一先生」外側。最後一百五十米再度內閃，難以被力策至終點，導致騎師艾道拿於趨近終點時須停止催策及修正坐騎。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "電訊巴打",
+      "horse_name_with_code": "電訊巴打(D482)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "自力更生",
+      "horse_name_with_code": "自力更生(G209)",
+      "incident_report": "跑離千六米處時在「舞林密碼」與「越駿歡欣」之間的窄位競跑，當時儘管騎師已努力阻止，但「舞林密碼」仍內閃，而「越駿歡欣」則在居「當年情」外側之際被稍微帶向外跑。末段在推進至「電訊巴打」內側的窄位之際未能被力策，當時「電訊巴打」稍微向內斜跑。",
+      "incident_type": "running_wide_or_in",
+      "severity": "low"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "當年情",
+      "horse_name_with_code": "當年情(G371)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "4",
+      "horse_name": "舞林密碼",
+      "horse_name_with_code": "舞林密碼(G365)",
+      "incident_report": "接近千五米處時在收慢避開「當年情」之際昂首。被查詢時，田泰安表示，坐騎是晚增程至一千六百五十米賽事，他獲指示讓坐騎順其自然及放鬆地競跑。他說，賽事早段及中段步速緩慢，坐騎略為搶口，但在趨近直路彎步速加快時未能加速。被查詢他於中段是否有機會讓坐騎推進上前以抵消慢步速時，田泰安表示，鑒於坐騎是晚增程至一千六百五十米途程及戴眼罩上陣，為確保坐騎能夠應付此程，他選擇不這樣做。練馬師方嘉柏確認他發出的策騎指示，並表示滿意田泰安採取的競跑策略。方嘉柏又說，早段的慢步速不利「舞林密碼」發揮。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "8.9",
+        "7.42",
+        "7.42",
+        "5.93"
+      ],
+      "fastest_sectional": 5.93,
+      "slowest_sectional": 8.9,
+      "sectional_variance": 2.97,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "7",
+        "horse_name": "一先生",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 8.4,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 119,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "越駿歡欣",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 3.1,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 134,
+          "weight_rating": "heavy",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "雪勇神駒",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 7.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "電訊巴打",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 13.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "自力更生",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 30.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "3-1/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "當年情",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 7.6,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "3-1/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "舞林密碼",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 2.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "unplaced",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 7,
+      "odds_statistics": {
+        "favorite_odds": 2.5,
+        "longest_odds": 30.0,
+        "average_odds": 10.23,
+        "odds_range": 27.5
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 5,
+      "race_competitiveness": "very_competitive",
+      "race_class": 1,
+      "class_level": "high",
+      "rating_range": "110-85",
+      "min_rating": 110,
+      "max_rating": 85,
+      "rating_spread": -25
+    }
+  },
+  "field_analysis": {
+    "total_runners": 7,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "舞林密碼",
+          "position": 7,
+          "odds": 2.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "越駿歡欣",
+          "position": 2,
+          "odds": 3.1,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "雪勇神駒",
+          "position": 3,
+          "odds": 7.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "舞林密碼",
+        "odds": 2.5,
+        "position": 7,
+        "performance": "unplaced"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 119,
+      "max_weight": 135,
+      "average_weight": 125.4,
+      "weight_spread": 16,
+      "top_weight_best_position": 4,
+      "bottom_weight_best_position": 1
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.5,
+      "longest_odds": 30.0,
+      "average_odds": 10.23,
+      "odds_range": 27.5,
+      "winner_odds": 8.4,
+      "market_efficiency": "minor_upset",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 5,
+      "total_margins_recorded": 6,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T20:03:14.745076"
+}

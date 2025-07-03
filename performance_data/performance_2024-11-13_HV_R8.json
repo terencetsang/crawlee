@@ -1,0 +1,81 @@
+{
+  "race_date": "2024/11/13",
+  "racecourse": "HV",
+  "race_number": "8",
+  "race_info": {
+    "prize_money": "派彩 (HK$)"
+  },
+  "sectional_times": {},
+  "results": [],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ],
+    "第七口孖寶": [
+      {
+        "combination": "-",
+        "payout": "退款"
+      }
+    ]
+  },
+  "incidents": [],
+  "performance": {
+    "race_performance": {},
+    "horse_performance": [],
+    "speed_analysis": {},
+    "statistical_data": {}
+  },
+  "field_analysis": {},
+  "scraped_at": "2025-06-25T01:22:05.832836"
+}

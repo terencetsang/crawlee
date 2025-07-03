@@ -1,0 +1,423 @@
+{
+  "race_date": "2023/09/13",
+  "racecourse": "HV",
+  "race_number": "1",
+  "race_info": {
+    "race_number_text": "第 1 場 (11)",
+    "race_number": "1",
+    "class_distance_text": "第五班 - 1200米 - (40-0)",
+    "race_class": "第五班",
+    "distance": "1200米",
+    "rating_range": "40-0",
+    "full_text": "第 1 場 (11) 第五班 - 1200米 - (40-0)",
+    "race_name": "第五班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 875,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.53",
+      "8.34",
+      "5.96"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "651",
+      "112",
+      "223"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "8",
+      "horse_name": "九秒九",
+      "jockey": "董明朗",
+      "trainer": "方嘉柏",
+      "actual_weight": "119",
+      "declared_weight": "1150",
+      "draw": "4",
+      "margin": "-",
+      "running_position": "651",
+      "finish_time": "1:09.99",
+      "win_odds": "3.3",
+      "horse_code": "E495"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "特攻",
+      "jockey": "布文",
+      "trainer": "賀賢",
+      "actual_weight": "132",
+      "declared_weight": "1118",
+      "draw": "5",
+      "margin": "1-1/2",
+      "running_position": "112",
+      "finish_time": "1:10.24",
+      "win_odds": "2.2",
+      "horse_code": "G004"
+    },
+    {
+      "position": 3,
+      "horse_number": "2",
+      "horse_name": "萬事有",
+      "jockey": "潘頓",
+      "trainer": "容天鵬",
+      "actual_weight": "134",
+      "declared_weight": "1228",
+      "draw": "1",
+      "margin": "1-3/4",
+      "running_position": "223",
+      "finish_time": "1:10.27",
+      "win_odds": "4.6",
+      "horse_code": "D443"
+    },
+    {
+      "position": 4,
+      "horse_number": "7",
+      "horse_name": "荃程路通",
+      "jockey": "巴度",
+      "trainer": "文家良",
+      "actual_weight": "119",
+      "declared_weight": "1057",
+      "draw": "7",
+      "margin": "2-1/2",
+      "running_position": "564",
+      "finish_time": "1:10.39",
+      "win_odds": "45",
+      "horse_code": "E403"
+    },
+    {
+      "position": 5,
+      "horse_number": "4",
+      "horse_name": "錢途光明",
+      "jockey": "梁家俊",
+      "trainer": "丁冠豪",
+      "actual_weight": "132",
+      "declared_weight": "1052",
+      "draw": "8",
+      "margin": "3-1/4",
+      "running_position": "775",
+      "finish_time": "1:10.51",
+      "win_odds": "45",
+      "horse_code": "G423"
+    },
+    {
+      "position": 6,
+      "horse_number": "6",
+      "horse_name": "友誼至佳",
+      "jockey": "希威森",
+      "trainer": "韋達",
+      "actual_weight": "128",
+      "declared_weight": "1182",
+      "draw": "2",
+      "margin": "3-3/4",
+      "running_position": "336",
+      "finish_time": "1:10.60",
+      "win_odds": "8.9",
+      "horse_code": "E208"
+    },
+    {
+      "position": 7,
+      "horse_number": "9",
+      "horse_name": "多利多",
+      "jockey": "艾兆禮",
+      "trainer": "蘇偉賢",
+      "actual_weight": "118",
+      "declared_weight": "1106",
+      "draw": "3",
+      "margin": "4-3/4",
+      "running_position": "447",
+      "finish_time": "1:10.73",
+      "win_odds": "26",
+      "horse_code": "E438"
+    },
+    {
+      "position": 8,
+      "horse_number": "1",
+      "horse_name": "順利取勝",
+      "jockey": "嘉里",
+      "trainer": "蔡約翰",
+      "actual_weight": "135",
+      "declared_weight": "1213",
+      "draw": "9",
+      "margin": "8-1/2",
+      "running_position": "888",
+      "finish_time": "1:11.35",
+      "win_odds": "20",
+      "horse_code": "G403"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "8",
+        "payout": "33.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "8",
+        "payout": "12.50"
+      },
+      {
+        "combination": "5",
+        "payout": "10.10"
+      },
+      {
+        "combination": "2",
+        "payout": "14.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "5,8",
+        "payout": "30.50"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "5,8",
+        "payout": "13.50"
+      },
+      {
+        "combination": "2,8",
+        "payout": "29.50"
+      },
+      {
+        "combination": "2,5",
+        "payout": "22.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "8,5",
+        "payout": "68.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "8,5,2",
+        "payout": "199.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,5,8",
+        "payout": "41.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "2,5,7,8",
+        "payout": "178.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "8,5,2,7",
+        "payout": "2,033.00"
+      }
+    ]
+  },
+  "incidents": [],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.53",
+        "8.34",
+        "5.96"
+      ],
+      "fastest_sectional": 5.96,
+      "slowest_sectional": 9.53,
+      "sectional_variance": 3.57,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "8",
+        "horse_name": "九秒九",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 3.3,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 119,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "特攻",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 2.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "萬事有",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 4.6,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 134,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "荃程路通",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 45.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "錢途光明",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 45.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "3-1/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "友誼至佳",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 8.9,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 128,
+          "weight_rating": "moderate",
+          "margin": "3-3/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "多利多",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 26.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "順利取勝",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 20.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "8-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 8,
+      "odds_statistics": {
+        "favorite_odds": 2.2,
+        "longest_odds": 45.0,
+        "average_odds": 19.38,
+        "odds_range": 42.8
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 5,
+      "class_level": "entry",
+      "rating_range": "40-0",
+      "min_rating": 40,
+      "max_rating": 0,
+      "rating_spread": -40
+    }
+  },
+  "field_analysis": {
+    "total_runners": 8,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "特攻",
+          "position": 2,
+          "odds": 2.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "九秒九",
+          "position": 1,
+          "odds": 3.3,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "萬事有",
+          "position": 3,
+          "odds": 4.6,
+          "odds_rating": "favorite"
+        }
+      ],
+      "favorites_in_first_3": 3,
+      "market_leader": {
+        "horse_name": "特攻",
+        "odds": 2.2,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 118,
+      "max_weight": 135,
+      "average_weight": 127.1,
+      "weight_spread": 17,
+      "top_weight_best_position": 8,
+      "bottom_weight_best_position": 7
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.2,
+      "longest_odds": 45.0,
+      "average_odds": 19.38,
+      "odds_range": 42.8,
+      "winner_odds": 3.3,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 3,
+      "total_margins_recorded": 7,
+      "competitiveness": "very_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:36:07.150104"
+}

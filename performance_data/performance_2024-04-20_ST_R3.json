@@ -1,0 +1,543 @@
+{
+  "race_date": "2024/04/20",
+  "racecourse": "ST",
+  "race_number": "3",
+  "race_info": {
+    "race_number_text": "第 3 場 (600)",
+    "race_number": "3",
+    "class_distance_text": "第三班 - 1200米 - (85-60)",
+    "race_class": "第三班",
+    "distance": "1200米",
+    "rating_range": "85-60",
+    "full_text": "第 3 場 (600) 第三班 - 1200米 - (85-60)",
+    "race_name": "第三班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 1,860,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.4",
+      "8.23",
+      "5.88"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "221",
+      "732",
+      "113"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "昇瀧駒",
+      "jockey": "田泰安",
+      "trainer": "廖康銘",
+      "actual_weight": "129",
+      "declared_weight": "1191",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "221",
+      "finish_time": "1:08.58",
+      "win_odds": "2",
+      "horse_code": "J141"
+    },
+    {
+      "position": 2,
+      "horse_number": "9",
+      "horse_name": "花果猴王",
+      "jockey": "鍾易禮",
+      "trainer": "告東尼",
+      "actual_weight": "110",
+      "declared_weight": "1132",
+      "draw": "2",
+      "margin": "短馬頭位",
+      "running_position": "732",
+      "finish_time": "1:08.59",
+      "win_odds": "9.5",
+      "horse_code": "H455"
+    },
+    {
+      "position": 3,
+      "horse_number": "8",
+      "horse_name": "福國寶",
+      "jockey": "巴度",
+      "trainer": "賀賢",
+      "actual_weight": "116",
+      "declared_weight": "1202",
+      "draw": "1",
+      "margin": "1-1/4",
+      "running_position": "113",
+      "finish_time": "1:08.78",
+      "win_odds": "56",
+      "horse_code": "G315"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "凱旋時光",
+      "jockey": "潘頓",
+      "trainer": "羅富全",
+      "actual_weight": "127",
+      "declared_weight": "1138",
+      "draw": "7",
+      "margin": "2-1/4",
+      "running_position": "554",
+      "finish_time": "1:08.92",
+      "win_odds": "2.5",
+      "horse_code": "H142"
+    },
+    {
+      "position": 5,
+      "horse_number": "2",
+      "horse_name": "明心知遇",
+      "jockey": "布文",
+      "trainer": "蔡約翰",
+      "actual_weight": "135",
+      "declared_weight": "1113",
+      "draw": "8",
+      "margin": "3",
+      "running_position": "995",
+      "finish_time": "1:09.04",
+      "win_odds": "16",
+      "horse_code": "H256"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "怡勁力",
+      "jockey": "黃智弘",
+      "trainer": "黎昭昇",
+      "actual_weight": "122",
+      "declared_weight": "1205",
+      "draw": "4",
+      "margin": "3",
+      "running_position": "446",
+      "finish_time": "1:09.05",
+      "win_odds": "14",
+      "horse_code": "H141"
+    },
+    {
+      "position": 7,
+      "horse_number": "7",
+      "horse_name": "閃電",
+      "jockey": "湯普新",
+      "trainer": "沈集成",
+      "actual_weight": "117",
+      "declared_weight": "1160",
+      "draw": "9",
+      "margin": "4-1/2",
+      "running_position": "677",
+      "finish_time": "1:09.28",
+      "win_odds": "43",
+      "horse_code": "G130"
+    },
+    {
+      "position": 8,
+      "horse_number": "1",
+      "horse_name": "好好心得",
+      "jockey": "潘明輝",
+      "trainer": "伍鵬志",
+      "actual_weight": "133",
+      "declared_weight": "1108",
+      "draw": "5",
+      "margin": "7",
+      "running_position": "888",
+      "finish_time": "1:09.69",
+      "win_odds": "60",
+      "horse_code": "D433"
+    },
+    {
+      "position": 9,
+      "horse_number": "6",
+      "horse_name": "時時滿意",
+      "jockey": "蔡明紹",
+      "trainer": "告東尼",
+      "actual_weight": "118",
+      "declared_weight": "1167",
+      "draw": "6",
+      "margin": "12-1/2",
+      "running_position": "369",
+      "finish_time": "1:10.59",
+      "win_odds": "25",
+      "horse_code": "G235"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "20.50"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "12.00"
+      },
+      {
+        "combination": "9",
+        "payout": "23.00"
+      },
+      {
+        "combination": "8",
+        "payout": "80.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,9",
+        "payout": "113.50"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "4,9",
+        "payout": "34.50"
+      },
+      {
+        "combination": "4,8",
+        "payout": "150.50"
+      },
+      {
+        "combination": "8,9",
+        "payout": "334.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,9",
+        "payout": "110.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,9,8",
+        "payout": "2,235.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "4,8,9",
+        "payout": "744.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "4,5,8,9",
+        "payout": "302.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "4,9,8,5",
+        "payout": "7,213.00"
+      }
+    ],
+    "第二口孖寶": [
+      {
+        "combination": "12/4",
+        "payout": "117.50"
+      },
+      {
+        "combination": "12/9",
+        "payout": "71.50"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "昇瀧駒",
+      "horse_name_with_code": "昇瀧駒(J141)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "9",
+      "horse_name": "花果猴王",
+      "horse_name_with_code": "花果猴王(H455)",
+      "incident_report": "出閘僅屬一般，其後不久受向內斜跑的「昇瀧駒」擠迫。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "8",
+      "horse_name": "福國寶",
+      "horse_name_with_code": "福國寶(G315)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "凱旋時光",
+      "horse_name_with_code": "凱旋時光(H142)",
+      "incident_report": "接近四百米處時移至「怡勁力」內側以繼續望空。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "2",
+      "horse_name": "明心知遇",
+      "horse_name_with_code": "明心知遇(H256)",
+      "incident_report": "自外檔出閘後於早段在馬群之後切入。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "3",
+      "horse_name": "怡勁力",
+      "horse_name_with_code": "怡勁力(H141)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "7",
+      "horse_name": "閃電",
+      "horse_name_with_code": "閃電(G130)",
+      "incident_report": "大部分途程在沒有遮擋下走外疊。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "1",
+      "horse_name": "好好心得",
+      "horse_name_with_code": "好好心得(D433)",
+      "incident_report": "出閘笨拙，觸碰閘廂左側。",
+      "incident_type": "starting_issues",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "6",
+      "horse_name": "時時滿意",
+      "horse_name_with_code": "時時滿意(G235)",
+      "incident_report": "賽後，蔡明紹表示，坐騎能夠保持居前列位置，直路彎外閃，直路上墮退。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.4",
+        "8.23",
+        "5.88"
+      ],
+      "fastest_sectional": 5.88,
+      "slowest_sectional": 9.4,
+      "sectional_variance": 3.52,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "昇瀧駒",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 2.0,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 129,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "花果猴王",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 9.5,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 110,
+          "weight_rating": "light",
+          "margin": "短馬頭位"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "福國寶",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 56.0,
+          "odds_rating": "outsider",
+          "result_rating": "placed",
+          "weight_carried": 116,
+          "weight_rating": "light",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "凱旋時光",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 2.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "competitive",
+          "weight_carried": 127,
+          "weight_rating": "moderate",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "明心知遇",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 16.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "3"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "怡勁力",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 14.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "3"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "閃電",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 43.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 117,
+          "weight_rating": "light",
+          "margin": "4-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "好好心得",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 60.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "7"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "時時滿意",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 25.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 118,
+          "weight_rating": "light",
+          "margin": "12-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 9,
+      "odds_statistics": {
+        "favorite_odds": 2.0,
+        "longest_odds": 60.0,
+        "average_odds": 25.33,
+        "odds_range": 58.0
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 3,
+      "class_level": "medium",
+      "rating_range": "85-60",
+      "min_rating": 85,
+      "max_rating": 60,
+      "rating_spread": -25
+    }
+  },
+  "field_analysis": {
+    "total_runners": 9,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "昇瀧駒",
+          "position": 1,
+          "odds": 2.0,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "凱旋時光",
+          "position": 4,
+          "odds": 2.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "花果猴王",
+          "position": 2,
+          "odds": 9.5,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "昇瀧駒",
+        "odds": 2.0,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 110,
+      "max_weight": 135,
+      "average_weight": 123.0,
+      "weight_spread": 25,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 2
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.0,
+      "longest_odds": 60.0,
+      "average_odds": 25.33,
+      "odds_range": 58.0,
+      "winner_odds": 2.0,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 3,
+      "total_margins_recorded": 8,
+      "competitiveness": "very_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T18:40:29.569907"
+}

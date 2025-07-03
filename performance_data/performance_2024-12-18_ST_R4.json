@@ -1,0 +1,660 @@
+{
+  "race_date": "2024/12/18",
+  "racecourse": "ST",
+  "race_number": "4",
+  "race_info": {
+    "race_number_text": "第 4 場 (272)",
+    "race_number": "4",
+    "class_distance_text": "第四班 - 1200米 - (60-40)",
+    "race_class": "第四班",
+    "distance": "1200米",
+    "rating_range": "60-40",
+    "full_text": "第 4 場 (272) 第四班 - 1200米 - (60-40)",
+    "race_name": "第四班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 1,170,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.4",
+      "8.23",
+      "5.88"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "531",
+      "652",
+      "883"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "智跑得",
+      "jockey": "霍宏聲",
+      "trainer": "廖康銘",
+      "actual_weight": "131",
+      "declared_weight": "1146",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "531",
+      "finish_time": "1:09.03",
+      "win_odds": "5.6",
+      "horse_code": "J330"
+    },
+    {
+      "position": 2,
+      "horse_number": "10",
+      "horse_name": "星火燎原",
+      "jockey": "何澤堯",
+      "trainer": "徐雨石",
+      "actual_weight": "120",
+      "declared_weight": "1143",
+      "draw": "4",
+      "margin": "1/2",
+      "running_position": "652",
+      "finish_time": "1:09.14",
+      "win_odds": "4.8",
+      "horse_code": "J150"
+    },
+    {
+      "position": 3,
+      "horse_number": "7",
+      "horse_name": "超加加",
+      "jockey": "貝知仁",
+      "trainer": "姚本輝",
+      "actual_weight": "127",
+      "declared_weight": "1087",
+      "draw": "5",
+      "margin": "1-1/4",
+      "running_position": "883",
+      "finish_time": "1:09.24",
+      "win_odds": "11",
+      "horse_code": "J486"
+    },
+    {
+      "position": 4,
+      "horse_number": "8",
+      "horse_name": "深心星",
+      "jockey": "賀銘年",
+      "trainer": "方嘉柏",
+      "actual_weight": "126",
+      "declared_weight": "1235",
+      "draw": "1",
+      "margin": "1-1/2",
+      "running_position": "464",
+      "finish_time": "1:09.26",
+      "win_odds": "14",
+      "horse_code": "K041"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "贏得自然",
+      "jockey": "黃寶妮",
+      "trainer": "賀賢",
+      "actual_weight": "119",
+      "declared_weight": "1105",
+      "draw": "7",
+      "margin": "2-1/4",
+      "running_position": "115",
+      "finish_time": "1:09.39",
+      "win_odds": "35",
+      "horse_code": "J365"
+    },
+    {
+      "position": 6,
+      "horse_number": "9",
+      "horse_name": "閃電",
+      "jockey": "布文",
+      "trainer": "沈集成",
+      "actual_weight": "125",
+      "declared_weight": "1146",
+      "draw": "2",
+      "margin": "2-1/4",
+      "running_position": "976",
+      "finish_time": "1:09.41",
+      "win_odds": "8.1",
+      "horse_code": "G130"
+    },
+    {
+      "position": 7,
+      "horse_number": "12",
+      "horse_name": "桃花多",
+      "jockey": "楊明綸",
+      "trainer": "鄭俊偉",
+      "actual_weight": "117",
+      "declared_weight": "1110",
+      "draw": "9",
+      "margin": "4-1/2",
+      "running_position": "11117",
+      "finish_time": "1:09.75",
+      "win_odds": "65",
+      "horse_code": "E488"
+    },
+    {
+      "position": 8,
+      "horse_number": "3",
+      "horse_name": "皇帝英豪",
+      "jockey": "班德禮",
+      "trainer": "韋達",
+      "actual_weight": "131",
+      "declared_weight": "1027",
+      "draw": "6",
+      "margin": "4-3/4",
+      "running_position": "228",
+      "finish_time": "1:09.78",
+      "win_odds": "98",
+      "horse_code": "J247"
+    },
+    {
+      "position": 9,
+      "horse_number": "5",
+      "horse_name": "電子宇宙",
+      "jockey": "蔡明紹",
+      "trainer": "巫偉傑",
+      "actual_weight": "129",
+      "declared_weight": "1032",
+      "draw": "8",
+      "margin": "8",
+      "running_position": "349",
+      "finish_time": "1:10.33",
+      "win_odds": "63",
+      "horse_code": "H151"
+    },
+    {
+      "position": 10,
+      "horse_number": "1",
+      "horse_name": "郎善好施",
+      "jockey": "麥道朗",
+      "trainer": "羅富全",
+      "actual_weight": "135",
+      "declared_weight": "1087",
+      "draw": "12",
+      "margin": "8-3/4",
+      "running_position": "10910",
+      "finish_time": "1:10.42",
+      "win_odds": "2.5",
+      "horse_code": "H462"
+    },
+    {
+      "position": 11,
+      "horse_number": "2",
+      "horse_name": "歌舞團",
+      "jockey": "周俊樂",
+      "trainer": "大衛希斯",
+      "actual_weight": "129",
+      "declared_weight": "1015",
+      "draw": "10",
+      "margin": "10",
+      "running_position": "121211",
+      "finish_time": "1:10.65",
+      "win_odds": "120",
+      "horse_code": "J434"
+    },
+    {
+      "position": 12,
+      "horse_number": "11",
+      "horse_name": "佳景臨門",
+      "jockey": "湯普新",
+      "trainer": "葉楚航",
+      "actual_weight": "117",
+      "declared_weight": "1066",
+      "draw": "11",
+      "margin": "11-1/4",
+      "running_position": "71012",
+      "finish_time": "1:10.83",
+      "win_odds": "12",
+      "horse_code": "H154"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "56.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "18.50"
+      },
+      {
+        "combination": "10",
+        "payout": "16.50"
+      },
+      {
+        "combination": "7",
+        "payout": "33.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,10",
+        "payout": "117.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "4,10",
+        "payout": "40.00"
+      },
+      {
+        "combination": "4,7",
+        "payout": "92.00"
+      },
+      {
+        "combination": "7,10",
+        "payout": "87.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,10",
+        "payout": "248.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,10,7",
+        "payout": "1,933.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "4,7,10",
+        "payout": "304.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "4,7,8,10",
+        "payout": "576.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "4,10,7,8",
+        "payout": "12,211.00"
+      }
+    ],
+    "第三口孖寶": [
+      {
+        "combination": "7/4",
+        "payout": "131.00"
+      },
+      {
+        "combination": "7/10",
+        "payout": "16.50"
+      }
+    ],
+    "第二口孖T": [
+      {
+        "combination": "2,7,8/4,7,10",
+        "payout": "18,837.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "智跑得",
+      "horse_name_with_code": "智跑得(J330)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "10",
+      "horse_name": "星火燎原",
+      "horse_name_with_code": "星火燎原(J150)",
+      "incident_report": "自七百五十米處起走外疊，沒有遮擋。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "7",
+      "horse_name": "超加加",
+      "horse_name_with_code": "超加加(J486)",
+      "incident_report": "接近四百米處時一度在「星火燎原」之後受困而未能望空。",
+      "incident_type": "blocked_or_checked",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "8",
+      "horse_name": "深心星",
+      "horse_name_with_code": "深心星(K041)",
+      "incident_report": "出閘僅屬一般。過了三百五十米處後內閃避開「電子宇宙」，因而被騎師修正。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "贏得自然",
+      "horse_name_with_code": "贏得自然(J365)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "9",
+      "horse_name": "閃電",
+      "horse_name_with_code": "閃電(G130)",
+      "incident_report": "接近五十米處時在「深心星」與「星火燎原」之間緊迫競跑之際受困而未能望空。",
+      "incident_type": "blocked_or_checked",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "12",
+      "horse_name": "桃花多",
+      "horse_name_with_code": "桃花多(E488)",
+      "incident_report": "自外檔出閘後於早段在馬群之後切入。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 8,
+      "horse_number": "3",
+      "horse_name": "皇帝英豪",
+      "horse_name_with_code": "皇帝英豪(J247)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "5",
+      "horse_name": "電子宇宙",
+      "horse_name_with_code": "電子宇宙(H151)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 10,
+      "horse_number": "1",
+      "horse_name": "郎善好施",
+      "horse_name_with_code": "郎善好施(H462)",
+      "incident_report": "賽後立即接受獸醫檢查，發現此駒流鼻血。由於這是「郎善好施」第二次流鼻血，此駒將被永久禁止出賽。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "high"
+    },
+    {
+      "position": 11,
+      "horse_number": "2",
+      "horse_name": "歌舞團",
+      "horse_name_with_code": "歌舞團(J434)",
+      "incident_report": "出閘僅屬一般。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 12,
+      "horse_number": "11",
+      "horse_name": "佳景臨門",
+      "horse_name_with_code": "佳景臨門(H154)",
+      "incident_report": "賽後立即接受獸醫檢查，發現此駒心律不正常。「佳景臨門」必須試閘及格，並且通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "veterinary_examination",
+      "severity": "high"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.4",
+        "8.23",
+        "5.88"
+      ],
+      "fastest_sectional": 5.88,
+      "slowest_sectional": 9.4,
+      "sectional_variance": 3.52,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "智跑得",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 5.6,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 131,
+          "weight_rating": "heavy"
+        }
+      },
+      {
+        "horse_number": "10",
+        "horse_name": "星火燎原",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 4.8,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "1/2"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "超加加",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 11.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 127,
+          "weight_rating": "moderate",
+          "margin": "1-1/4"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "深心星",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 14.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 126,
+          "weight_rating": "moderate",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "贏得自然",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 35.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 119,
+          "weight_rating": "light",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "9",
+        "horse_name": "閃電",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 8.1,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "12",
+        "horse_name": "桃花多",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 65.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 117,
+          "weight_rating": "light",
+          "margin": "4-1/2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "皇帝英豪",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 98.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "電子宇宙",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 63.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 129,
+          "weight_rating": "moderate",
+          "margin": "8"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "郎善好施",
+        "position": 10,
+        "performance_metrics": {
+          "win_odds": 2.5,
+          "odds_rating": "strong_favorite",
+          "result_rating": "unplaced",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "8-3/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "歌舞團",
+        "position": 11,
+        "performance_metrics": {
+          "win_odds": 120.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 129,
+          "weight_rating": "moderate",
+          "margin": "10"
+        }
+      },
+      {
+        "horse_number": "11",
+        "horse_name": "佳景臨門",
+        "position": 12,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 117,
+          "weight_rating": "light",
+          "margin": "11-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 12,
+      "odds_statistics": {
+        "favorite_odds": 2.5,
+        "longest_odds": 120.0,
+        "average_odds": 36.58,
+        "odds_range": 117.5
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 5,
+      "race_competitiveness": "very_competitive",
+      "race_class": 4,
+      "class_level": "medium",
+      "rating_range": "60-40",
+      "min_rating": 60,
+      "max_rating": 40,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 12,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "郎善好施",
+          "position": 10,
+          "odds": 2.5,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "星火燎原",
+          "position": 2,
+          "odds": 4.8,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "智跑得",
+          "position": 1,
+          "odds": 5.6,
+          "odds_rating": "favorite"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "郎善好施",
+        "odds": 2.5,
+        "position": 10,
+        "performance": "unplaced"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 117,
+      "max_weight": 135,
+      "average_weight": 125.5,
+      "weight_spread": 18,
+      "top_weight_best_position": 10,
+      "bottom_weight_best_position": 7
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.5,
+      "longest_odds": 120.0,
+      "average_odds": 36.58,
+      "odds_range": 117.5,
+      "winner_odds": 5.6,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 5,
+      "total_margins_recorded": 11,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-25T01:17:12.909991"
+}

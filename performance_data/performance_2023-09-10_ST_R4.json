@@ -1,0 +1,360 @@
+{
+  "race_date": "2023/09/10",
+  "racecourse": "ST",
+  "race_number": "4",
+  "race_info": {
+    "race_number_text": "第 4 場 (4)",
+    "race_number": "4",
+    "class_distance_text": "第一班 - 1200米 - (90+)",
+    "race_class": "第一班",
+    "distance": "1200米",
+    "full_text": "第 4 場 (4) 第一班 - 1200米 - (90+)",
+    "race_name": "第一班 1200米",
+    "track_condition": "黏地",
+    "prize_money": "HK$ 3,720,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "10.0",
+      "8.75",
+      "6.25"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "111",
+      "522",
+      "443"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "2",
+      "horse_name": "維港智能",
+      "jockey": "田泰安",
+      "trainer": "沈集成",
+      "actual_weight": "115",
+      "declared_weight": "1075",
+      "draw": "5",
+      "margin": "-",
+      "running_position": "111",
+      "finish_time": "1:09.87",
+      "win_odds": "4.1",
+      "horse_code": "G404"
+    },
+    {
+      "position": 2,
+      "horse_number": "1",
+      "horse_name": "金鑽貴人",
+      "jockey": "潘頓",
+      "trainer": "文家良",
+      "actual_weight": "135",
+      "declared_weight": "1206",
+      "draw": "6",
+      "margin": "2-1/2",
+      "running_position": "522",
+      "finish_time": "1:10.27",
+      "win_odds": "1.2",
+      "horse_code": "G180"
+    },
+    {
+      "position": 3,
+      "horse_number": "4",
+      "horse_name": "順勢而飛",
+      "jockey": "巴度",
+      "trainer": "羅富全",
+      "actual_weight": "115",
+      "declared_weight": "1161",
+      "draw": "2",
+      "margin": "3-3/4",
+      "running_position": "443",
+      "finish_time": "1:10.47",
+      "win_odds": "12",
+      "horse_code": "G338"
+    },
+    {
+      "position": 4,
+      "horse_number": "3",
+      "horse_name": "駿馬風采",
+      "jockey": "蔡明紹",
+      "trainer": "羅富全",
+      "actual_weight": "116",
+      "declared_weight": "1182",
+      "draw": "1",
+      "margin": "6",
+      "running_position": "234",
+      "finish_time": "1:10.81",
+      "win_odds": "28",
+      "horse_code": "D334"
+    },
+    {
+      "position": 5,
+      "horse_number": "5",
+      "horse_name": "樂滿貫",
+      "jockey": "鍾易禮",
+      "trainer": "告東尼",
+      "actual_weight": "108",
+      "declared_weight": "1192",
+      "draw": "4",
+      "margin": "7-3/4",
+      "running_position": "355",
+      "finish_time": "1:11.12",
+      "win_odds": "74",
+      "horse_code": "D476"
+    },
+    {
+      "position": 6,
+      "horse_number": "6",
+      "horse_name": "年少有威",
+      "jockey": "艾兆禮",
+      "trainer": "羅富全",
+      "actual_weight": "116",
+      "declared_weight": "1193",
+      "draw": "3",
+      "margin": "8-1/4",
+      "running_position": "666",
+      "finish_time": "1:11.19",
+      "win_odds": "43",
+      "horse_code": "G340"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "2",
+        "payout": "41.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "2",
+        "payout": "14.00"
+      },
+      {
+        "combination": "1",
+        "payout": "12.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "1,2",
+        "payout": "16.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "2,1",
+        "payout": "56.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "2,1,4",
+        "payout": "123.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "1,2,4",
+        "payout": "18.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,3,4",
+        "payout": "18.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "2,1,4,3",
+        "payout": "282.00"
+      }
+    ],
+    "第三口孖寶": [
+      {
+        "combination": "2/2",
+        "payout": "178.50"
+      },
+      {
+        "combination": "2/1",
+        "payout": "17.00"
+      }
+    ],
+    "第二口孖T": [
+      {
+        "combination": "1,2,7/1,2,4",
+        "payout": "471.00"
+      }
+    ]
+  },
+  "incidents": [],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "10.0",
+        "8.75",
+        "6.25"
+      ],
+      "fastest_sectional": 6.25,
+      "slowest_sectional": 10.0,
+      "sectional_variance": 3.75,
+      "track_condition": "黏地",
+      "track_condition_rating": "heavy"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "2",
+        "horse_name": "維港智能",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 4.1,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 115,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "金鑽貴人",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 1.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "順勢而飛",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "3-3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "駿馬風采",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 28.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 116,
+          "weight_rating": "light",
+          "margin": "6"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "樂滿貫",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 74.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 108,
+          "weight_rating": "light",
+          "margin": "7-3/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "年少有威",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 43.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 116,
+          "weight_rating": "light",
+          "margin": "8-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 1.2,
+        "longest_odds": 74.0,
+        "average_odds": 27.05,
+        "odds_range": 72.8
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 2,
+      "race_competitiveness": "competitive",
+      "race_class": 1,
+      "class_level": "high"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "金鑽貴人",
+          "position": 2,
+          "odds": 1.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "維港智能",
+          "position": 1,
+          "odds": 4.1,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "順勢而飛",
+          "position": 3,
+          "odds": 12.0,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 3,
+      "market_leader": {
+        "horse_name": "金鑽貴人",
+        "odds": 1.2,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 108,
+      "max_weight": 135,
+      "average_weight": 117.5,
+      "weight_spread": 27,
+      "top_weight_best_position": 2,
+      "bottom_weight_best_position": 5
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.2,
+      "longest_odds": 74.0,
+      "average_odds": 27.05,
+      "odds_range": 72.8,
+      "winner_odds": 4.1,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 5,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:35:58.843633"
+}

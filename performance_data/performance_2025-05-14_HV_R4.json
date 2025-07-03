@@ -1,0 +1,471 @@
+{
+  "race_date": "2025/05/14",
+  "racecourse": "HV",
+  "race_number": "4",
+  "race_info": {
+    "race_number_text": "第 4 場 (672)",
+    "race_number": "4",
+    "class_distance_text": "第二班 - 1650米 - (105-80)",
+    "race_class": "第二班",
+    "distance": "1650米",
+    "rating_range": "105-80",
+    "full_text": "第 4 場 (672) 第二班 - 1650米 - (105-80)",
+    "race_name": "第二班 1650米",
+    "track_condition": "好地至快地",
+    "prize_money": "HK$ 3,120,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "8.33",
+      "6.94",
+      "6.94",
+      "5.55"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "3341",
+      "2222",
+      "7733"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "加州動員",
+      "jockey": "巴度",
+      "trainer": "告東尼",
+      "actual_weight": "122",
+      "declared_weight": "1064",
+      "draw": "2",
+      "margin": "-",
+      "running_position": "3341",
+      "finish_time": "1:38.86",
+      "win_odds": "3.1",
+      "horse_code": "H418"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "太陽勇士",
+      "jockey": "潘頓",
+      "trainer": "大衛希斯",
+      "actual_weight": "122",
+      "declared_weight": "1102",
+      "draw": "7",
+      "margin": "頸位",
+      "running_position": "2222",
+      "finish_time": "1:38.93",
+      "win_odds": "2",
+      "horse_code": "J127"
+    },
+    {
+      "position": 3,
+      "horse_number": "6",
+      "horse_name": "常拼常勇",
+      "jockey": "周俊樂",
+      "trainer": "姚本輝",
+      "actual_weight": "120",
+      "declared_weight": "1114",
+      "draw": "3",
+      "margin": "3/4",
+      "running_position": "7733",
+      "finish_time": "1:39.00",
+      "win_odds": "16",
+      "horse_code": "E306"
+    },
+    {
+      "position": 4,
+      "horse_number": "7",
+      "horse_name": "木火兄弟",
+      "jockey": "楊明綸",
+      "trainer": "鄭俊偉",
+      "actual_weight": "115",
+      "declared_weight": "1185",
+      "draw": "1",
+      "margin": "1-1/2",
+      "running_position": "5674",
+      "finish_time": "1:39.09",
+      "win_odds": "11",
+      "horse_code": "G115"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "喜蓮勇感",
+      "jockey": "班德禮",
+      "trainer": "沈集成",
+      "actual_weight": "135",
+      "declared_weight": "1235",
+      "draw": "5",
+      "margin": "1-3/4",
+      "running_position": "4455",
+      "finish_time": "1:39.14",
+      "win_odds": "7.3",
+      "horse_code": "H215"
+    },
+    {
+      "position": 6,
+      "horse_number": "2",
+      "horse_name": "觔斗雲",
+      "jockey": "艾兆禮",
+      "trainer": "姚本輝",
+      "actual_weight": "135",
+      "declared_weight": "1119",
+      "draw": "4",
+      "margin": "2-3/4",
+      "running_position": "6566",
+      "finish_time": "1:39.31",
+      "win_odds": "15",
+      "horse_code": "E249"
+    },
+    {
+      "position": 7,
+      "horse_number": "3",
+      "horse_name": "電訊巴打",
+      "jockey": "鍾易禮",
+      "trainer": "徐雨石",
+      "actual_weight": "122",
+      "declared_weight": "1115",
+      "draw": "6",
+      "margin": "8-1/2",
+      "running_position": "1117",
+      "finish_time": "1:40.23",
+      "win_odds": "19",
+      "horse_code": "D482"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "31.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "10.10"
+      },
+      {
+        "combination": "5",
+        "payout": "12.50"
+      },
+      {
+        "combination": "6",
+        "payout": "28.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "4,5",
+        "payout": "30.50"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "4,5",
+        "payout": "17.00"
+      },
+      {
+        "combination": "4,6",
+        "payout": "50.00"
+      },
+      {
+        "combination": "5,6",
+        "payout": "45.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,5",
+        "payout": "80.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,5,6",
+        "payout": "468.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "4,5,6",
+        "payout": "98.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "4,5,6,7",
+        "payout": "157.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "4,5,6,7",
+        "payout": "1,892.00"
+      }
+    ],
+    "第三口孖寶": [
+      {
+        "combination": "2/4",
+        "payout": "255.50"
+      },
+      {
+        "combination": "2/5",
+        "payout": "40.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "加州動員",
+      "horse_name_with_code": "加州動員(H418)",
+      "incident_report": "起步時向外斜跑及被碰撞。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 2,
+      "horse_number": "5",
+      "horse_name": "太陽勇士",
+      "horse_name_with_code": "太陽勇士(J127)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "6",
+      "horse_name": "常拼常勇",
+      "horse_name_with_code": "常拼常勇(E306)",
+      "incident_report": "躍出時在「觔斗雲」與向外斜跑的「加州動員」之間受擠迫。當賽事步速於中段減慢時，此駒於接近八百米處時開始上前。其後在未能切入領放下須在沒有遮擋下走外疊。",
+      "incident_type": "running_wide_or_in",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "7",
+      "horse_name": "木火兄弟",
+      "horse_name_with_code": "木火兄弟(G115)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "喜蓮勇感",
+      "horse_name_with_code": "喜蓮勇感(H215)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "2",
+      "horse_name": "觔斗雲",
+      "horse_name_with_code": "觔斗雲(E249)",
+      "incident_report": "起步後不久發生碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "3",
+      "horse_name": "電訊巴打",
+      "horse_name_with_code": "電訊巴打(D482)",
+      "incident_report": "賽後，鍾易禮表示，坐騎能夠如賽前預期般領放，但在直路上未能對催策交出強勁反應，他將此歸因於坐騎是晚升班角逐。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "8.33",
+        "6.94",
+        "6.94",
+        "5.55"
+      ],
+      "fastest_sectional": 5.55,
+      "slowest_sectional": 8.33,
+      "sectional_variance": 2.78,
+      "track_condition": "好地至快地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "加州動員",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 3.1,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 122,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "太陽勇士",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 2.0,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "常拼常勇",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 16.0,
+          "odds_rating": "outsider",
+          "result_rating": "placed",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "木火兄弟",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 11.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "喜蓮勇感",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 7.3,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "觔斗雲",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 15.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "2-3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "電訊巴打",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 19.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "8-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 7,
+      "odds_statistics": {
+        "favorite_odds": 2.0,
+        "longest_odds": 19.0,
+        "average_odds": 10.49,
+        "odds_range": 17.0
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 1,
+      "race_competitiveness": "decisive",
+      "race_class": 2,
+      "class_level": "high",
+      "rating_range": "105-80",
+      "min_rating": 105,
+      "max_rating": 80,
+      "rating_spread": -25
+    }
+  },
+  "field_analysis": {
+    "total_runners": 7,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "太陽勇士",
+          "position": 2,
+          "odds": 2.0,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "加州動員",
+          "position": 1,
+          "odds": 3.1,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "喜蓮勇感",
+          "position": 5,
+          "odds": 7.3,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "太陽勇士",
+        "odds": 2.0,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 115,
+      "max_weight": 135,
+      "average_weight": 124.4,
+      "weight_spread": 20,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 4
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.0,
+      "longest_odds": 19.0,
+      "average_odds": 10.49,
+      "odds_range": 17.0,
+      "winner_odds": 3.1,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 1
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 2,
+      "total_margins_recorded": 6,
+      "competitiveness": "competitive"
+    }
+  },
+  "scraped_at": "2025-06-24T19:08:31.745111"
+}

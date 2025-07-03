@@ -1,0 +1,745 @@
+{
+  "race_date": "2023/12/10",
+  "racecourse": "ST",
+  "race_number": "2",
+  "race_info": {
+    "race_number_text": "第 2 場 (233)",
+    "race_number": "2",
+    "class_distance_text": "第四班 - 1400米 - (60-40)",
+    "race_class": "第四班",
+    "distance": "1400米",
+    "rating_range": "60-40",
+    "full_text": "第 2 場 (233) 第四班 - 1400米 - (60-40)",
+    "race_name": "第四班 1400米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 1,170,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.03",
+      "3.35",
+      "3.35",
+      "2.68"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "6641",
+      "1111112",
+      "4233"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "9",
+      "horse_name": "大數據",
+      "jockey": "田泰安",
+      "trainer": "姚本輝",
+      "actual_weight": "126",
+      "declared_weight": "1152",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "6641",
+      "finish_time": "1:23.34",
+      "win_odds": "3.3",
+      "horse_code": "H230"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "連連歡呼",
+      "jockey": "董明朗",
+      "trainer": "伍鵬志",
+      "actual_weight": "135",
+      "declared_weight": "1284",
+      "draw": "9",
+      "margin": "1/2",
+      "running_position": "1111112",
+      "finish_time": "1:23.43",
+      "win_odds": "10",
+      "horse_code": "G195"
+    },
+    {
+      "position": 3,
+      "horse_number": "3",
+      "horse_name": "光年八十",
+      "jockey": "周俊樂",
+      "trainer": "容天鵬",
+      "actual_weight": "132",
+      "declared_weight": "1259",
+      "draw": "10",
+      "margin": "1-3/4",
+      "running_position": "4233",
+      "finish_time": "1:23.61",
+      "win_odds": "6.4",
+      "horse_code": "H170"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "超悅明駒",
+      "jockey": "蔡明紹",
+      "trainer": "蘇偉賢",
+      "actual_weight": "135",
+      "declared_weight": "1199",
+      "draw": "4",
+      "margin": "1-3/4",
+      "running_position": "2314",
+      "finish_time": "1:23.61",
+      "win_odds": "60",
+      "horse_code": "G003"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "寶安威",
+      "jockey": "巴米高",
+      "trainer": "丁冠豪",
+      "actual_weight": "124",
+      "declared_weight": "1126",
+      "draw": "7",
+      "margin": "2-1/4",
+      "running_position": "99105",
+      "finish_time": "1:23.70",
+      "win_odds": "23",
+      "horse_code": "H201"
+    },
+    {
+      "position": 6,
+      "horse_number": "4",
+      "horse_name": "艾莉奧",
+      "jockey": "霍宏聲",
+      "trainer": "大衛希斯",
+      "actual_weight": "133",
+      "declared_weight": "1206",
+      "draw": "1",
+      "margin": "2-1/2",
+      "running_position": "5566",
+      "finish_time": "1:23.73",
+      "win_odds": "9.8",
+      "horse_code": "G223"
+    },
+    {
+      "position": 7,
+      "horse_number": "5",
+      "horse_name": "福星",
+      "jockey": "艾道拿",
+      "trainer": "賀賢",
+      "actual_weight": "133",
+      "declared_weight": "1049",
+      "draw": "5",
+      "margin": "2-3/4",
+      "running_position": "8877",
+      "finish_time": "1:23.80",
+      "win_odds": "5.4",
+      "horse_code": "H239"
+    },
+    {
+      "position": 8,
+      "horse_number": "7",
+      "horse_name": "電路九號",
+      "jockey": "潘頓",
+      "trainer": "巫偉傑",
+      "actual_weight": "127",
+      "declared_weight": "1162",
+      "draw": "14",
+      "margin": "4",
+      "running_position": "141398",
+      "finish_time": "1:23.96",
+      "win_odds": "7.3",
+      "horse_code": "G140"
+    },
+    {
+      "position": 9,
+      "horse_number": "13",
+      "horse_name": "縱橫大進",
+      "jockey": "何澤堯",
+      "trainer": "黎昭昇",
+      "actual_weight": "120",
+      "declared_weight": "1122",
+      "draw": "2",
+      "margin": "4-3/4",
+      "running_position": "7789",
+      "finish_time": "1:24.08",
+      "win_odds": "22",
+      "horse_code": "H072"
+    },
+    {
+      "position": 10,
+      "horse_number": "10",
+      "horse_name": "威力飛彈",
+      "jockey": "艾兆禮",
+      "trainer": "鄭俊偉",
+      "actual_weight": "125",
+      "declared_weight": "1218",
+      "draw": "11",
+      "margin": "6",
+      "running_position": "12121410",
+      "finish_time": "1:24.28",
+      "win_odds": "110",
+      "horse_code": "G210"
+    },
+    {
+      "position": 11,
+      "horse_number": "14",
+      "horse_name": "喜駿風采",
+      "jockey": "巴度",
+      "trainer": "文家良",
+      "actual_weight": "116",
+      "declared_weight": "1238",
+      "draw": "8",
+      "margin": "8-3/4",
+      "running_position": "10101211",
+      "finish_time": "1:24.73",
+      "win_odds": "33",
+      "horse_code": "G422"
+    },
+    {
+      "position": 12,
+      "horse_number": "12",
+      "horse_name": "燈胆王子",
+      "jockey": "賀銘年",
+      "trainer": "葉楚航",
+      "actual_weight": "121",
+      "declared_weight": "991",
+      "draw": "12",
+      "margin": "9",
+      "running_position": "13141312",
+      "finish_time": "1:24.78",
+      "win_odds": "116",
+      "horse_code": "G179"
+    },
+    {
+      "position": 13,
+      "horse_number": "8",
+      "horse_name": "歡笑福星",
+      "jockey": "嘉里",
+      "trainer": "方嘉柏",
+      "actual_weight": "126",
+      "declared_weight": "1087",
+      "draw": "13",
+      "margin": "18-1/2",
+      "running_position": "31213",
+      "finish_time": "1:26.31",
+      "win_odds": "133",
+      "horse_code": "H428"
+    },
+    {
+      "position": 14,
+      "horse_number": "11",
+      "horse_name": "大英才",
+      "jockey": "希威森",
+      "trainer": "廖康銘",
+      "actual_weight": "124",
+      "declared_weight": "1128",
+      "draw": "6",
+      "margin": "22-3/4",
+      "running_position": "14514",
+      "finish_time": "1:26.98",
+      "win_odds": "12",
+      "horse_code": "H282"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "9",
+        "payout": "33.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "9",
+        "payout": "16.50"
+      },
+      {
+        "combination": "2",
+        "payout": "30.00"
+      },
+      {
+        "combination": "3",
+        "payout": "28.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,9",
+        "payout": "256.00"
+      }
+    ],
+    "位置Q": [
+      {
+        "combination": "2,9",
+        "payout": "89.50"
+      },
+      {
+        "combination": "3,9",
+        "payout": "59.00"
+      },
+      {
+        "combination": "2,3",
+        "payout": "118.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "9,2",
+        "payout": "378.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "9,2,3",
+        "payout": "1,461.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,3,9",
+        "payout": "389.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "1,2,3,9",
+        "payout": "3,100.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "9,2,3,1",
+        "payout": "39,267.00"
+      }
+    ],
+    "第一口孖寶": [
+      {
+        "combination": "6/9",
+        "payout": "63.50"
+      },
+      {
+        "combination": "6/2",
+        "payout": "33.50"
+      }
+    ],
+    "第一口孖T": [
+      {
+        "combination": "6,10,13/2,3,9",
+        "payout": "6,929.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "9",
+      "horse_name": "大數據",
+      "horse_name_with_code": "大數據(H230)",
+      "incident_report": "接近五百五十米處時收慢避開「大英才」，向外移出避開該駒的後蹄。接近四百五十米處時被帶出較外疊。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "連連歡呼",
+      "horse_name_with_code": "連連歡呼(G195)",
+      "incident_report": "出閘緩慢。接近七百五十米處時開始搶口，收慢避開「寶安威」。轉直路彎時受困。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "medium"
+    },
+    {
+      "position": 3,
+      "horse_number": "3",
+      "horse_name": "光年八十",
+      "horse_name_with_code": "光年八十(H170)",
+      "incident_report": "接近八百米處時在收慢以讓「歡笑福星」過頭之際失蹄。",
+      "incident_type": "blocked_or_checked",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "1",
+      "horse_name": "超悅明駒",
+      "horse_name_with_code": "超悅明駒(G003)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "6",
+      "horse_name": "寶安威",
+      "horse_name_with_code": "寶安威(H201)",
+      "incident_report": "起步後不久在被帶出較外疊之際受阻礙。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "4",
+      "horse_name": "艾莉奧",
+      "horse_name_with_code": "艾莉奧(G223)",
+      "incident_report": "起步時被碰撞。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 7,
+      "horse_number": "5",
+      "horse_name": "福星",
+      "horse_name_with_code": "福星(H239)",
+      "incident_report": "起步後不久受向外斜跑的「超悅明駒」擠迫。接近五百五十米處時在被「大數據」帶出較外疊之際受阻礙，接近四百五十米處時在被帶出更外疊之際再度受阻礙。賽後，艾道拿報告，他認為坐騎縮程角逐，得享較快步速下應更合發揮。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 8,
+      "horse_number": "7",
+      "horse_name": "電路九號",
+      "horse_name_with_code": "電路九號(G140)",
+      "incident_report": "自大外檔出閘緩慢，其後於早段在馬群之後切入。接近七百五十米處時收慢避開「連連歡呼」，因而昂首及失去平衡。",
+      "incident_type": "starting_issues",
+      "severity": "medium"
+    },
+    {
+      "position": 9,
+      "horse_number": "13",
+      "horse_name": "縱橫大進",
+      "horse_name_with_code": "縱橫大進(H072)",
+      "incident_report": "自四百五十米處起在正在墮退的「大英才」之後受困而未能望空直至三百米處。",
+      "incident_type": "blocked_or_checked",
+      "severity": "medium"
+    },
+    {
+      "position": 10,
+      "horse_number": "10",
+      "horse_name": "威力飛彈",
+      "horse_name_with_code": "威力飛彈(G210)",
+      "incident_report": "起步時碰撞對手。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 11,
+      "horse_number": "14",
+      "horse_name": "喜駿風采",
+      "horse_name_with_code": "喜駿風采(G422)",
+      "incident_report": "賽後，巴度表示對坐騎的動作有疑慮。賽後立即接受獸醫檢查，並無發現任何明顯異常之處。「喜駿風采」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 12,
+      "horse_number": "12",
+      "horse_name": "燈胆王子",
+      "horse_name_with_code": "燈胆王子(G179)",
+      "incident_report": "自外檔起步時被碰撞，其後於早段在馬群之後切入。",
+      "incident_type": "interference",
+      "severity": "medium"
+    },
+    {
+      "position": 13,
+      "horse_number": "8",
+      "horse_name": "歡笑福星",
+      "horse_name_with_code": "歡笑福星(H428)",
+      "incident_report": "賽後立即接受獸醫檢查，並無發現任何明顯異常之處。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 14,
+      "horse_number": "11",
+      "horse_name": "大英才",
+      "horse_name_with_code": "大英才(H282)",
+      "incident_report": "起步後不久碰撞對手。接近四百五十米處時受阻礙及被帶出較外疊。賽後，希威森表示，他覺得坐騎於直路上或有點不妥，因而自接近三百米處起在坐騎處於不具競爭力的位置時未有力策坐騎。賽後立即接受獸醫檢查，內窺鏡檢查顯示此駒的氣管內有很多血。「大英才」包尾大敗而回，小組認為此駒的表現難以接受。「大英才」必須試閘及格，並且通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "veterinary_examination",
+      "severity": "high"
+    },
+    {
+      "position": "WV",
+      "horse_number": "",
+      "horse_name": "浪漫梟雄",
+      "horse_name_with_code": "浪漫梟雄(H482)",
+      "incident_report": "十二月八日被小組按照獸醫意見（左前腿肌腱受傷）著令退出，並由後備馬匹「寶安威」補上。「浪漫梟雄」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.03",
+        "3.35",
+        "3.35",
+        "2.68"
+      ],
+      "fastest_sectional": 2.68,
+      "slowest_sectional": 4.03,
+      "sectional_variance": 1.35,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "9",
+        "horse_name": "大數據",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 3.3,
+          "odds_rating": "favorite",
+          "result_rating": "winner",
+          "weight_carried": 126,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "連連歡呼",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 10.0,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "1/2"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "光年八十",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 6.4,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "超悅明駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 60.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "1-3/4"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "寶安威",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 23.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "2-1/4"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "艾莉奧",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 9.8,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "2-1/2"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "福星",
+        "position": 7,
+        "performance_metrics": {
+          "win_odds": 5.4,
+          "odds_rating": "favorite",
+          "result_rating": "unplaced",
+          "weight_carried": 133,
+          "weight_rating": "heavy",
+          "margin": "2-3/4"
+        }
+      },
+      {
+        "horse_number": "7",
+        "horse_name": "電路九號",
+        "position": 8,
+        "performance_metrics": {
+          "win_odds": 7.3,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 127,
+          "weight_rating": "moderate",
+          "margin": "4"
+        }
+      },
+      {
+        "horse_number": "13",
+        "horse_name": "縱橫大進",
+        "position": 9,
+        "performance_metrics": {
+          "win_odds": 22.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 120,
+          "weight_rating": "moderate",
+          "margin": "4-3/4"
+        }
+      },
+      {
+        "horse_number": "10",
+        "horse_name": "威力飛彈",
+        "position": 10,
+        "performance_metrics": {
+          "win_odds": 110.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 125,
+          "weight_rating": "moderate",
+          "margin": "6"
+        }
+      },
+      {
+        "horse_number": "14",
+        "horse_name": "喜駿風采",
+        "position": 11,
+        "performance_metrics": {
+          "win_odds": 33.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 116,
+          "weight_rating": "light",
+          "margin": "8-3/4"
+        }
+      },
+      {
+        "horse_number": "12",
+        "horse_name": "燈胆王子",
+        "position": 12,
+        "performance_metrics": {
+          "win_odds": 116.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "9"
+        }
+      },
+      {
+        "horse_number": "8",
+        "horse_name": "歡笑福星",
+        "position": 13,
+        "performance_metrics": {
+          "win_odds": 133.0,
+          "odds_rating": "outsider",
+          "result_rating": "unplaced",
+          "weight_carried": 126,
+          "weight_rating": "moderate",
+          "margin": "18-1/2"
+        }
+      },
+      {
+        "horse_number": "11",
+        "horse_name": "大英才",
+        "position": 14,
+        "performance_metrics": {
+          "win_odds": 12.0,
+          "odds_rating": "competitive",
+          "result_rating": "unplaced",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "22-3/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 14,
+      "odds_statistics": {
+        "favorite_odds": 3.3,
+        "longest_odds": 133.0,
+        "average_odds": 39.37,
+        "odds_range": 129.7
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 4,
+      "class_level": "medium",
+      "rating_range": "60-40",
+      "min_rating": 60,
+      "max_rating": 40,
+      "rating_spread": -20
+    }
+  },
+  "field_analysis": {
+    "total_runners": 14,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "大數據",
+          "position": 1,
+          "odds": 3.3,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "福星",
+          "position": 7,
+          "odds": 5.4,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "光年八十",
+          "position": 3,
+          "odds": 6.4,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "大數據",
+        "odds": 3.3,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 116,
+      "max_weight": 135,
+      "average_weight": 126.9,
+      "weight_spread": 19,
+      "top_weight_best_position": 2,
+      "bottom_weight_best_position": 11
+    },
+    "odds_analysis": {
+      "shortest_odds": 3.3,
+      "longest_odds": 133.0,
+      "average_odds": 39.37,
+      "odds_range": 129.7,
+      "winner_odds": 3.3,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 3,
+      "total_margins_recorded": 13,
+      "competitiveness": "very_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T22:02:25.911117"
+}

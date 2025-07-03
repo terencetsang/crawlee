@@ -1,25 +1,123 @@
-# HKJC Win Odds Trends Extraction & Upload System
-# Essential Python packages for 獨贏賠率走勢 (Win Odds Trends) extraction
+# ============================================================================
+# HKJC Complete Data Processing Pipeline - Python Dependencies
+# ============================================================================
+# Combined requirements for both race entries and win odds trends extraction
+#
+# Core Pipeline Dependencies:
+# - Web scraping: crawlee, playwright, beautifulsoup4, requests
+# - Data processing: pandas, numpy
+# - Database: pocketbase
+# - Configuration: python-dotenv
+# - Date/time handling: python-dateutil, pytz
+#
+# Installation: pip install -r requirements.txt
+# ============================================================================
 
-# Core web scraping and automation
+# Core Web Scraping Framework
+crawlee==0.4.5
+
+# Browser Automation (essential for HKJC odds extraction)
 playwright>=1.40.0
+
+# HTML Parsing and Web Requests
 beautifulsoup4>=4.12.0
 requests>=2.31.0
+lxml>=5.3.0
 
-# Database integration
+# PocketBase Database Client
 pocketbase>=0.8.0
 
-# Configuration management
+# Configuration Management
 python-dotenv>=1.0.0
 
-# Data processing (optional but recommended)
+# Data Processing
 pandas>=2.0.0
+numpy>=2.0.0
 
-# Additional dependencies (automatically installed with above packages)
-# certifi - SSL certificates
-# charset-normalizer - Character encoding detection
-# idna - Internationalized domain names
-# urllib3 - HTTP client
-# soupsieve - CSS selectors for BeautifulSoup
-# pytz - Timezone handling
-# python-dateutil - Date parsing utilities
+# Date and Time Handling
+python-dateutil>=2.9.0
+pytz>=2025.1
+
+# HTTP and Network Libraries
+httpx>=0.27.0
+httpcore>=1.0.0
+urllib3>=2.2.0
+certifi>=2024.12.0
+
+# Async Support
+anyio>=4.7.0
+greenlet>=3.1.0
+
+# Data Validation
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+pydantic_core>=2.27.0
+
+# Text Processing
+charset-normalizer>=3.4.0
+chardet>=5.2.0
+soupsieve>=2.6
+
+# Utility Libraries
+click>=8.1.0
+colorama>=0.4.0
+rich>=13.9.0
+typer>=0.15.0
+
+# Type Annotations
+typing_extensions>=4.12.0
+annotated-types>=0.7.0
+
+# Supporting Dependencies
+idna>=3.10
+sniffio>=1.3.0
+h11>=0.14.0
+h2>=4.1.0
+hpack>=4.0.0
+hyperframe>=6.0.0
+multidict>=6.1.0
+yarl>=1.18.0
+propcache>=0.2.0
+six>=1.17.0
+wcwidth>=0.2.0
+
+# Development and Debugging Tools
+psutil>=6.1.0
+filelock>=3.16.0
+
+# Template and Configuration Tools
+Jinja2>=3.1.0
+MarkupSafe>=3.0.0
+PyYAML>=6.0.0
+
+# Additional Utilities
+arrow>=1.3.0
+python-slugify>=8.0.0
+text-unidecode>=1.3
+tldextract>=5.1.0
+tzdata>=2025.1
+
+# Legacy Dependencies (may be removed in future versions)
+binaryornot>=0.4.0
+blessed>=1.20.0
+Brotli>=1.1.0
+cookiecutter>=2.6.0
+docutils>=0.21.0
+editor>=1.6.0
+eval_type_backport>=0.2.0
+html5lib>=1.1
+inquirer>=3.4.0
+markdown-it-py>=3.0.0
+mdurl>=0.1.0
+more-itertools>=10.5.0
+Pygments>=2.18.0
+readchar>=4.2.0
+requests-file>=2.1.0
+runs>=1.2.0
+shellingham>=1.5.0
+sortedcollections>=2.1.0
+sortedcontainers>=2.4.0
+types-python-dateutil>=2.9.0
+webencodings>=0.5.0
+xmod>=1.8.0
+pyee>=12.0.0

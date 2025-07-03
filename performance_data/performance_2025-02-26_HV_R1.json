@@ -1,0 +1,355 @@
+{
+  "race_date": "2025/02/26",
+  "racecourse": "HV",
+  "race_number": "1",
+  "race_info": {
+    "race_number_text": "第 1 場 (457)",
+    "race_number": "1",
+    "class_distance_text": "第一班 - 1200米 - (110-85)",
+    "race_class": "第一班",
+    "distance": "1200米",
+    "rating_range": "110-85",
+    "full_text": "第 1 場 (457) 第一班 - 1200米 - (110-85)",
+    "race_name": "第一班 1200米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 3,720,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "9.59",
+      "8.39",
+      "5.99"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "231",
+      "112",
+      "323"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "小霸王",
+      "jockey": "蔡明紹",
+      "trainer": "告東尼",
+      "actual_weight": "119",
+      "declared_weight": "1182",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "231",
+      "finish_time": "1:08.95",
+      "win_odds": "7.4",
+      "horse_code": "G265"
+    },
+    {
+      "position": 2,
+      "horse_number": "3",
+      "horse_name": "合夥奔馳",
+      "jockey": "莫雅",
+      "trainer": "呂健威",
+      "actual_weight": "131",
+      "declared_weight": "1135",
+      "draw": "4",
+      "margin": "鼻位",
+      "running_position": "112",
+      "finish_time": "1:08.95",
+      "win_odds": "2.2",
+      "horse_code": "H408"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "勇敢巨星",
+      "jockey": "艾兆禮",
+      "trainer": "呂健威",
+      "actual_weight": "116",
+      "declared_weight": "1104",
+      "draw": "1",
+      "margin": "3/4",
+      "running_position": "323",
+      "finish_time": "1:09.08",
+      "win_odds": "7.7",
+      "horse_code": "G268"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "精算暴雪",
+      "jockey": "布文",
+      "trainer": "蔡約翰",
+      "actual_weight": "132",
+      "declared_weight": "1106",
+      "draw": "2",
+      "margin": "2",
+      "running_position": "554",
+      "finish_time": "1:09.25",
+      "win_odds": "2.7",
+      "horse_code": "H368"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "神虎龍駒",
+      "jockey": "艾道拿",
+      "trainer": "伍鵬志",
+      "actual_weight": "135",
+      "declared_weight": "1049",
+      "draw": "5",
+      "margin": "2-1/4",
+      "running_position": "445",
+      "finish_time": "1:09.29",
+      "win_odds": "8.5",
+      "horse_code": "H164"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "4",
+        "payout": "74.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "4",
+        "payout": "25.00"
+      },
+      {
+        "combination": "3",
+        "payout": "13.00"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "3,4",
+        "payout": "68.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "4,3",
+        "payout": "179.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "4,3,5",
+        "payout": "823.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "3,4,5",
+        "payout": "115.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "4",
+      "horse_name": "小霸王",
+      "horse_name_with_code": "小霸王(G265)",
+      "incident_report": "過了二百米處後移至「合夥奔馳」外側以繼續望空。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "3",
+      "horse_name": "合夥奔馳",
+      "horse_name_with_code": "合夥奔馳(H408)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "勇敢巨星",
+      "horse_name_with_code": "勇敢巨星(G268)",
+      "incident_report": "趨近一千米處時在收慢以讓「小霸王」過頭之際搶口。",
+      "incident_type": "blocked_or_checked",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "2",
+      "horse_name": "精算暴雪",
+      "horse_name_with_code": "精算暴雪(H368)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "1",
+      "horse_name": "神虎龍駒",
+      "horse_name_with_code": "神虎龍駒(H164)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "9.59",
+        "8.39",
+        "5.99"
+      ],
+      "fastest_sectional": 5.99,
+      "slowest_sectional": 9.59,
+      "sectional_variance": 3.6,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "4",
+        "horse_name": "小霸王",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 7.4,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 119,
+          "weight_rating": "light"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "合夥奔馳",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 2.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "placed",
+          "weight_carried": 131,
+          "weight_rating": "heavy",
+          "margin": "鼻位"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "勇敢巨星",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 7.7,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 116,
+          "weight_rating": "light",
+          "margin": "3/4"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "精算暴雪",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 2.7,
+          "odds_rating": "strong_favorite",
+          "result_rating": "competitive",
+          "weight_carried": 132,
+          "weight_rating": "heavy",
+          "margin": "2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "神虎龍駒",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 8.5,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "2-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 5,
+      "odds_statistics": {
+        "favorite_odds": 2.2,
+        "longest_odds": 8.5,
+        "average_odds": 5.7,
+        "odds_range": 6.3
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 1,
+      "race_competitiveness": "decisive",
+      "race_class": 1,
+      "class_level": "high",
+      "rating_range": "110-85",
+      "min_rating": 110,
+      "max_rating": 85,
+      "rating_spread": -25
+    }
+  },
+  "field_analysis": {
+    "total_runners": 5,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "合夥奔馳",
+          "position": 2,
+          "odds": 2.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "精算暴雪",
+          "position": 4,
+          "odds": 2.7,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "小霸王",
+          "position": 1,
+          "odds": 7.4,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "合夥奔馳",
+        "odds": 2.2,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 116,
+      "max_weight": 135,
+      "average_weight": 126.6,
+      "weight_spread": 19,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 3
+    },
+    "odds_analysis": {
+      "shortest_odds": 2.2,
+      "longest_odds": 8.5,
+      "average_odds": 5.7,
+      "odds_range": 6.3,
+      "winner_odds": 7.4,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 1,
+      "total_margins_recorded": 4,
+      "competitiveness": "decisive"
+    }
+  },
+  "scraped_at": "2025-06-24T23:25:13.997887"
+}

@@ -1,0 +1,397 @@
+{
+  "race_date": "2025/04/13",
+  "racecourse": "ST",
+  "race_number": "1",
+  "race_info": {
+    "race_number_text": "第 1 場 (581)",
+    "race_number": "1",
+    "class_distance_text": "新馬賽 - 1000米",
+    "race_class": "新馬賽",
+    "distance": "1000米",
+    "full_text": "第 1 場 (581) 新馬賽 - 1000米",
+    "race_name": "新馬賽 1000米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 950,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "5.26",
+      "4.6",
+      "3.29"
+    ],
+    "detected_sectional_count": 3,
+    "sample_running_positions": [
+      "211",
+      "652",
+      "433"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 3,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "6",
+      "horse_name": "渾身解數",
+      "jockey": "潘頓",
+      "trainer": "黎昭昇",
+      "actual_weight": "121",
+      "declared_weight": "1267",
+      "draw": "6",
+      "margin": "-",
+      "running_position": "211",
+      "finish_time": "0:56.65",
+      "win_odds": "1.2",
+      "horse_code": "K291"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "不勞而獲",
+      "jockey": "周俊樂",
+      "trainer": "葉楚航",
+      "actual_weight": "124",
+      "declared_weight": "1073",
+      "draw": "1",
+      "margin": "短馬頭位",
+      "running_position": "652",
+      "finish_time": "0:56.67",
+      "win_odds": "8.8",
+      "horse_code": "K377"
+    },
+    {
+      "position": 3,
+      "horse_number": "4",
+      "horse_name": "快活精神",
+      "jockey": "田泰安",
+      "trainer": "鄭俊偉",
+      "actual_weight": "121",
+      "declared_weight": "1215",
+      "draw": "5",
+      "margin": "6-1/2",
+      "running_position": "433",
+      "finish_time": "0:57.68",
+      "win_odds": "9.2",
+      "horse_code": "K326"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "星將",
+      "jockey": "霍宏聲",
+      "trainer": "游達榮",
+      "actual_weight": "121",
+      "declared_weight": "1136",
+      "draw": "3",
+      "margin": "6-3/4",
+      "running_position": "124",
+      "finish_time": "0:57.71",
+      "win_odds": "9.2",
+      "horse_code": "K331"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "神燦金剛",
+      "jockey": "潘明輝",
+      "trainer": "葉楚航",
+      "actual_weight": "126",
+      "declared_weight": "1140",
+      "draw": "4",
+      "margin": "6-3/4",
+      "running_position": "565",
+      "finish_time": "0:57.75",
+      "win_odds": "35",
+      "horse_code": "K259"
+    },
+    {
+      "position": 6,
+      "horse_number": "1",
+      "horse_name": "馬達",
+      "jockey": "梁家俊",
+      "trainer": "巫偉傑",
+      "actual_weight": "126",
+      "declared_weight": "1168",
+      "draw": "2",
+      "margin": "10-1/2",
+      "running_position": "346",
+      "finish_time": "0:58.35",
+      "win_odds": "29",
+      "horse_code": "K165"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "6",
+        "payout": "12.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "6",
+        "payout": "10.10"
+      },
+      {
+        "combination": "2",
+        "payout": "27.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,6",
+        "payout": "43.00"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "6,2",
+        "payout": "52.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "6,2,4",
+        "payout": "110.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,4,6",
+        "payout": "41.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "2,4,5,6",
+        "payout": "21.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "6,2,4,5",
+        "payout": "174.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "6",
+      "horse_name": "渾身解數",
+      "horse_name_with_code": "渾身解數(K291)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "2",
+      "horse_name": "不勞而獲",
+      "horse_name_with_code": "不勞而獲(K377)",
+      "incident_report": "出閘僅屬一般，早段在馬群之後切入。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "4",
+      "horse_name": "快活精神",
+      "horse_name_with_code": "快活精神(K326)",
+      "incident_report": "接近四百米處時失蹄。賽後，田泰安報告，坐騎走勢稚嫩，直路上受催策時在一段短途程上內閃。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "5",
+      "horse_name": "星將",
+      "horse_name_with_code": "星將(K331)",
+      "incident_report": "出閘笨拙。",
+      "incident_type": "starting_issues",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "神燦金剛",
+      "horse_name_with_code": "神燦金剛(K259)",
+      "incident_report": "出閘笨拙。",
+      "incident_type": "starting_issues",
+      "severity": "medium"
+    },
+    {
+      "position": 6,
+      "horse_number": "1",
+      "horse_name": "馬達",
+      "horse_name_with_code": "馬達(K165)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "5.26",
+        "4.6",
+        "3.29"
+      ],
+      "fastest_sectional": 3.29,
+      "slowest_sectional": 5.26,
+      "sectional_variance": 1.97,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "6",
+        "horse_name": "渾身解數",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 1.2,
+          "odds_rating": "strong_favorite",
+          "result_rating": "winner",
+          "weight_carried": 121,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "2",
+        "horse_name": "不勞而獲",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 8.8,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 124,
+          "weight_rating": "moderate",
+          "margin": "短馬頭位"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "快活精神",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 9.2,
+          "odds_rating": "competitive",
+          "result_rating": "placed",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "6-1/2"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "星將",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 9.2,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 121,
+          "weight_rating": "moderate",
+          "margin": "6-3/4"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "神燦金剛",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 35.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 126,
+          "weight_rating": "moderate",
+          "margin": "6-3/4"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "馬達",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 29.0,
+          "odds_rating": "outsider",
+          "result_rating": "competitive",
+          "weight_carried": 126,
+          "weight_rating": "moderate",
+          "margin": "10-1/2"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 1.2,
+        "longest_odds": 35.0,
+        "average_odds": 15.4,
+        "odds_range": 33.8
+      },
+      "market_competitiveness": "competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "渾身解數",
+          "position": 1,
+          "odds": 1.2,
+          "odds_rating": "strong_favorite"
+        },
+        {
+          "horse_name": "不勞而獲",
+          "position": 2,
+          "odds": 8.8,
+          "odds_rating": "competitive"
+        },
+        {
+          "horse_name": "快活精神",
+          "position": 3,
+          "odds": 9.2,
+          "odds_rating": "competitive"
+        }
+      ],
+      "favorites_in_first_3": 3,
+      "market_leader": {
+        "horse_name": "渾身解數",
+        "odds": 1.2,
+        "position": 1,
+        "performance": "winner"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 121,
+      "max_weight": 126,
+      "average_weight": 123.2,
+      "weight_spread": 5,
+      "top_weight_best_position": 5,
+      "bottom_weight_best_position": 1
+    },
+    "odds_analysis": {
+      "shortest_odds": 1.2,
+      "longest_odds": 35.0,
+      "average_odds": 15.4,
+      "odds_range": 33.8,
+      "winner_odds": 1.2,
+      "market_efficiency": "strong_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 3,
+      "total_margins_recorded": 5,
+      "competitiveness": "very_competitive"
+    }
+  },
+  "scraped_at": "2025-06-24T20:11:17.966166"
+}

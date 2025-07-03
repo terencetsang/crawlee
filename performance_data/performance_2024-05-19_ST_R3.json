@@ -1,0 +1,411 @@
+{
+  "race_date": "2024/05/19",
+  "racecourse": "ST",
+  "race_number": "3",
+  "race_info": {
+    "race_number_text": "第 3 場 (677)",
+    "race_number": "3",
+    "class_distance_text": "第一班 - 1400米 - (85+)",
+    "race_class": "第一班",
+    "distance": "1400米",
+    "full_text": "第 3 場 (677) 第一班 - 1400米 - (85+)",
+    "race_name": "第一班 1400米",
+    "track_condition": "好地",
+    "prize_money": "HK$ 3,720,000"
+  },
+  "sectional_times": {
+    "sectional_breakdown": [
+      "4.04",
+      "3.37",
+      "3.37",
+      "2.69"
+    ],
+    "detected_sectional_count": 4,
+    "sample_running_positions": [
+      "4441",
+      "6662",
+      "2223"
+    ],
+    "sectional_splits": {
+      "method": "estimated_from_positions",
+      "sectional_count": 4,
+      "note": "Enhanced sectional detection - requires timing data correlation"
+    }
+  },
+  "results": [
+    {
+      "position": 1,
+      "horse_number": "2",
+      "horse_name": "神虎龍駒",
+      "jockey": "黃智弘",
+      "trainer": "伍鵬志",
+      "actual_weight": "126",
+      "declared_weight": "1044",
+      "draw": "3",
+      "margin": "-",
+      "running_position": "4441",
+      "finish_time": "1:21.56",
+      "win_odds": "6.3",
+      "horse_code": "H164"
+    },
+    {
+      "position": 2,
+      "horse_number": "4",
+      "horse_name": "增有",
+      "jockey": "潘頓",
+      "trainer": "賀賢",
+      "actual_weight": "122",
+      "declared_weight": "1061",
+      "draw": "6",
+      "margin": "短馬頭位",
+      "running_position": "6662",
+      "finish_time": "1:21.59",
+      "win_odds": "3.6",
+      "horse_code": "G173"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "傑出漢子",
+      "jockey": "艾兆禮",
+      "trainer": "呂健威",
+      "actual_weight": "115",
+      "declared_weight": "1100",
+      "draw": "4",
+      "margin": "頸位",
+      "running_position": "2223",
+      "finish_time": "1:21.63",
+      "win_odds": "3.6",
+      "horse_code": "G455"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "旺旺神駒",
+      "jockey": "潘明輝",
+      "trainer": "沈集成",
+      "actual_weight": "114",
+      "declared_weight": "1218",
+      "draw": "1",
+      "margin": "頸位",
+      "running_position": "5554",
+      "finish_time": "1:21.63",
+      "win_odds": "3.8",
+      "horse_code": "G457"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "包裝必勝",
+      "jockey": "希威森",
+      "trainer": "呂健威",
+      "actual_weight": "123",
+      "declared_weight": "1173",
+      "draw": "2",
+      "margin": "1-1/2",
+      "running_position": "1115",
+      "finish_time": "1:21.80",
+      "win_odds": "5.5",
+      "horse_code": "G161"
+    },
+    {
+      "position": 6,
+      "horse_number": "1",
+      "horse_name": "健康愉快",
+      "jockey": "巴度",
+      "trainer": "羅富全",
+      "actual_weight": "135",
+      "declared_weight": "1164",
+      "draw": "5",
+      "margin": "3-1/4",
+      "running_position": "3336",
+      "finish_time": "1:22.10",
+      "win_odds": "15",
+      "horse_code": "D435"
+    }
+  ],
+  "payouts": {
+    "獨贏": [
+      {
+        "combination": "2",
+        "payout": "63.00"
+      }
+    ],
+    "位置": [
+      {
+        "combination": "2",
+        "payout": "26.50"
+      },
+      {
+        "combination": "4",
+        "payout": "22.50"
+      }
+    ],
+    "連贏": [
+      {
+        "combination": "2,4",
+        "payout": "99.50"
+      }
+    ],
+    "二重彩": [
+      {
+        "combination": "2,4",
+        "payout": "236.00"
+      }
+    ],
+    "三重彩": [
+      {
+        "combination": "2,4,5",
+        "payout": "712.00"
+      }
+    ],
+    "單T": [
+      {
+        "combination": "2,4,5",
+        "payout": "97.00"
+      }
+    ],
+    "四連環": [
+      {
+        "combination": "2,4,5,6",
+        "payout": "60.00"
+      }
+    ],
+    "四重彩": [
+      {
+        "combination": "2,4,5,6",
+        "payout": "1,341.00"
+      }
+    ],
+    "第二口孖寶": [
+      {
+        "combination": "7/2",
+        "payout": "173.00"
+      },
+      {
+        "combination": "7/4",
+        "payout": "23.00"
+      }
+    ]
+  },
+  "incidents": [
+    {
+      "position": 1,
+      "horse_number": "2",
+      "horse_name": "神虎龍駒",
+      "horse_name_with_code": "神虎龍駒(H164)",
+      "incident_report": "賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 2,
+      "horse_number": "4",
+      "horse_name": "增有",
+      "horse_name_with_code": "增有(G173)",
+      "incident_report": "自大外檔出閘後於早段在馬群之後切入。賽後須抽取樣本檢驗。",
+      "incident_type": "post_race_testing",
+      "severity": "low"
+    },
+    {
+      "position": 3,
+      "horse_number": "5",
+      "horse_name": "傑出漢子",
+      "horse_name_with_code": "傑出漢子(G455)",
+      "incident_report": "無特別報告。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 4,
+      "horse_number": "6",
+      "horse_name": "旺旺神駒",
+      "horse_name_with_code": "旺旺神駒(G457)",
+      "incident_report": "出閘僅屬一般。末段在「神虎龍駒」與「增有」之間緊迫競跑。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    },
+    {
+      "position": 5,
+      "horse_number": "3",
+      "horse_name": "包裝必勝",
+      "horse_name_with_code": "包裝必勝(G161)",
+      "incident_report": "賽後立即接受獸醫檢查，內窺鏡檢查顯示此駒的氣管內有很多血。「包裝必勝」必須通過獸醫檢驗後，才可再次出賽。",
+      "incident_type": "veterinary_examination",
+      "severity": "low"
+    },
+    {
+      "position": 6,
+      "horse_number": "1",
+      "horse_name": "健康愉快",
+      "horse_name_with_code": "健康愉快(D435)",
+      "incident_report": "賽後，巴度告知小組，儘管他預期坐騎會佔取前列位置，但他未獲指示必須讓坐騎領放。他說，由於賽事早段步速屬標準，他選擇讓坐騎佔取領先馬匹之後有遮擋的位置，坐騎走勢暢順。",
+      "incident_type": "other_incident",
+      "severity": "medium"
+    }
+  ],
+  "performance": {
+    "race_performance": {
+      "sectional_times": [
+        "4.04",
+        "3.37",
+        "3.37",
+        "2.69"
+      ],
+      "fastest_sectional": 2.69,
+      "slowest_sectional": 4.04,
+      "sectional_variance": 1.35,
+      "track_condition": "好地",
+      "track_condition_rating": "fast"
+    },
+    "horse_performance": [
+      {
+        "horse_number": "2",
+        "horse_name": "神虎龍駒",
+        "position": 1,
+        "performance_metrics": {
+          "win_odds": 6.3,
+          "odds_rating": "competitive",
+          "result_rating": "winner",
+          "weight_carried": 126,
+          "weight_rating": "moderate"
+        }
+      },
+      {
+        "horse_number": "4",
+        "horse_name": "增有",
+        "position": 2,
+        "performance_metrics": {
+          "win_odds": 3.6,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 122,
+          "weight_rating": "moderate",
+          "margin": "短馬頭位"
+        }
+      },
+      {
+        "horse_number": "5",
+        "horse_name": "傑出漢子",
+        "position": 3,
+        "performance_metrics": {
+          "win_odds": 3.6,
+          "odds_rating": "favorite",
+          "result_rating": "placed",
+          "weight_carried": 115,
+          "weight_rating": "light",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "6",
+        "horse_name": "旺旺神駒",
+        "position": 4,
+        "performance_metrics": {
+          "win_odds": 3.8,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 114,
+          "weight_rating": "light",
+          "margin": "頸位"
+        }
+      },
+      {
+        "horse_number": "3",
+        "horse_name": "包裝必勝",
+        "position": 5,
+        "performance_metrics": {
+          "win_odds": 5.5,
+          "odds_rating": "favorite",
+          "result_rating": "competitive",
+          "weight_carried": 123,
+          "weight_rating": "moderate",
+          "margin": "1-1/2"
+        }
+      },
+      {
+        "horse_number": "1",
+        "horse_name": "健康愉快",
+        "position": 6,
+        "performance_metrics": {
+          "win_odds": 15.0,
+          "odds_rating": "competitive",
+          "result_rating": "competitive",
+          "weight_carried": 135,
+          "weight_rating": "heavy",
+          "margin": "3-1/4"
+        }
+      }
+    ],
+    "speed_analysis": {},
+    "statistical_data": {
+      "field_size": 6,
+      "odds_statistics": {
+        "favorite_odds": 3.6,
+        "longest_odds": 15.0,
+        "average_odds": 6.3,
+        "odds_range": 11.4
+      },
+      "market_competitiveness": "highly_competitive",
+      "close_finish_count": 3,
+      "race_competitiveness": "very_competitive",
+      "race_class": 1,
+      "class_level": "high"
+    }
+  },
+  "field_analysis": {
+    "total_runners": 6,
+    "favorites_performance": {
+      "top_3_favorites": [
+        {
+          "horse_name": "增有",
+          "position": 2,
+          "odds": 3.6,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "傑出漢子",
+          "position": 3,
+          "odds": 3.6,
+          "odds_rating": "favorite"
+        },
+        {
+          "horse_name": "旺旺神駒",
+          "position": 4,
+          "odds": 3.8,
+          "odds_rating": "favorite"
+        }
+      ],
+      "favorites_in_first_3": 2,
+      "market_leader": {
+        "horse_name": "增有",
+        "odds": 3.6,
+        "position": 2,
+        "performance": "placed"
+      }
+    },
+    "weight_distribution": {
+      "min_weight": 114,
+      "max_weight": 135,
+      "average_weight": 122.5,
+      "weight_spread": 21,
+      "top_weight_best_position": 6,
+      "bottom_weight_best_position": 4
+    },
+    "odds_analysis": {
+      "shortest_odds": 3.6,
+      "longest_odds": 15.0,
+      "average_odds": 6.3,
+      "odds_range": 11.4,
+      "winner_odds": 6.3,
+      "market_efficiency": "moderate_favorite_won",
+      "longshots_placed": 0
+    },
+    "margin_analysis": {
+      "close_finishes_top_6": 5,
+      "total_margins_recorded": 5,
+      "competitiveness": "extremely_competitive"
+    }
+  },
+  "scraped_at": "2025-06-26T18:31:33.011268"
+}
