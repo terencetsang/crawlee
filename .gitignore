@@ -1,7 +1,59 @@
+# HKJC Win Odds Trends - Git Ignore File
+
+# Environment and credentials
+.env
+*.backup_*
+
+# Data directories (large files)
+# win_odds_data/*.json  # COMMENTED OUT - Include win odds data in git
+race_data/
+prompt_text_files/
+
+# Generated reports and summaries
+*_summary.json
+*_report.json
+*_comparison.json
+race_sessions_summary.json
+pocketbase_verification_report.json
+race_dates_backup*.json
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Process and log files
+nohup.out
+*.log
+*.out
+
+# Storage directories (Crawlee)
+storage/
+
+# Temporary and output files
+output.json
+*.tmp
+*.temp
+
+# Test and development files
+test_*.html
+*_test.py
+sample_race_with_prompt.txt
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+
+# Legacy files (keep existing exclusions)
 cors_proxy.py
 find_all_div.py
-generate_prompt_files.py
-get_race_dates.py
 direct_race_viewer.html
 .htaccess
 hkjc_horse_entries_complete.py
@@ -19,20 +71,10 @@ json_test.html
 main_play.py
 main.py
 pocketbase_test.html
-sample_race_with_prompt.txt
-nohup.out
-output.json
-test_race_dates.html
 race_data_viewer.html
 update_race_dates.py
-__pycache__/create_prompt_json_file.cpython-312.pyc
-
-prompt_text_files/
-storage/
 test_pocketbase.py
 static_server.py
 simple_proxy.py
-race_dates.json
 simple_race_viewer.html
 proxy_server.py
-.env
