@@ -20,22 +20,27 @@ def load_race_dates(filename='race_dates.json'):
         print(f"💡 Run 'python extract_race_dates_to_json.py' first to create {filename}")
         return []
 
-def filter_dates_by_criteria(race_dates, status=None, month=None, limit=None):
+def filter_dates_by_criteria(race_dates, status=None, month=None, limit=None, allow_upcoming=False):
     """Filter race dates by various criteria."""
     filtered = race_dates
-    
+
     # Filter by status
     if status:
         filtered = [d for d in filtered if d.get('status') == status]
-    
+    else:
+        # Safety check: By default, exclude upcoming races unless explicitly allowed
+        if not allow_upcoming:
+            filtered = [d for d in filtered if d.get('status') != 'upcoming']
+            print("🛡️ Safety filter: Excluding 'upcoming' races (use --allow-upcoming to override)")
+
     # Filter by month (YYYY/MM format)
     if month:
         filtered = [d for d in filtered if d.get('race_date', '').startswith(month)]
-    
+
     # Apply limit
     if limit:
         filtered = filtered[-limit:]  # Get most recent dates
-    
+
     return filtered
 
 def extract_race_data(race_date, date_metadata, racecourses=['ST', 'HV'], delay=2):
@@ -104,6 +109,8 @@ Examples:
                        help='Filter by race status')
     parser.add_argument('--month', help='Filter by month (YYYY/MM format)')
     parser.add_argument('--limit', type=int, help='Limit number of dates to process')
+    parser.add_argument('--allow-upcoming', action='store_true',
+                       help='Allow processing of upcoming races (default: false for safety)')
     parser.add_argument('--delay', type=float, default=2.0,
                        help='Delay between dates in seconds (default: 2.0)')
     parser.add_argument('--racecourses', nargs='+', default=['ST', 'HV'],
@@ -124,10 +131,11 @@ Examples:
     
     # Filter dates
     filtered_dates = filter_dates_by_criteria(
-        race_dates, 
-        status=args.status, 
-        month=args.month, 
-        limit=args.limit
+        race_dates,
+        status=args.status,
+        month=args.month,
+        limit=args.limit,
+        allow_upcoming=getattr(args, 'allow_upcoming', False)
     )
     
     if not filtered_dates:
