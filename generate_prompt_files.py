@@ -11,7 +11,7 @@ load_dotenv()
 PROMPT_INPUT = os.getenv("PROMPT_INPUT", "作為資深評馬人，根據香港賽馬, 附上以下json資料,那些馬匹可能勝出入三甲及那些馬匹不可能勝出. 6次近績,由左至右排列，左邊是最近.")
 
 # Input and output directories
-INPUT_DIR = os.getenv("OUTPUT_DIR", "race_data")
+INPUT_DIR = "race_data"
 OUTPUT_DIR = "prompt_text_files"
 
 def main():

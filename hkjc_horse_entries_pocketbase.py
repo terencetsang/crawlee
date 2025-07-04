@@ -26,7 +26,7 @@ RACECOURSE = os.getenv("RACECOURSE")
 TOTAL_RACES = int(os.getenv("TOTAL_RACES", "10"))
 
 # Output directory for fallback JSON files
-OUTPUT_DIR = os.getenv("OUTPUT_DIR", "race_data")
+OUTPUT_DIR = "race_data"
 
 def get_race_info_from_hkjc():
     """
