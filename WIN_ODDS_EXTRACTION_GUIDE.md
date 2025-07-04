@@ -28,11 +28,13 @@ playwright install chromium
 
 ### Environment Setup
 Create `.env` file with:
+
+**⚠️ SECURITY NOTE**: Never commit the `.env` file to version control. Add `.env` to your `.gitignore` file to prevent accidental exposure of credentials.
 ```env
 # PocketBase Configuration
-POCKETBASE_URL=http://terence.myds.me:8081
-POCKETBASE_EMAIL=terencetsang@hotmail.com
-POCKETBASE_PASSWORD=Qwertyu12345
+POCKETBASE_URL=your_pocketbase_server_url
+POCKETBASE_EMAIL=your_pocketbase_email
+POCKETBASE_PASSWORD=your_pocketbase_password
 
 # Output Directory for JSON backups
 OUTPUT_DIR=win_odds_data
