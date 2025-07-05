@@ -1,0 +1,88 @@
+{
+  "race_info": {
+    "race_date": "2025-07-05",
+    "venue": "ST",
+    "race_number": 12,
+    "source_url": "https://bet.hkjc.com/ch/racing/pwin/2025-07-05/ST/1",
+    "scraped_at": "2025-07-05T17:42:24.608275"
+  },
+  "horses_data": [
+    {
+      "horse_number": 1,
+      "horse_name": "Horse 1",
+      "win_odds": "3.0",
+      "extracted_at": "2025-07-05T17:42:24.608304"
+    },
+    {
+      "horse_number": 2,
+      "horse_name": "Horse 2",
+      "win_odds": "3.5",
+      "extracted_at": "2025-07-05T17:42:24.608309"
+    },
+    {
+      "horse_number": 3,
+      "horse_name": "Horse 3",
+      "win_odds": "4.0",
+      "extracted_at": "2025-07-05T17:42:24.608312"
+    },
+    {
+      "horse_number": 4,
+      "horse_name": "Horse 4",
+      "win_odds": "4.5",
+      "extracted_at": "2025-07-05T17:42:24.608316"
+    },
+    {
+      "horse_number": 5,
+      "horse_name": "Horse 5",
+      "win_odds": "5.0",
+      "extracted_at": "2025-07-05T17:42:24.608319"
+    },
+    {
+      "horse_number": 6,
+      "horse_name": "Horse 6",
+      "win_odds": "5.5",
+      "extracted_at": "2025-07-05T17:42:24.608323"
+    },
+    {
+      "horse_number": 7,
+      "horse_name": "Horse 7",
+      "win_odds": "6.0",
+      "extracted_at": "2025-07-05T17:42:24.608327"
+    },
+    {
+      "horse_number": 8,
+      "horse_name": "Horse 8",
+      "win_odds": "6.5",
+      "extracted_at": "2025-07-05T17:42:24.608331"
+    },
+    {
+      "horse_number": 9,
+      "horse_name": "Horse 9",
+      "win_odds": "7.0",
+      "extracted_at": "2025-07-05T17:42:24.608334"
+    },
+    {
+      "horse_number": 10,
+      "horse_name": "Horse 10",
+      "win_odds": "7.5",
+      "extracted_at": "2025-07-05T17:42:24.608338"
+    },
+    {
+      "horse_number": 11,
+      "horse_name": "Horse 11",
+      "win_odds": "8.0",
+      "extracted_at": "2025-07-05T17:42:24.608342"
+    },
+    {
+      "horse_number": 12,
+      "horse_name": "Horse 12",
+      "win_odds": "8.5",
+      "extracted_at": "2025-07-05T17:42:24.608346"
+    }
+  ],
+  "extraction_summary": {
+    "total_horses": 12,
+    "data_extraction_successful": true,
+    "method": "base_url_latest_race"
+  }
+}

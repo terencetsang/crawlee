@@ -21,8 +21,30 @@ COLLECTION_NAME = "race_odds"
 # Output directory for backup JSON files
 OUTPUT_DIR = os.getenv("OUTPUT_DIR", "win_odds_data")
 
+def is_valid_race_date_for_odds(race_date_str):
+    """
+    Validate that a race date is valid for odds extraction.
+    Allows completed races and races from today (which may have final odds).
+
+    Args:
+        race_date_str (str): Race date in YYYY-MM-DD format
+
+    Returns:
+        bool: True if the date is valid for odds extraction, False otherwise
+    """
+    try:
+        race_datetime = datetime.strptime(race_date_str, "%Y-%m-%d")
+        today = datetime.now().date()
+
+        # Allow races from today and earlier (completed races + today's races with final odds)
+        # Exclude future races (no odds available yet)
+        return race_datetime.date() <= today
+
+    except (ValueError, TypeError):
+        return False
+
 def get_race_info_from_hkjc():
-    """Get current race information from HKJC website"""
+    """Get current race information from HKJC website - only past/completed races"""
     try:
         print("🔍 Getting race information from HKJC...")
         
@@ -78,55 +100,337 @@ def get_race_info_from_hkjc():
         if race_tabs:
             total_races = max(race_tabs)
         
+        # Validate that the race date is valid for odds extraction
+        if race_date and not is_valid_race_date_for_odds(race_date):
+            print(f"⚠️ Skipping future race date: {race_date} (no odds available yet)")
+            return None
+
         if race_date and racecourse and total_races > 0:
-            print(f"✅ Found: Date={race_date}, Venue={racecourse}, Races={total_races}")
+            print(f"✅ Found completed race: Date={race_date}, Venue={racecourse}, Races={total_races}")
             return (race_date, racecourse, total_races)
-        
-        print("⚠️ Could not extract complete race information")
+
+        print("⚠️ Could not extract complete race information or race is in the future")
         return None
         
     except Exception as e:
         print(f"❌ Error getting race info: {str(e)}")
         return None
 
-def get_available_race_dates():
-    """Get available race dates from multiple sources"""
-    race_dates = []
+def get_venue_from_database(race_date):
+    """
+    Get the venue for a race date from PocketBase database.
+    This is more reliable than web scraping since it uses actual stored data.
+    """
+    try:
+        client = PocketBase(POCKETBASE_URL)
+        client.collection("users").auth_with_password(POCKETBASE_EMAIL, POCKETBASE_PASSWORD)
 
-    # Method 1: Get from HKJC current race info
-    current_race = get_race_info_from_hkjc()
-    if current_race:
-        race_dates.append(current_race)
+        # Query for records with this race date
+        records = client.collection(COLLECTION_NAME).get_list(
+            1, 1,  # Just need one record to determine venue
+            {
+                "filter": f'race_date="{race_date}"'
+            }
+        )
 
-    # Method 2: Try recent dates (last 7 days) - but be more conservative
-    print("🔍 Checking recent race dates...")
+        if records.total_items > 0:
+            venue = records.items[0].venue
+            print(f"   📊 Database shows {race_date} venue: {venue}")
+            return venue
+        else:
+            print(f"   ⚠️ No database records found for {race_date}")
+            return None
+
+    except Exception as e:
+        print(f"   ❌ Database query error for {race_date}: {str(e)}")
+        return None
+
+def determine_venue_for_date(race_date):
+    """
+    Determine which venue (ST or HV) has races for a given date.
+    First tries database, then falls back to web checking.
+    Returns the venue code or None if no races found.
+    """
+    # Method 1: Check database first (most reliable)
+    venue = get_venue_from_database(race_date)
+    if venue:
+        return venue
+
+    # Method 2: Fallback to web checking with better redirect detection
+    print(f"   🔍 Checking web for {race_date} venue...")
+
+    # Try both venues, but use stricter validation
+    for test_venue in ["ST", "HV"]:
+        if check_race_date_exists_strict(race_date, test_venue):
+            print(f"   ✅ Web check confirms {race_date} venue: {test_venue}")
+            return test_venue
+
+    return None
+
+def check_race_date_exists_strict(race_date, venue):
+    """
+    Stricter version of race date checking that better detects redirects.
+    Checks both URL and content to ensure we're not being redirected.
+    """
+    try:
+        url = f"https://bet.hkjc.com/ch/racing/pwin/{race_date}/{venue}/1"
+        response = requests.get(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }, timeout=10, allow_redirects=False)  # Don't follow redirects
+
+        # If we get a redirect response, it means the date/venue doesn't exist
+        if response.status_code in [301, 302, 303, 307, 308]:
+            print(f"   🔄 {race_date} {venue} redirected (likely doesn't exist)")
+            return False
+
+        if response.status_code == 200:
+            # Check the actual URL we ended up at
+            final_url = response.url if hasattr(response, 'url') else url
+
+            # Verify the URL still contains our requested date and venue
+            if race_date in final_url and venue in final_url:
+                # Additional content validation
+                from bs4 import BeautifulSoup
+                soup = BeautifulSoup(response.text, 'html.parser')
+                page_text = soup.get_text()
+
+                # Check for race-specific content
+                if "第1場" in page_text or "Race 1" in page_text:
+                    # Verify the date in the content matches our request
+                    date_formatted = race_date.replace('-', '/')  # 2025/07/01
+                    if date_formatted in page_text:
+                        return True
+
+            print(f"   ⚠️ {race_date} {venue} content validation failed")
+            return False
+
+        return False
+
+    except Exception as e:
+        print(f"   ❌ Error checking {race_date} {venue}: {e}")
+        return False
+
+def load_verified_odds_dates():
+    """Load dates that are verified to have odds data available"""
+    try:
+        print("📅 Loading verified odds dates from database and authoritative sources...")
+
+        verified_sessions = []
+
+        # Method 1: Load from database (most reliable for existing odds data)
+        try:
+            client = PocketBase(POCKETBASE_URL)
+            client.collection("users").auth_with_password(POCKETBASE_EMAIL, POCKETBASE_PASSWORD)
+
+            # Get unique race dates from database
+            records = client.collection(COLLECTION_NAME).get_list(
+                1, 500,  # Get more records to find all dates
+                {
+                    "sort": "-race_date",
+                    "fields": "race_date,venue"
+                }
+            )
+
+            # Extract unique date/venue combinations
+            db_sessions = {}
+            for record in records.items:
+                race_date = record.race_date
+                venue = record.venue
+
+                if race_date and venue and is_valid_race_date_for_odds(race_date):
+                    if race_date not in db_sessions:
+                        db_sessions[race_date] = {
+                            'race_date': race_date,
+                            'venue': venue,
+                            'venue_name': "Sha Tin" if venue == "ST" else "Happy Valley",
+                            'total_races': 12,  # Standard race count
+                            'source': 'database',
+                            'verified': True
+                        }
+
+            verified_sessions.extend(db_sessions.values())
+            print(f"✅ Found {len(db_sessions)} dates with odds data in database")
+
+        except Exception as e:
+            print(f"⚠️ Could not load from database: {str(e)}")
+
+        # Method 2: Add from authoritative Local Results if available
+        if os.path.exists('hkjc_authoritative_dates.json'):
+            try:
+                with open('hkjc_authoritative_dates.json', 'r') as f:
+                    data = json.load(f)
+
+                race_sessions = data.get('race_sessions', [])
+                existing_dates = {session['race_date'] for session in verified_sessions}
+
+                for session in race_sessions:
+                    race_date = session.get('race_date')
+                    if (race_date and
+                        is_valid_race_date_for_odds(race_date) and
+                        race_date not in existing_dates):
+
+                        session['source'] = 'local_results'
+                        session['verified'] = True
+                        verified_sessions.append(session)
+                        print(f"   + Added from Local Results: {race_date}")
+
+            except Exception as e:
+                print(f"⚠️ Could not load authoritative dates: {str(e)}")
+
+        # Method 3: Fallback to odds_dates.json
+        if not verified_sessions and os.path.exists('odds_dates.json'):
+            print("⚠️ No other sources available, using odds_dates.json...")
+
+            with open('odds_dates.json', 'r') as f:
+                odds_dates = json.load(f)
+
+            for date_str in odds_dates:
+                if is_valid_race_date_for_odds(date_str):
+                    verified_sessions.append({
+                        'race_date': date_str,
+                        'venue': None,  # To be determined
+                        'venue_name': 'Unknown',
+                        'total_races': 10,
+                        'source': 'odds_dates_json',
+                        'verified': False
+                    })
+
+        # Sort by date (newest first)
+        verified_sessions.sort(key=lambda x: x['race_date'], reverse=True)
+
+        print(f"✅ Total verified sessions: {len(verified_sessions)}")
+        for session in verified_sessions[:10]:  # Show first 10
+            source = session.get('source', 'unknown')
+            venue_name = session.get('venue_name', 'Unknown')
+            print(f"   - {session['race_date']}: {session.get('venue', '?')} ({venue_name}) [{source}]")
+
+        if len(verified_sessions) > 10:
+            print(f"   ... and {len(verified_sessions) - 10} more")
+
+        return verified_sessions
+
+    except Exception as e:
+        print(f"❌ Error loading verified odds dates: {str(e)}")
+        return []
+
+def check_recent_race_dates():
+    """Check recent dates for new race data that might not be in odds_dates.json yet"""
+    print("\n🔍 Checking recent dates for new race data...")
+    recent_races = []
     today = datetime.now()
 
-    # Only check dates that are likely to have races (exclude Mondays and Tuesdays typically)
+    # Check last 7 days for new race data
     for i in range(7):
         check_date = today - timedelta(days=i)
         date_str = check_date.strftime("%Y-%m-%d")
 
-        # Skip future dates (races can't exist in the future)
-        if check_date > today:
+        # Only check valid dates
+        if not is_valid_race_date_for_odds(date_str):
             continue
 
-        # Check both venues but with validation
-        for venue in ["ST", "HV"]:
-            print(f"   Checking {date_str} {venue}...")
-            if check_race_date_exists(date_str, venue):
-                # Estimate total races more carefully
-                total_races = estimate_total_races(date_str, venue)
-                if total_races > 0:
-                    race_dates.append((date_str, venue, total_races))
-                    print(f"   ✅ Found {date_str} {venue} with {total_races} races")
-            else:
-                print(f"   ❌ No races found for {date_str} {venue}")
+        print(f"   Checking {date_str} for new race data...")
 
-    # Remove duplicates and sort by date
-    unique_races = list(set(race_dates))
-    unique_races.sort(key=lambda x: x[0], reverse=True)  # Sort by date, newest first
-    return unique_races
+        # Determine venue for this date
+        venue = determine_venue_for_date(date_str)
+
+        if venue:
+            # Check if we can get race count
+            total_races = estimate_total_races(date_str, venue)
+            if total_races > 0:
+                recent_races.append((date_str, venue, total_races))
+                venue_name = "Sha Tin" if venue == "ST" else "Happy Valley"
+                print(f"   ✅ Found new race data: {date_str} {venue} ({venue_name}) with {total_races} races")
+        else:
+            print(f"   ❌ No race data found for {date_str}")
+
+    return recent_races
+
+def get_available_race_dates():
+    """Get available race dates from race_entries collection (most reliable source)"""
+    race_dates = []
+
+    print("📅 Loading race dates from race_entries collection...")
+
+    try:
+        client = PocketBase(POCKETBASE_URL)
+        client.collection("users").auth_with_password(POCKETBASE_EMAIL, POCKETBASE_PASSWORD)
+
+        # Get unique race dates and venues from race_entries collection
+        records = client.collection("race_entries").get_list(
+            1, 500,  # Get more records to find all dates
+            {
+                "sort": "-race_date",
+                "fields": "race_date,venue"
+            }
+        )
+
+        # Extract unique date/venue combinations
+        race_sessions = {}
+        for record in records.items:
+            race_date = record.race_date
+            venue = record.venue
+
+            if race_date and venue and is_valid_race_date_for_odds(race_date):
+                if race_date not in race_sessions:
+                    # Handle both English and Chinese venue codes
+                    if venue in ["ST", "沙田"]:
+                        venue_code = "ST"
+                        venue_name = "Sha Tin"
+                    elif venue in ["HV", "跑馬地"]:
+                        venue_code = "HV"
+                        venue_name = "Happy Valley"
+                    else:
+                        venue_code = venue
+                        venue_name = venue
+
+                    race_sessions[race_date] = {
+                        'race_date': race_date,
+                        'venue': venue_code,
+                        'venue_name': venue_name,
+                        'total_races': 12  # Standard race count
+                    }
+
+        # Convert to race_dates format
+        for session in race_sessions.values():
+            race_date = session['race_date']
+            venue = session['venue']
+            total_races = session['total_races']
+            venue_name = session['venue_name']
+
+            race_dates.append((race_date, venue, total_races))
+            print(f"   ✅ {race_date} {venue} ({venue_name}) with {total_races} races")
+
+        print(f"✅ Found {len(race_dates)} race sessions from race_entries collection")
+
+    except Exception as e:
+        print(f"❌ Error loading from race_entries collection: {str(e)}")
+
+        # Fallback: try to get current race info from HKJC
+        print("🔍 Falling back to HKJC current race info...")
+        current_race = get_race_info_from_hkjc()
+        if current_race:
+            race_date, venue, total_races = current_race
+            if is_valid_race_date_for_odds(race_date):
+                race_dates.append(current_race)
+                venue_name = "Sha Tin" if venue == "ST" else "Happy Valley"
+                print(f"   ✅ Current race: {race_date} {venue} ({venue_name}) with {total_races} races")
+            else:
+                print(f"   ⚠️ Current race date {race_date} is not valid for odds extraction")
+        else:
+            print("   ❌ Could not get current race info")
+
+    # Sort by date (newest first)
+    race_dates.sort(key=lambda x: x[0], reverse=True)
+
+    if race_dates:
+        print(f"\n📊 Final race schedule ({len(race_dates)} sessions):")
+        for race_date, venue, total_races in race_dates:
+            venue_name = "Sha Tin" if venue == "ST" else "Happy Valley"
+            print(f"   - {race_date}: {venue} ({venue_name}) - {total_races} races")
+    else:
+        print("\n❌ No valid race dates found")
+
+    return race_dates
 
 def check_race_date_exists(race_date, venue):
     """Check if a race date exists by trying to access race 1 and validating content"""
@@ -192,11 +496,71 @@ def estimate_total_races(race_date, venue):
     # Default to 10 if we can't determine
     return total_races if total_races > 0 else 10
 
-async def extract_race_odds(race_date, venue, race_number):
-    """Extract odds for a specific race"""
+def extract_race_info_from_current_page(page_text):
+    """Extract race date and venue from current odds page"""
     try:
-        url = f"https://bet.hkjc.com/ch/racing/pwin/{race_date}/{venue}/{race_number}"
-        print(f"🏇 Extracting Race {race_number} - {race_date} {venue}")
+        import re
+
+        # Look for date patterns in various formats
+        date_patterns = [
+            r'(\d{2})/(\d{2})/(\d{4})',  # DD/MM/YYYY (05/07/2025)
+            r'(\d{4})/(\d{2})/(\d{2})',  # YYYY/MM/DD (2025/07/05)
+            r'(\d{4})年(\d{1,2})月(\d{1,2})日',  # Chinese format
+        ]
+
+        race_date = None
+        for pattern in date_patterns:
+            matches = re.findall(pattern, page_text)
+            for match in matches:
+                try:
+                    if pattern.startswith(r'(\d{2})/'):  # DD/MM/YYYY
+                        day, month, year = match
+                        race_date = f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+                    elif pattern.startswith(r'(\d{4})/'):  # YYYY/MM/DD
+                        year, month, day = match
+                        race_date = f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+                    elif pattern.endswith(r'日'):  # Chinese format
+                        year, month, day = match
+                        race_date = f"{year}-{month.zfill(2)}-{day.zfill(2)}"
+
+                    # Validate date is reasonable (within last 30 days to next 7 days)
+                    from datetime import datetime, timedelta
+                    date_obj = datetime.strptime(race_date, '%Y-%m-%d')
+                    today = datetime.now()
+                    days_diff = (date_obj - today).days
+
+                    if -30 <= days_diff <= 7:  # Reasonable range
+                        break
+                    else:
+                        race_date = None
+                except:
+                    continue
+
+            if race_date:
+                break
+
+        # Look for venue information
+        venue = None
+        if "沙田" in page_text:
+            venue = "ST"
+        elif "跑馬地" in page_text:
+            venue = "HV"
+
+        if race_date and venue:
+            return (race_date, venue)
+        else:
+            return None
+
+    except Exception as e:
+        print(f"⚠️ Error extracting race info: {str(e)}")
+        return None
+
+async def extract_current_race_odds(race_number):
+    """Extract odds for current/latest race using base URL"""
+    try:
+        # Use base URL to get latest race data
+        url = f"https://bet.hkjc.com/ch/racing/pwin/"
+        print(f"🏇 Extracting Race {race_number} from latest race data")
 
         async with async_playwright() as p:
             browser = await p.chromium.launch(
@@ -216,16 +580,24 @@ async def extract_race_odds(race_date, venue, race_number):
                 await page.goto(url, wait_until='domcontentloaded', timeout=30000)
                 await page.wait_for_timeout(5000)
 
-                # Validate that we're on the correct race page
+                # Get the page content to extract race info
                 page_text = await page.text_content('body')
 
-                # Check if page contains the expected date
-                date_formatted = race_date.replace('-', '/')  # 2025/07/02
-                date_chinese_year = race_date[:4] + '年'  # 2025年
+                # Extract race date and venue from the current page
+                race_info = extract_race_info_from_current_page(page_text)
 
-                if date_formatted not in page_text and date_chinese_year not in page_text:
-                    print(f"⚠️ Page doesn't contain expected date {race_date} - likely redirected")
+                if not race_info:
+                    print(f"⚠️ Could not extract race info from current page")
                     return None
+
+                race_date, venue = race_info
+                print(f"✅ Found current race: {race_date} {venue}")
+
+                # Navigate to specific race if not race 1
+                if race_number != 1:
+                    race_url = f"https://bet.hkjc.com/ch/racing/pwin/{race_date}/{venue}/{race_number}"
+                    await page.goto(race_url, wait_until='domcontentloaded', timeout=30000)
+                    await page.wait_for_timeout(3000)
 
                 # Extract odds data
                 odds_data = await extract_odds_from_page(page)
@@ -487,13 +859,18 @@ async def main():
     total_saved = 0
     
     for race_date, venue, total_races in available_races:
+        # Final validation: ensure we don't process future dates
+        if not is_valid_race_date_for_odds(race_date):
+            print(f"⚠️ Skipping future race date: {race_date} {venue} (no odds available yet)")
+            continue
+
         print(f"\n🏁 Processing {race_date} {venue} ({total_races} races)")
         print("-" * 40)
         
         for race_number in range(1, total_races + 1):
             try:
                 # Extract odds data
-                data = await extract_race_odds(race_date, venue, race_number)
+                data = await extract_current_race_odds(race_number)
                 
                 if data:
                     total_extracted += 1

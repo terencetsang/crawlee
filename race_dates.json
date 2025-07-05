@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "extracted_at": "2025-06-26T22:41:30.118004",
-    "total_dates": 244,
+    "extracted_at": "2025-07-04T21:26:49.260645",
+    "total_dates": 248,
     "date_range": {
       "earliest": "23/07/2023",
-      "latest": "28/06/2025"
+      "latest": "06/07/2025"
     },
     "status_summary": {
-      "completed": 243,
-      "upcoming": 1
+      "completed": 246,
+      "upcoming": 2
     }
   },
   "race_dates": [
@@ -2791,7 +2791,7 @@
       "racecourse": "HV",
       "total_races": 9,
       "extracted_at": "2025-06-24T20:22:59.937414",
-      "last_updated": "2025-06-26T22:41:06.454661",
+      "last_updated": "2025-07-04T21:25:43.135156",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_hv_verification"
@@ -2803,7 +2803,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.938538",
-      "last_updated": "2025-06-26T22:41:08.316684",
+      "last_updated": "2025-07-04T21:25:46.607073",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2815,7 +2815,7 @@
       "racecourse": "ST",
       "total_races": 10,
       "extracted_at": "2025-06-24T20:22:59.937768",
-      "last_updated": "2025-06-26T22:41:10.457078",
+      "last_updated": "2025-07-04T21:25:49.624843",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_st_verification"
@@ -2827,7 +2827,7 @@
       "racecourse": "HV",
       "total_races": 9,
       "extracted_at": "2025-06-24T20:22:59.938688",
-      "last_updated": "2025-06-26T22:41:12.705590",
+      "last_updated": "2025-07-04T21:25:53.516361",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_hv_verification"
@@ -2839,7 +2839,7 @@
       "racecourse": "ST",
       "total_races": 11,
       "extracted_at": "2025-06-24T20:22:59.938436",
-      "last_updated": "2025-06-26T22:41:14.844816",
+      "last_updated": "2025-07-04T21:25:56.644913",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_st_verification"
@@ -2851,7 +2851,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.939302",
-      "last_updated": "2025-06-26T22:41:16.689956",
+      "last_updated": "2025-07-04T21:25:59.886935",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2863,7 +2863,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.937056",
-      "last_updated": "2025-06-26T22:41:18.530946",
+      "last_updated": "2025-07-04T21:26:03.349363",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2875,7 +2875,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.939197",
-      "last_updated": "2025-06-26T22:41:20.357157",
+      "last_updated": "2025-07-04T21:26:06.689707",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2887,7 +2887,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.939380",
-      "last_updated": "2025-06-26T22:41:22.163927",
+      "last_updated": "2025-07-04T21:26:10.343150",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2899,7 +2899,7 @@
       "racecourse": "NO_RACING",
       "total_races": 0,
       "extracted_at": "2025-06-24T20:22:59.937109",
-      "last_updated": "2025-06-26T22:41:23.987251",
+      "last_updated": "2025-07-04T21:26:13.895371",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "no_data_found"
@@ -2911,7 +2911,7 @@
       "racecourse": "ST",
       "total_races": 11,
       "extracted_at": "2025-06-24T20:22:59.937396",
-      "last_updated": "2025-06-26T22:41:26.178546",
+      "last_updated": "2025-07-04T21:26:17.299315",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_st_verification"
@@ -2923,7 +2923,7 @@
       "racecourse": "HV",
       "total_races": 9,
       "extracted_at": "2025-06-24T20:22:59.937823",
-      "last_updated": "2025-06-26T22:41:28.382517",
+      "last_updated": "2025-07-04T21:26:26.435284",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_hv_verification"
@@ -2931,14 +2931,62 @@
     {
       "race_date": "2025/06/28",
       "race_date_formatted": "28/06/2025",
-      "status": "upcoming",
+      "status": "completed",
       "racecourse": "ST",
-      "total_races": 9,
+      "total_races": 11,
       "extracted_at": "2025-06-26T18:18:05.076348",
-      "last_updated": "2025-06-26T22:41:30.117953",
+      "last_updated": "2025-07-04T21:26:29.940601",
       "metadata_source": "hkjc_url_verification",
       "verification_confidence": "high",
       "verification_method": "direct_st_verification"
+    },
+    {
+      "race_date": "2025/06/29",
+      "race_date_formatted": "29/06/2025",
+      "status": "completed",
+      "racecourse": "NO_RACING",
+      "total_races": 0,
+      "extracted_at": "2025-07-04T19:34:39.447952",
+      "last_updated": "2025-07-04T21:26:39.833504",
+      "metadata_source": "hkjc_url_verification",
+      "verification_confidence": "high",
+      "verification_method": "no_data_found"
+    },
+    {
+      "race_date": "2025/07/01",
+      "race_date_formatted": "01/07/2025",
+      "status": "completed",
+      "racecourse": "ST",
+      "total_races": 10,
+      "extracted_at": "2025-07-04T19:34:39.445274",
+      "last_updated": "2025-07-04T21:26:42.987990",
+      "metadata_source": "hkjc_url_verification",
+      "verification_confidence": "high",
+      "verification_method": "direct_st_verification"
+    },
+    {
+      "race_date": "2025/07/05",
+      "race_date_formatted": "05/07/2025",
+      "status": "upcoming",
+      "racecourse": "ST",
+      "total_races": 10,
+      "extracted_at": "2025-07-04T19:34:39.449473",
+      "last_updated": "2025-07-04T21:26:45.978126",
+      "metadata_source": "hkjc_url_verification",
+      "verification_confidence": "high",
+      "verification_method": "direct_st_verification"
+    },
+    {
+      "race_date": "2025/07/06",
+      "race_date_formatted": "06/07/2025",
+      "status": "upcoming",
+      "racecourse": "NO_RACING",
+      "total_races": 0,
+      "extracted_at": "2025-07-04T20:10:32.135104",
+      "last_updated": "2025-07-04T21:26:49.260515",
+      "metadata_source": "hkjc_url_verification",
+      "verification_confidence": "high",
+      "verification_method": "no_data_found"
     }
   ]
 }

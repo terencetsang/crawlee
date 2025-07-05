@@ -1,0 +1,73 @@
+{
+  "extracted_at": "2025-07-05T13:10:28.719704",
+  "source": "hkjc_local_results_authoritative",
+  "method": "local_results_verification",
+  "total_dates": 7,
+  "race_dates": [
+    "2025-07-01",
+    "2025-06-28",
+    "2025-06-25",
+    "2025-06-22",
+    "2025-06-14",
+    "2025-06-11",
+    "2025-06-08"
+  ],
+  "race_sessions": [
+    {
+      "race_date": "2025-07-01",
+      "venue": "ST",
+      "venue_name": "Sha Tin",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/07/01",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-28",
+      "venue": "ST",
+      "venue_name": "Sha Tin",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/28",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-25",
+      "venue": "HV",
+      "venue_name": "Happy Valley",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/25",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-22",
+      "venue": "ST",
+      "venue_name": "Sha Tin",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/22",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-14",
+      "venue": "ST",
+      "venue_name": "Sha Tin",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/14",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-11",
+      "venue": "HV",
+      "venue_name": "Happy Valley",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/11",
+      "verified": true
+    },
+    {
+      "race_date": "2025-06-08",
+      "venue": "ST",
+      "venue_name": "Sha Tin",
+      "total_races": 1,
+      "url": "https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2025/06/08",
+      "verified": true
+    }
+  ]
+}
