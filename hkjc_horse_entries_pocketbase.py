@@ -17,7 +17,8 @@ load_dotenv()
 POCKETBASE_URL = os.getenv("POCKETBASE_URL")
 POCKETBASE_EMAIL = os.getenv("POCKETBASE_EMAIL")
 POCKETBASE_PASSWORD = os.getenv("POCKETBASE_PASSWORD")
-COLLECTION_NAME = os.getenv("POCKETBASE_COLLECTION")
+#COLLECTION_NAME = os.getenv("POCKETBASE_COLLECTION")
+COLLECTION_NAME = 'race_entries'
 
 # Race configuration from environment variables
 # These are used as fallback values if get_race_info_from_hkjc() fails to extract information from HKJC website
