@@ -50,7 +50,17 @@ TOTAL_RACES=12
 ### PocketBase Collection Schema
 Collection name: `race_odds`
 
+#### Current Schema (extract_latest_odds.py)
 Required fields:
+- `race_date` (text) - Format: YYYY/MM/DD
+- `racecourse` (text) - ST (Sha Tin) or HV (Happy Valley)
+- `race_number` (number) - Race number (1-12)
+- `race_id` (text) - Format: YYYY-MM-DD_VENUE_RX
+- `horse_data` (json) - Array of horse odds data
+- `extracted_at` (text) - ISO timestamp
+- `source_url` (text) - HKJC source URL
+
+#### Legacy Schema (historical scripts)
 - `race_date` (text) - Format: YYYY-MM-DD
 - `venue` (text) - ST (Sha Tin) or HV (Happy Valley)
 - `race_number` (number) - Race number (1-12)
@@ -67,6 +77,35 @@ Required fields:
 ## Data Structure
 
 ### Win Odds Trends JSON Format
+
+#### Current Format (extract_latest_odds.py)
+```json
+{
+  "race_info": {
+    "race_date": "2025-07-09",
+    "venue": "HV",
+    "race_number": 1,
+    "source_url": "https://bet.hkjc.com/ch/racing/pwin/2025-07-09/HV/1",
+    "scraped_at": "2025-07-07T21:25:35.827048"
+  },
+  "horses_data": [
+    {
+      "horse_number": 1,
+      "horse_name": "Horse 1",
+      "win_odds": "3.0",
+      "extracted_at": "2025-07-07T21:25:35.827095"
+    },
+    {
+      "horse_number": 2,
+      "horse_name": "Horse 2",
+      "win_odds": "3.5",
+      "extracted_at": "2025-07-07T21:25:35.827106"
+    }
+  ]
+}
+```
+
+#### Legacy Format (historical scripts)
 ```json
 {
   "race_info": {
@@ -102,19 +141,31 @@ Required fields:
 
 ## Extraction Process
 
-### 1. Automated Extraction (Recommended)
+### 1. Latest Race Odds Extraction (Recommended)
 ```bash
-# Extract all available odds data
+# Extract latest/current race odds automatically
+python extract_latest_odds.py
+```
+**Features:**
+- ✅ Automatically detects latest available race date
+- ✅ Uses base URL strategy for current race data
+- ✅ Extracts all races for the detected date
+- ✅ Saves to both local files and PocketBase
+- ✅ No manual date configuration required
+
+### 2. Historical Odds Extraction
+```bash
+# Extract all available historical odds data
 python extract_all_odds_data.py
 ```
 
-### 2. Manual Single Race Extraction
+### 3. Manual Single Race Extraction
 ```bash
-# Extract specific race
+# Extract specific race (legacy method)
 python hkjc_win_odds_trends.py
 ```
 
-### 3. Extract Missing Races
+### 4. Extract Missing Races
 ```bash
 # Check for missing races first
 python cross_check_race_counts.py
@@ -125,23 +176,68 @@ python extract_missing_2_races.py
 
 ### Extraction Scripts Overview
 
+#### `extract_latest_odds.py` ⭐ **RECOMMENDED**
+- **Purpose**: Extract latest/current race odds automatically
+- **Strategy**: Uses base URL to detect current race date and venue
+- **Input**: No configuration required (auto-detects)
+- **Output**: JSON files with `_latest` suffix + PocketBase upload
+- **Features**:
+  - Auto-detection of current race
+  - Complete race day extraction
+  - Real-time odds data
+  - Automatic PocketBase upload
+- **Use Case**: Daily odds monitoring, current race analysis
+
 #### `extract_all_odds_data.py`
-- **Purpose**: Extract all available odds data from HKJC
+- **Purpose**: Extract all available historical odds data
 - **Input**: Uses `odds_dates.json` for date list
 - **Output**: JSON files in `win_odds_data/` + PocketBase upload
 - **Features**: Retry logic, error handling, progress tracking
+- **Use Case**: Historical data collection, bulk extraction
 
 #### `hkjc_win_odds_trends.py`
-- **Purpose**: Extract single race odds data
+- **Purpose**: Extract single race odds data (legacy)
 - **Input**: Manual race date/venue/number configuration
 - **Output**: Single JSON file + PocketBase upload
 - **Features**: Detailed extraction logging
+- **Use Case**: Specific race extraction, debugging
 
 #### `extract_missing_2_races.py`
 - **Purpose**: Extract specific missing races
 - **Input**: Hardcoded race list in script
 - **Output**: JSON files + PocketBase upload
 - **Features**: Targeted extraction with retry
+- **Use Case**: Gap filling, specific race recovery
+
+## Latest Odds Extraction Workflow
+
+### Quick Start (Recommended)
+```bash
+# Extract latest race odds (one command)
+python extract_latest_odds.py
+```
+
+### What It Does
+1. **🔍 Auto-Detection**: Automatically detects current race date and venue
+2. **🏇 Complete Extraction**: Extracts all races for the detected race day
+3. **💾 Dual Storage**: Saves to both local JSON files and PocketBase
+4. **📊 Real-Time Data**: Gets current live odds for upcoming races
+
+### Output Files
+- **Local Files**: `win_odds_data/win_odds_trends_YYYY_MM_DD_VENUE_RX_latest.json`
+- **PocketBase**: Records in `race_odds` collection
+- **Console**: Progress tracking and summary statistics
+
+### Example Output
+```
+🏇 HKJC Latest Race Odds Extractor
+============================================================
+✅ Latest race: 2025-07-09 HV (Happy Valley)
+📊 Processing 12 races
+✅ Total races extracted: 12/12
+💾 Total saved to PocketBase: 12
+📁 Backup files saved to: win_odds_data/
+```
 
 ## Upload Process
 
@@ -210,10 +306,27 @@ project/
 ```
 
 ### File Naming Convention
+
+#### Current Format (extract_latest_odds.py)
+Format: `win_odds_trends_YYYY_MM_DD_VENUE_RX_latest.json`
+- `YYYY_MM_DD`: Race date (underscores)
+- `VENUE`: ST (Sha Tin) or HV (Happy Valley)
+- `RX`: Race number (R1, R2, etc.)
+- `_latest`: Suffix indicating current/live odds data
+
+**Examples:**
+- `win_odds_trends_2025_07_09_HV_R1_latest.json`
+- `win_odds_trends_2025_07_09_HV_R12_latest.json`
+
+#### Legacy Format (historical scripts)
 Format: `win_odds_trends_YYYY_MM_DD_VENUE_RX.json`
 - `YYYY_MM_DD`: Race date (underscores)
 - `VENUE`: ST (Sha Tin) or HV (Happy Valley)
 - `RX`: Race number (R1, R2, etc.)
+
+**Examples:**
+- `win_odds_trends_2025_07_05_ST_R1.json`
+- `win_odds_trends_2025_07_05_ST_R11.json`
 
 ## Troubleshooting
 
@@ -265,11 +378,24 @@ Check extraction logs for:
 
 ## Best Practices
 
+### Current Approach (extract_latest_odds.py)
+1. **Daily Extraction**: Run `python extract_latest_odds.py` daily for current odds
+2. **Automatic Detection**: No manual date configuration required
+3. **Real-Time Data**: Gets live odds for upcoming races
+4. **Consistent Format**: Standardized JSON structure and naming
+5. **Dual Storage**: Local backup + PocketBase upload
+
+### Legacy Approach (historical scripts)
 1. **Regular Extraction**: Run extraction weekly to capture data before removal
 2. **Backup Strategy**: Keep JSON files as backup before PocketBase upload
 3. **Verification**: Always run verification after bulk operations
 4. **Monitoring**: Check `odds_dates.json` for available date ranges
 5. **Cleanup**: Regularly remove invalid/duplicate records
+
+### Migration Strategy
+- **New Projects**: Use `extract_latest_odds.py` for current odds
+- **Historical Data**: Use legacy scripts for past data collection
+- **Monitoring**: Combine both approaches for comprehensive coverage
 
 ## Data Retention
 
