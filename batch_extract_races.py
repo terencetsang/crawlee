@@ -28,10 +28,13 @@ def filter_dates_by_criteria(race_dates, status=None, month=None, limit=None, al
     if status:
         filtered = [d for d in filtered if d.get('status') == status]
     else:
-        # Safety check: By default, exclude upcoming races unless explicitly allowed
+        # Safety check: By default, only process completed races
         if not allow_upcoming:
-            filtered = [d for d in filtered if d.get('status') != 'upcoming']
-            print("🛡️ Safety filter: Excluding 'upcoming' races (use --allow-upcoming to override)")
+            filtered = [d for d in filtered if d.get('status') == 'completed']
+            print("🛡️ Safety filter: Only processing 'completed' races (use --allow-upcoming to include today/upcoming)")
+        else:
+            # When allow_upcoming is True, process all races (completed, today, upcoming)
+            print("⚠️ Processing all race statuses including upcoming races")
 
     # Filter by month (YYYY/MM format)
     if month:
@@ -110,7 +113,7 @@ Examples:
     parser.add_argument('--month', help='Filter by month (YYYY/MM format)')
     parser.add_argument('--limit', type=int, help='Limit number of dates to process')
     parser.add_argument('--allow-upcoming', action='store_true',
-                       help='Allow processing of upcoming races (default: false for safety)')
+                       help='Allow processing of today/upcoming races (default: only completed races)')
     parser.add_argument('--delay', type=float, default=2.0,
                        help='Delay between dates in seconds (default: 2.0)')
     parser.add_argument('--racecourses', nargs='+', default=['ST', 'HV'],
