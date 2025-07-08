@@ -170,6 +170,7 @@
 
         <div class="tabs" id="tabs">
             <div class="tab active" data-tab="gemini">Gemini Analysis</div>
+            <div class="tab" data-tab="perplexity">Perplexity Pro</div>
             <div class="tab" data-tab="fuji">Fuji Data</div>
             <div class="tab" data-tab="entries">Entries</div>
             <div class="tab" data-tab="json">Raw JSON</div>
@@ -177,6 +178,10 @@
 
         <div id="gemini-tab" class="tab-content active">
             <pre id="gemini-response" class="gemini-response"></pre>
+        </div>
+
+        <div id="perplexity-tab" class="tab-content">
+            <pre id="perplexity-response" class="gemini-response"></pre>
         </div>
 
         <div id="fuji-tab" class="tab-content">
@@ -216,6 +221,7 @@
         const errorContainer = document.getElementById('error-container');
         const loadingDiv = document.getElementById('loading');
         const geminiContent = document.getElementById('gemini-response');
+        const perplexityContent = document.getElementById('perplexity-response');
         const fujiContent = document.getElementById('fuji-response');
         const jsonContent = document.getElementById('json-content');
         const entriesTableBody = document.getElementById('entries-body');
@@ -685,7 +691,7 @@ Tierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
 
                 // Construct the API URL - properly encode the filter parameter
                 const filterParam = encodeURIComponent(`race_date='${date}' && race_number='${raceNumber}'`);
-                const fieldsParam = 'race_date,race_number,gemini_25_respones,fuji,entries';
+                const fieldsParam = 'race_date,race_number,gemini_25_respones,gemini_2_respones,fuji,entries';
                 const url = `${apiBaseUrl}?filter=${filterParam}&fields=${fieldsParam}`;
 
                 console.log('API URL:', url);
@@ -924,6 +930,19 @@ Tierce: 1,2,3/1,2,3,4/1,2,3,4,5`,
                     geminiContent.innerHTML = parseMarkdown(raceData.gemini_25_respones);
                 } else {
                     geminiContent.innerHTML = '<p>No Gemini analysis available for this race.</p>';
+                }
+            }
+
+            // Display Perplexity Pro data
+            if (isLocalFormat) {
+                // Local JSON file format - no gemini_2_respones field available
+                perplexityContent.innerHTML = '<p>No Perplexity Pro analysis available for local JSON format.</p>';
+            } else {
+                // PocketBase format
+                if (raceData.gemini_2_respones) {
+                    perplexityContent.textContent = raceData.gemini_2_respones;
+                } else {
+                    perplexityContent.innerHTML = '<p>No Perplexity Pro analysis available for this race.</p>';
                 }
             }
 
