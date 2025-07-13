@@ -35,8 +35,8 @@ class July2025Cleaner:
             'race_payout_analysis'
         ]
 
-        # Clean up ALL July 2025 dates for fresh manual restart
-        self.july_dates = ["2025/07/01", "2025/07/05"]
+        # Clean up only the future date (2025/07/05) - keep valid past date (2025/07/01)
+        self.july_dates = ["2025/07/05"]
     
     def authenticate(self):
         """Authenticate with PocketBase and get auth token."""

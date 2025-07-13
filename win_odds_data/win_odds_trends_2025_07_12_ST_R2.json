@@ -1,0 +1,15 @@
+{
+  "race_info": {
+    "race_date": "2025-07-12",
+    "venue": "ST",
+    "race_number": 2,
+    "source_url": "https://bet.hkjc.com/ch/racing/pwin/2025-07-13/ST/1",
+    "scraped_at": "2025-07-12T15:34:14.155191"
+  },
+  "win_odds_trends": null,
+  "extraction_summary": {
+    "odds_data_found": false,
+    "data_extraction_successful": false,
+    "method": "base_url_completed_race_real_extraction"
+  }
+}
