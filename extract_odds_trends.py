@@ -57,7 +57,8 @@ def extract_race_info_from_page(page_text):
 
                     # Accept recent past, today, and upcoming races within next 7 days
                     # This is where odds data might still be available
-                    if -2 <= days_diff <= 7:  # Yesterday, today, and next 7 days
+                    # Extended range to include 2025/07/16 (6 days ago)
+                    if -7 <= days_diff <= 7:  # Last 7 days, today, and next 7 days
                         if days_diff == 0:
                             print(f"   ✅ Found today's race date: {race_date} (today)")
                         elif days_diff < 0:

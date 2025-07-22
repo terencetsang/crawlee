@@ -1,0 +1,341 @@
+{
+  "race_info": {
+    "race_date": "2025/07/16",
+    "racecourse": "HV",
+    "race_number": 4,
+    "race_id": "2025-07-16_HV_R4",
+    "source_url": "https://bet.hkjc.com/ch/racing/pwin/2025-07-16/HV/4",
+    "extracted_at": "2025-07-22T20:55:13.701722"
+  },
+  "horses_data": [
+    {
+      "horse_number": "1",
+      "horse_name": "三江飛輪",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "9.0"
+        },
+        {
+          "time": "19:58",
+          "odds": "9.4"
+        },
+        {
+          "time": "20:01",
+          "odds": "10"
+        }
+      ],
+      "gate": "5",
+      "weight": "135",
+      "jockey": "田泰安",
+      "trainer": "葉楚航",
+      "place_odds_trend": [
+        {
+          "odds": "2.6"
+        }
+      ]
+    },
+    {
+      "horse_number": "2",
+      "horse_name": "將義",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "4.9"
+        },
+        {
+          "time": "19:58",
+          "odds": "5.4"
+        },
+        {
+          "time": "20:01",
+          "odds": "4.0"
+        }
+      ],
+      "gate": "2",
+      "weight": "134",
+      "jockey": "梁家俊",
+      "trainer": "巫偉傑",
+      "place_odds_trend": [
+        {
+          "odds": "1.7"
+        }
+      ]
+    },
+    {
+      "horse_number": "3",
+      "horse_name": "中華英雄",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "9.4"
+        },
+        {
+          "time": "19:58",
+          "odds": "9.6"
+        },
+        {
+          "time": "20:01",
+          "odds": "12"
+        }
+      ],
+      "gate": "8",
+      "weight": "134",
+      "jockey": "布文",
+      "trainer": "大衛希斯",
+      "place_odds_trend": [
+        {
+          "odds": "3.2"
+        }
+      ]
+    },
+    {
+      "horse_number": "4",
+      "horse_name": "奮鬥心",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "12"
+        },
+        {
+          "time": "19:58",
+          "odds": "13"
+        },
+        {
+          "time": "20:01",
+          "odds": "12"
+        }
+      ],
+      "gate": "12",
+      "weight": "134",
+      "jockey": "奧爾民",
+      "trainer": "伍鵬志",
+      "place_odds_trend": [
+        {
+          "odds": "3.4"
+        }
+      ]
+    },
+    {
+      "horse_number": "5",
+      "horse_name": "寶成智星",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "11"
+        },
+        {
+          "time": "19:58",
+          "odds": "11"
+        },
+        {
+          "time": "20:01",
+          "odds": "10"
+        }
+      ],
+      "gate": "10",
+      "weight": "133",
+      "jockey": "潘頓",
+      "trainer": "丁冠豪",
+      "place_odds_trend": [
+        {
+          "odds": "3.4"
+        }
+      ]
+    },
+    {
+      "horse_number": "6",
+      "horse_name": "翠兒威威",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "6.2"
+        },
+        {
+          "time": "19:58",
+          "odds": "5.2"
+        },
+        {
+          "time": "20:01",
+          "odds": "7.5"
+        }
+      ],
+      "gate": "4",
+      "weight": "126",
+      "jockey": "周俊樂 (-2)",
+      "trainer": "容天鵬",
+      "place_odds_trend": [
+        {
+          "odds": "2.8"
+        }
+      ]
+    },
+    {
+      "horse_number": "7",
+      "horse_name": "夢照發",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "18"
+        },
+        {
+          "time": "19:58",
+          "odds": "17"
+        },
+        {
+          "time": "20:01",
+          "odds": "13"
+        }
+      ],
+      "gate": "6",
+      "weight": "125",
+      "jockey": "鍾易禮 (-2)",
+      "trainer": "黎昭昇",
+      "place_odds_trend": [
+        {
+          "odds": "3.4"
+        }
+      ]
+    },
+    {
+      "horse_number": "8",
+      "horse_name": "歡樂老撾",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "18"
+        },
+        {
+          "time": "19:58",
+          "odds": "20"
+        },
+        {
+          "time": "20:01",
+          "odds": "21"
+        }
+      ],
+      "gate": "9",
+      "weight": "124",
+      "jockey": "賀銘年",
+      "trainer": "姚本輝",
+      "place_odds_trend": [
+        {
+          "odds": "6.4"
+        }
+      ]
+    },
+    {
+      "horse_number": "9",
+      "horse_name": "嘉力寶",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "40"
+        },
+        {
+          "time": "19:58",
+          "odds": "45"
+        },
+        {
+          "time": "20:01",
+          "odds": "68"
+        }
+      ],
+      "gate": "3",
+      "weight": "122",
+      "jockey": "蔡明紹",
+      "trainer": "蔡約翰",
+      "place_odds_trend": [
+        {
+          "odds": "17"
+        }
+      ]
+    },
+    {
+      "horse_number": "10",
+      "horse_name": "金鑽八十",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "22"
+        },
+        {
+          "time": "19:58",
+          "odds": "26"
+        },
+        {
+          "time": "20:01",
+          "odds": "35"
+        }
+      ],
+      "gate": "7",
+      "weight": "122",
+      "jockey": "黃智弘 (-5)",
+      "trainer": "文家良",
+      "place_odds_trend": [
+        {
+          "odds": "9.8"
+        }
+      ]
+    },
+    {
+      "horse_number": "11",
+      "horse_name": "美麗歡聲",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "6.8"
+        },
+        {
+          "time": "19:58",
+          "odds": "7.5"
+        },
+        {
+          "time": "20:01",
+          "odds": "9.8"
+        }
+      ],
+      "gate": "11",
+      "weight": "119",
+      "jockey": "艾兆禮",
+      "trainer": "告東尼",
+      "place_odds_trend": [
+        {
+          "odds": "3.3"
+        }
+      ]
+    },
+    {
+      "horse_number": "12",
+      "horse_name": "堅多福",
+      "win_odds_trend": [
+        {
+          "time": "19:33",
+          "odds": "7.2"
+        },
+        {
+          "time": "19:58",
+          "odds": "6.1"
+        },
+        {
+          "time": "20:01",
+          "odds": "4.8"
+        }
+      ],
+      "gate": "1",
+      "weight": "116",
+      "jockey": "班德禮",
+      "trainer": "方嘉柏",
+      "place_odds_trend": [
+        {
+          "odds": "1.9"
+        }
+      ]
+    }
+  ],
+  "extraction_summary": {
+    "horses_extracted": 12,
+    "data_extraction_successful": true,
+    "method": "direct_url_extraction"
+  }
+}
